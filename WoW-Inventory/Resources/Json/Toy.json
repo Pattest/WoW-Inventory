@@ -1,0 +1,28 @@
+https://eu.api.blizzard.com/data/wow/toy/1?namespace=static-10.1.7_51059-eu&locale=fr_FR&access_token=EUR7ke4TOcePklME6BPBxexFwjMkf155xK
+
+{
+    "_links": {
+        "self": {
+            "href": "https://eu.api.blizzard.com/data/wow/toy/1?namespace=static-10.1.7_51059-eu"
+        }
+    },
+    "id": 1,
+    "item": {
+        "key": {
+            "href": "https://eu.api.blizzard.com/data/wow/item/1973?namespace=static-10.1.7_51059-eu"
+        },
+        "name": "Orbe de tromperie",
+        "id": 1973
+    },
+    "source": {
+        "type": "DROP",
+        "name": "Butin"
+    },
+    "source_description": "Butin : Butin mondial",
+    "media": {
+        "key": {
+            "href": "https://eu.api.blizzard.com/data/wow/media/item/1973?namespace=static-10.1.7_51059-eu"
+        },
+        "id": 1973
+    }
+}

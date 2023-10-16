@@ -1,0 +1,55 @@
+https://eu.api.blizzard.com/data/wow/pet/281?namespace=static-10.1.7_51059-eu&locale=fr_FR&access_token=EUR7ke4TOcePklME6BPBxexFwjMkf155xK
+
+{
+    "_links": {
+        "self": {
+            "href": "https://eu.api.blizzard.com/data/wow/pet/281?namespace=static-10.1.7_51059-eu"
+        }
+    },
+    "id": 281,
+    "name": "Page de guilde",
+    "battle_pet_type": {
+        "id": 0,
+        "type": "HUMANOID",
+        "name": "Humanoïde"
+    },
+    "description": "Quand une guilde se couvre d'honneur en terrassant les champions de l'Alliance, certains Orcs viennent s'associer à sa gloire en se mettant à son service.",
+    "is_capturable": false,
+    "is_tradable": false,
+    "is_battlepet": false,
+    "is_alliance_only": false,
+    "is_horde_only": true,
+    "abilities": [
+        {
+            "ability": {
+                "key": {
+                    "href": "https://eu.api.blizzard.com/data/wow/pet-ability/111?namespace=static-10.1.7_51059-eu"
+                },
+                "name": "Coup de poing",
+                "id": 111
+            },
+            "slot": 0,
+            "required_level": 1
+        }
+    ],
+    "source": {
+        "type": "VENDOR",
+        "name": "Vendeur"
+    },
+    "icon": "https://render.worldofwarcraft.com/eu/icons/56/achievement_guildperk_honorablemention.jpg",
+    "creature": {
+        "key": {
+            "href": "https://eu.api.blizzard.com/data/wow/creature/49588?namespace=static-10.1.7_51059-eu"
+        },
+        "name": "Page de guilde",
+        "id": 49588
+    },
+    "is_random_creature_display": false,
+    "media": {
+        "key": {
+            "href": "https://eu.api.blizzard.com/data/wow/media/pet/281?namespace=static-10.1.7_51059-eu"
+        },
+        "id": 281
+    },
+    "should_exclude_if_uncollected": true
+}
