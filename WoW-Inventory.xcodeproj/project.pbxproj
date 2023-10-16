@@ -1,0 +1,612 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B552ED382ADD7A22003810AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B552ED372ADD7A22003810AF /* AppDelegate.swift */; };
+		B552ED3A2ADD7A22003810AF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B552ED392ADD7A22003810AF /* SceneDelegate.swift */; };
+		B552ED3C2ADD7A22003810AF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B552ED3B2ADD7A22003810AF /* ViewController.swift */; };
+		B552ED3F2ADD7A22003810AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B552ED3D2ADD7A22003810AF /* Main.storyboard */; };
+		B552ED412ADD7A24003810AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B552ED402ADD7A24003810AF /* Assets.xcassets */; };
+		B552ED442ADD7A24003810AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B552ED422ADD7A24003810AF /* LaunchScreen.storyboard */; };
+		B552ED4F2ADD7A24003810AF /* WoW_InventoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B552ED4E2ADD7A24003810AF /* WoW_InventoryTests.swift */; };
+		B552ED592ADD7A24003810AF /* WoW_InventoryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B552ED582ADD7A24003810AF /* WoW_InventoryUITests.swift */; };
+		B552ED5B2ADD7A24003810AF /* WoW_InventoryUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B552ED5A2ADD7A24003810AF /* WoW_InventoryUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B552ED4B2ADD7A24003810AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B552ED2C2ADD7A22003810AF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B552ED332ADD7A22003810AF;
+			remoteInfo = "WoW-Inventory";
+		};
+		B552ED552ADD7A24003810AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B552ED2C2ADD7A22003810AF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B552ED332ADD7A22003810AF;
+			remoteInfo = "WoW-Inventory";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B552ED342ADD7A22003810AF /* WoW-Inventory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WoW-Inventory.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B552ED372ADD7A22003810AF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B552ED392ADD7A22003810AF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		B552ED3B2ADD7A22003810AF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B552ED3E2ADD7A22003810AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B552ED402ADD7A24003810AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B552ED432ADD7A24003810AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B552ED452ADD7A24003810AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B552ED4A2ADD7A24003810AF /* WoW-InventoryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "WoW-InventoryTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B552ED4E2ADD7A24003810AF /* WoW_InventoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WoW_InventoryTests.swift; sourceTree = "<group>"; };
+		B552ED542ADD7A24003810AF /* WoW-InventoryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "WoW-InventoryUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B552ED582ADD7A24003810AF /* WoW_InventoryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WoW_InventoryUITests.swift; sourceTree = "<group>"; };
+		B552ED5A2ADD7A24003810AF /* WoW_InventoryUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WoW_InventoryUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B552ED312ADD7A22003810AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B552ED472ADD7A24003810AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B552ED512ADD7A24003810AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B552ED2B2ADD7A22003810AF = {
+			isa = PBXGroup;
+			children = (
+				B552ED362ADD7A22003810AF /* WoW-Inventory */,
+				B552ED4D2ADD7A24003810AF /* WoW-InventoryTests */,
+				B552ED572ADD7A24003810AF /* WoW-InventoryUITests */,
+				B552ED352ADD7A22003810AF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B552ED352ADD7A22003810AF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B552ED342ADD7A22003810AF /* WoW-Inventory.app */,
+				B552ED4A2ADD7A24003810AF /* WoW-InventoryTests.xctest */,
+				B552ED542ADD7A24003810AF /* WoW-InventoryUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B552ED362ADD7A22003810AF /* WoW-Inventory */ = {
+			isa = PBXGroup;
+			children = (
+				B552ED372ADD7A22003810AF /* AppDelegate.swift */,
+				B552ED392ADD7A22003810AF /* SceneDelegate.swift */,
+				B552ED3B2ADD7A22003810AF /* ViewController.swift */,
+				B552ED3D2ADD7A22003810AF /* Main.storyboard */,
+				B552ED402ADD7A24003810AF /* Assets.xcassets */,
+				B552ED422ADD7A24003810AF /* LaunchScreen.storyboard */,
+				B552ED452ADD7A24003810AF /* Info.plist */,
+			);
+			path = "WoW-Inventory";
+			sourceTree = "<group>";
+		};
+		B552ED4D2ADD7A24003810AF /* WoW-InventoryTests */ = {
+			isa = PBXGroup;
+			children = (
+				B552ED4E2ADD7A24003810AF /* WoW_InventoryTests.swift */,
+			);
+			path = "WoW-InventoryTests";
+			sourceTree = "<group>";
+		};
+		B552ED572ADD7A24003810AF /* WoW-InventoryUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B552ED582ADD7A24003810AF /* WoW_InventoryUITests.swift */,
+				B552ED5A2ADD7A24003810AF /* WoW_InventoryUITestsLaunchTests.swift */,
+			);
+			path = "WoW-InventoryUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B552ED332ADD7A22003810AF /* WoW-Inventory */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B552ED5E2ADD7A24003810AF /* Build configuration list for PBXNativeTarget "WoW-Inventory" */;
+			buildPhases = (
+				B552ED302ADD7A22003810AF /* Sources */,
+				B552ED312ADD7A22003810AF /* Frameworks */,
+				B552ED322ADD7A22003810AF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "WoW-Inventory";
+			productName = "WoW-Inventory";
+			productReference = B552ED342ADD7A22003810AF /* WoW-Inventory.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B552ED492ADD7A24003810AF /* WoW-InventoryTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B552ED612ADD7A24003810AF /* Build configuration list for PBXNativeTarget "WoW-InventoryTests" */;
+			buildPhases = (
+				B552ED462ADD7A24003810AF /* Sources */,
+				B552ED472ADD7A24003810AF /* Frameworks */,
+				B552ED482ADD7A24003810AF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B552ED4C2ADD7A24003810AF /* PBXTargetDependency */,
+			);
+			name = "WoW-InventoryTests";
+			productName = "WoW-InventoryTests";
+			productReference = B552ED4A2ADD7A24003810AF /* WoW-InventoryTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B552ED532ADD7A24003810AF /* WoW-InventoryUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B552ED642ADD7A24003810AF /* Build configuration list for PBXNativeTarget "WoW-InventoryUITests" */;
+			buildPhases = (
+				B552ED502ADD7A24003810AF /* Sources */,
+				B552ED512ADD7A24003810AF /* Frameworks */,
+				B552ED522ADD7A24003810AF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B552ED562ADD7A24003810AF /* PBXTargetDependency */,
+			);
+			name = "WoW-InventoryUITests";
+			productName = "WoW-InventoryUITests";
+			productReference = B552ED542ADD7A24003810AF /* WoW-InventoryUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B552ED2C2ADD7A22003810AF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					B552ED332ADD7A22003810AF = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					B552ED492ADD7A24003810AF = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = B552ED332ADD7A22003810AF;
+					};
+					B552ED532ADD7A24003810AF = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = B552ED332ADD7A22003810AF;
+					};
+				};
+			};
+			buildConfigurationList = B552ED2F2ADD7A22003810AF /* Build configuration list for PBXProject "WoW-Inventory" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B552ED2B2ADD7A22003810AF;
+			productRefGroup = B552ED352ADD7A22003810AF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B552ED332ADD7A22003810AF /* WoW-Inventory */,
+				B552ED492ADD7A24003810AF /* WoW-InventoryTests */,
+				B552ED532ADD7A24003810AF /* WoW-InventoryUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B552ED322ADD7A22003810AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B552ED442ADD7A24003810AF /* LaunchScreen.storyboard in Resources */,
+				B552ED412ADD7A24003810AF /* Assets.xcassets in Resources */,
+				B552ED3F2ADD7A22003810AF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B552ED482ADD7A24003810AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B552ED522ADD7A24003810AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B552ED302ADD7A22003810AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B552ED3C2ADD7A22003810AF /* ViewController.swift in Sources */,
+				B552ED382ADD7A22003810AF /* AppDelegate.swift in Sources */,
+				B552ED3A2ADD7A22003810AF /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B552ED462ADD7A24003810AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B552ED4F2ADD7A24003810AF /* WoW_InventoryTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B552ED502ADD7A24003810AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B552ED592ADD7A24003810AF /* WoW_InventoryUITests.swift in Sources */,
+				B552ED5B2ADD7A24003810AF /* WoW_InventoryUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B552ED4C2ADD7A24003810AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B552ED332ADD7A22003810AF /* WoW-Inventory */;
+			targetProxy = B552ED4B2ADD7A24003810AF /* PBXContainerItemProxy */;
+		};
+		B552ED562ADD7A24003810AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B552ED332ADD7A22003810AF /* WoW-Inventory */;
+			targetProxy = B552ED552ADD7A24003810AF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B552ED3D2ADD7A22003810AF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B552ED3E2ADD7A22003810AF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B552ED422ADD7A24003810AF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B552ED432ADD7A24003810AF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B552ED5C2ADD7A24003810AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B552ED5D2ADD7A24003810AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B552ED5F2ADD7A24003810AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 95Q5YEGF4A;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "WoW-Inventory/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "pattest.WoW-Inventory";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B552ED602ADD7A24003810AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 95Q5YEGF4A;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "WoW-Inventory/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "pattest.WoW-Inventory";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B552ED622ADD7A24003810AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 95Q5YEGF4A;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "pattest.WoW-InventoryTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WoW-Inventory.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WoW-Inventory";
+			};
+			name = Debug;
+		};
+		B552ED632ADD7A24003810AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 95Q5YEGF4A;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "pattest.WoW-InventoryTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WoW-Inventory.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WoW-Inventory";
+			};
+			name = Release;
+		};
+		B552ED652ADD7A24003810AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 95Q5YEGF4A;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "pattest.WoW-InventoryUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "WoW-Inventory";
+			};
+			name = Debug;
+		};
+		B552ED662ADD7A24003810AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 95Q5YEGF4A;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "pattest.WoW-InventoryUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "WoW-Inventory";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B552ED2F2ADD7A22003810AF /* Build configuration list for PBXProject "WoW-Inventory" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B552ED5C2ADD7A24003810AF /* Debug */,
+				B552ED5D2ADD7A24003810AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B552ED5E2ADD7A24003810AF /* Build configuration list for PBXNativeTarget "WoW-Inventory" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B552ED5F2ADD7A24003810AF /* Debug */,
+				B552ED602ADD7A24003810AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B552ED612ADD7A24003810AF /* Build configuration list for PBXNativeTarget "WoW-InventoryTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B552ED622ADD7A24003810AF /* Debug */,
+				B552ED632ADD7A24003810AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B552ED642ADD7A24003810AF /* Build configuration list for PBXNativeTarget "WoW-InventoryUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B552ED652ADD7A24003810AF /* Debug */,
+				B552ED662ADD7A24003810AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B552ED2C2ADD7A22003810AF /* Project object */;
+}
