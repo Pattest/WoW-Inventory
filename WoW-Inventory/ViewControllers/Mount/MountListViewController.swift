@@ -1,6 +1,6 @@
 //
 //  HomeViewController.swift
-//  World_of_Warcraft
+//  WoW-Inventory
 //
 //  Created by Baptiste Cadoux on 27/06/2019.
 //  Copyright © 2019 Baptistecdx. All rights reserved.
@@ -8,9 +8,9 @@
 
 import UIKit
 
-class HomeViewController: UIViewController {
+class MountListViewController: UIViewController {
 
-    let viewModel = HomeViewModel()
+    let viewModel = MountListViewModel()
 
     @IBOutlet weak var tableView: UITableView!
 
@@ -31,16 +31,16 @@ class HomeViewController: UIViewController {
     }
 }
 
-extension HomeViewController: UITableViewDelegate,
+extension MountListViewController: UITableViewDelegate,
                               UITableViewDataSource {
     func tableView(_ tableView: UITableView, 
                    numberOfRowsInSection section: Int) -> Int {
-        return viewModel.mounts.count
+        return viewModel.getMounts().count
     }
     
     func tableView(_ tableView: UITableView, 
                    cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let mount = viewModel.mounts[indexPath.row]
+        let mount = viewModel.getMounts()[indexPath.row]
         let cell = UITableViewCell()
         cell.textLabel?.text = "\(mount.mountInfo.name)"
         return cell
