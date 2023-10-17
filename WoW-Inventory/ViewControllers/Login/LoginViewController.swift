@@ -1,6 +1,6 @@
 //
 //  LoginViewController.swift
-//  World_of_Warcraft
+//  WoW-Inventory
 //
 //  Created by Baptiste Cadoux on 27/06/2019.
 //  Copyright © 2019 Baptistecdx. All rights reserved.
@@ -13,15 +13,33 @@ import Moya
 
 class LoginViewController: UIViewController {
     
-    @IBOutlet weak var logoImageView: UIImageView?
-    @IBOutlet weak var loginButton: UIButton?
+    @IBOutlet weak var logoImageView: UIImageView!
+    @IBOutlet weak var loginButton: UIButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        setupUI()
+        setupText()
     }
-    
-    @IBAction func loginBtnAction(_ sender: Any) {
-        logInWithBlizzard()
+
+    func setupUI() {
+        loginButton.titleLabel?.font = UIFont(name: "LifeCraft", size: 30)
+        loginButton.layer
+            .cornerRadius(4)
+            .basicShadow()
+    }
+
+    func setupText() {
+        loginButton.setTitle("Login", for: .normal)
+    }
+
+    @IBAction func loginButtonAction(_ sender: Any) {
+        if BlizzardCredentials.shared.getAccessToken().isEmpty {
+            logInWithBlizzard()
+        } else {
+            goToHome()
+        }
     }
 
     func logInWithBlizzard() {
@@ -40,12 +58,8 @@ class LoginViewController: UIViewController {
         present(safariVC, animated: true)
     }
 
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        //
-    }
-
     func goToHome() {
-        performSegue(withIdentifier: "LoginToHome",
+        performSegue(withIdentifier: WISegue.loginToHome.rawValue,
                      sender: self)
     }
 }

@@ -1,6 +1,6 @@
 //
-//  HomeServices.swift
-//  World_of_Warcraft
+//  MountListServices.swift
+//  WoW-Inventory
 //
 //  Created by Baptiste Cadoux on 12/10/2023.
 //  Copyright © 2023 Baptistecdx. All rights reserved.
@@ -9,12 +9,14 @@
 import Foundation
 import Moya
 
-class HomeServices {
+class MountListServices {
 
-    let data = MoyaProvider<WoWCommunity>()
+    lazy var accountProfileProvider = {
+        MoyaProvider<PAccountProfile>()
+    }()
 
     func fetchMounts(handler: @escaping ([Mount]) -> Void) {
-        data.request(.mounts) { result in
+        accountProfileProvider.request(.mounts) { result in
             switch result {
             case let .success(moyaResponse):
                 do {

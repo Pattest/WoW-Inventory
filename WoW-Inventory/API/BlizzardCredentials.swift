@@ -1,6 +1,6 @@
 //
 //  BlizzardCredentials.swift
-//  World_of_Warcraft
+//  WoW-Inventory
 //
 //  Created by Baptiste Cadoux on 20/06/2019.
 //  Copyright © 2019 Interactive Mobility. All rights reserved.
@@ -12,7 +12,7 @@ public class BlizzardCredentials {
 
     static var shared = BlizzardCredentials()
     
-    static let credentialsPlist: [String: String] = {
+    private static let credentialsPlist: [String: String] = {
         if let credentialsPlistPath = Bundle.main.url(forResource: "BlizzardCredentials",
                                                       withExtension: "plist") {
             let credentialsPlistData = try! Data(contentsOf: credentialsPlistPath)
@@ -29,6 +29,7 @@ public class BlizzardCredentials {
     let clientID: String = credentialsPlist["client_id"]!
     let clientSecret: String = credentialsPlist["client_secret"]!
     let redirectUri: String = credentialsPlist["redirect_uri"]!
+    let baseURL: String = credentialsPlist["base_url"]!
 
     private var accessToken: String = ""
 

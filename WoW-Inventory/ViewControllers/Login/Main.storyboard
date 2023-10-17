@@ -16,7 +16,7 @@
         <!--Login View Controller-->
         <scene sceneID="0C0-I5-CHm">
             <objects>
-                <viewController storyboardIdentifier="LoginViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="YaE-9C-deZ" customClass="LoginViewController" customModule="World_of_Warcraft" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="YaE-9C-deZ" customClass="LoginViewController" customModule="WoW_Inventory" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5Ed-Br-FWi">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -28,22 +28,45 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ASI-VA-LCE">
-                                <rect key="frame" x="100" y="736" width="193" height="62"/>
-                                <fontDescription key="fontDescription" name="LifeCraft" family="LifeCraft" pointSize="50"/>
-                                <state key="normal" title=" [ Login ] "/>
+                                <rect key="frame" x="121.66666666666669" y="738" width="150" height="50"/>
+                                <color key="backgroundColor" systemColor="systemCyanColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="WmE-bM-kVi"/>
+                                    <constraint firstAttribute="height" constant="50" id="iJT-Io-m91"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
-                                    <action selector="loginBtnAction:" destination="YaE-9C-deZ" eventType="touchUpInside" id="dxi-8Z-uin"/>
+                                    <action selector="loginButtonAction:" destination="YaE-9C-deZ" eventType="touchUpInside" id="dxi-8Z-uin"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="[" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AOo-vI-RMn">
+                                <rect key="frame" x="44" y="718" width="52.666666666666657" height="90"/>
+                                <fontDescription key="fontDescription" name="LifeCraft" family="LifeCraft" pointSize="90"/>
+                                <color key="textColor" systemColor="systemRedColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="]" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ayw-xx-b7P">
+                                <rect key="frame" x="296.66666666666669" y="718" width="59" height="90"/>
+                                <fontDescription key="fontDescription" name="LifeCraft" family="LifeCraft" pointSize="90"/>
+                                <color key="textColor" systemColor="systemBlueColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="EWK-oY-OLn"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="ayw-xx-b7P" firstAttribute="centerY" secondItem="ASI-VA-LCE" secondAttribute="centerY" id="4eL-WR-Hob"/>
                             <constraint firstItem="ASI-VA-LCE" firstAttribute="top" relation="greaterThanOrEqual" secondItem="TcY-Dl-g54" secondAttribute="bottom" constant="20" id="5V4-GQ-z6y"/>
+                            <constraint firstItem="ASI-VA-LCE" firstAttribute="leading" secondItem="AOo-vI-RMn" secondAttribute="trailing" constant="25" id="AdJ-3c-zZY"/>
+                            <constraint firstItem="AOo-vI-RMn" firstAttribute="centerY" secondItem="ASI-VA-LCE" secondAttribute="centerY" id="LwA-b1-MY9"/>
+                            <constraint firstItem="ayw-xx-b7P" firstAttribute="leading" secondItem="ASI-VA-LCE" secondAttribute="trailing" constant="25" id="Nce-S3-IR2"/>
                             <constraint firstItem="TcY-Dl-g54" firstAttribute="centerY" secondItem="5Ed-Br-FWi" secondAttribute="centerY" id="QPa-5D-g4U"/>
                             <constraint firstItem="EWK-oY-OLn" firstAttribute="trailing" secondItem="TcY-Dl-g54" secondAttribute="trailing" constant="10" id="cB2-0G-2CV"/>
                             <constraint firstItem="TcY-Dl-g54" firstAttribute="centerX" secondItem="5Ed-Br-FWi" secondAttribute="centerX" id="eTt-yg-Agy"/>
-                            <constraint firstItem="EWK-oY-OLn" firstAttribute="bottom" secondItem="ASI-VA-LCE" secondAttribute="bottom" constant="20" id="h4M-ZC-4bv"/>
+                            <constraint firstItem="EWK-oY-OLn" firstAttribute="bottom" secondItem="ASI-VA-LCE" secondAttribute="bottom" constant="30" id="h4M-ZC-4bv"/>
                             <constraint firstItem="ASI-VA-LCE" firstAttribute="centerX" secondItem="5Ed-Br-FWi" secondAttribute="centerX" id="kHA-1P-jOW"/>
                             <constraint firstItem="TcY-Dl-g54" firstAttribute="leading" secondItem="EWK-oY-OLn" secondAttribute="leading" constant="10" id="t2K-RE-bpX"/>
                         </constraints>
@@ -52,55 +75,22 @@
                     <connections>
                         <outlet property="loginButton" destination="ASI-VA-LCE" id="m9S-Sf-U0B"/>
                         <outlet property="logoImageView" destination="TcY-Dl-g54" id="IAt-P2-8HM"/>
-                        <segue destination="BYZ-38-t0r" kind="show" identifier="LoginToHome" id="xKn-Q2-KOz"/>
+                        <segue destination="l9G-8j-NUB" kind="show" identifier="loginToHome" id="wmP-ql-000"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cz2-sB-tHH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="150.38167938931298" y="19.718309859154932"/>
         </scene>
-        <!--Home View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Home-->
+        <scene sceneID="vku-yW-zDN">
             <objects>
-                <viewController storyboardIdentifier="HomeViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="HomeViewController" customModule="World_of_Warcraft" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Profile" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WHQ-9n-mOt">
-                                <rect key="frame" x="0.0" y="103" width="393" height="75"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="75" id="x5q-t1-i5r"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="LifeCraft" family="LifeCraft" pointSize="50"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="jQA-m4-Tmb">
-                                <rect key="frame" x="0.0" y="178" width="393" height="674"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                            </tableView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstAttribute="bottom" secondItem="jQA-m4-Tmb" secondAttribute="bottom" id="Ap6-J0-Kex"/>
-                            <constraint firstItem="WHQ-9n-mOt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Ld5-B7-Bu5"/>
-                            <constraint firstItem="jQA-m4-Tmb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="N1P-pA-cve"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jQA-m4-Tmb" secondAttribute="trailing" id="bHS-7G-cFp"/>
-                            <constraint firstItem="jQA-m4-Tmb" firstAttribute="top" secondItem="WHQ-9n-mOt" secondAttribute="bottom" id="c88-wT-gyn"/>
-                            <constraint firstItem="WHQ-9n-mOt" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="gSR-6p-QPn"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="WHQ-9n-mOt" secondAttribute="trailing" id="jAO-Nh-8Tt"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="gaW-hg-Hyp"/>
-                    <connections>
-                        <outlet property="tableView" destination="jQA-m4-Tmb" id="gzt-bC-jdO"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="Home" id="l9G-8j-NUB" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="n2M-M7-G8p"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HrL-y2-pyD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1168.7022900763359" y="20.422535211267608"/>
+            <point key="canvasLocation" x="991" y="20"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="uj5-v3-I2A">
@@ -123,8 +113,14 @@
     </scenes>
     <resources>
         <image name="WoW_logo" width="2530" height="992"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemCyanColor">
+            <color red="0.1960784314" green="0.67843137249999996" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

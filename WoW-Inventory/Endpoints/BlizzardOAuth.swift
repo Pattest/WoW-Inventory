@@ -1,6 +1,6 @@
 //
 //  BlizzardOAuth.swift
-//  World_of_Warcraft
+//  WoW-Inventory
 //
 //  Created by Baptiste Cadoux on 28/06/2019.
 //  Copyright © 2019 Baptistecdx. All rights reserved.
@@ -39,10 +39,6 @@ extension BlizzardOAuth: TargetType {
         }
     }
     
-    var sampleData: Data {
-        return "".utf8Encoded
-    }
-    
     var task: Task {
         switch self {
         case .authorize:
@@ -71,7 +67,7 @@ extension BlizzardOAuth: TargetType {
         switch self {
         case .authorize:
             return [
-                "Content-type": "application/json",
+                "Content-type": "application/json"
             ]
 
         case .token:
@@ -82,17 +78,5 @@ extension BlizzardOAuth: TargetType {
             ]
         }
         
-    }
-}
-
-// MARK: - Helpers
-
-private extension String {
-    var urlEscaped: String {
-        return addingPercentEncoding(withAllowedCharacters: .urlHostAllowed)!
-    }
-    
-    var utf8Encoded: Data {
-        return data(using: .utf8)!
     }
 }

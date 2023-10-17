@@ -1,6 +1,6 @@
 //
 //  DataManager.swift
-//  World_of_Warcraft
+//  WoW-Inventory
 //
 //  Created by Baptiste Cadoux on 12/10/2023.
 //  Copyright © 2023 Baptistecdx. All rights reserved.
@@ -23,7 +23,6 @@ class DataManager {
                     let decoder = JSONDecoder()
                     let oauthToken = try decoder.decode(OAuthToken.self, from: data)
                     BlizzardCredentials.shared.setAccessToken(oauthToken.accessToken)
-                    print("Bearer: \(BlizzardCredentials.shared.getAccessToken())")
                     handler(true)
 
                 } catch {

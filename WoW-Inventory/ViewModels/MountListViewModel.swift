@@ -1,6 +1,6 @@
 //
-//  HomeViewModel.swift
-//  World_of_Warcraft
+//  MountListViewModel.swift
+//  WoW-Inventory
 //
 //  Created by Baptiste Cadoux on 12/10/2023.
 //  Copyright © 2023 Baptistecdx. All rights reserved.
@@ -8,11 +8,11 @@
 
 import Foundation
 
-class HomeViewModel {
+class MountListViewModel {
 
-    private var services = HomeServices()
+    private var services = MountListServices()
 
-    var mounts = [Mount]()
+    private var mounts = [Mount]()
 
     func fetchMounts(handler: @escaping (Bool) -> Void) {
         services.fetchMounts() { mounts in
@@ -23,5 +23,9 @@ class HomeViewModel {
                 handler(false)
             }
         }
+    }
+
+    func getMounts() -> [Mount] {
+        return mounts
     }
 }
