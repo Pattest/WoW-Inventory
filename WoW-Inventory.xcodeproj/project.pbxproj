@@ -46,7 +46,15 @@
 		B55AFE522ADECFBD0050BBF5 /* GameDataTargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55AFE512ADECFBD0050BBF5 /* GameDataTargetType.swift */; };
 		B55AFE542ADED2220050BBF5 /* ProfileTargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55AFE532ADED2220050BBF5 /* ProfileTargetType.swift */; };
 		B55AFE562ADED2A60050BBF5 /* WITargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55AFE552ADED2A60050BBF5 /* WITargetType.swift */; };
+		B56EEE832AE11D55008AF5F6 /* HomeCellType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56EEE822AE11D55008AF5F6 /* HomeCellType.swift */; };
+		B56EEE852AE11D7F008AF5F6 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56EEE842AE11D7F008AF5F6 /* HomeViewModel.swift */; };
+		B56EEE892AE13477008AF5F6 /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56EEE872AE13477008AF5F6 /* HomeCell.swift */; };
+		B56EEE8A2AE13477008AF5F6 /* HomeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B56EEE882AE13477008AF5F6 /* HomeCell.xib */; };
 		B5CE03E52ADD8BD30069283A /* WISegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CE03E42ADD8BD30069283A /* WISegue.swift */; };
+		B5DA60D42AE16090004B7F0E /* UIFont+WI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DA60D32AE16090004B7F0E /* UIFont+WI.swift */; };
+		B5DA60D82AE16294004B7F0E /* MountListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DA60D62AE16294004B7F0E /* MountListCell.swift */; };
+		B5DA60D92AE16294004B7F0E /* MountListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5DA60D72AE16294004B7F0E /* MountListCell.xib */; };
+		B5DA60DC2AE16B40004B7F0E /* MountDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DA60DB2AE16B40004B7F0E /* MountDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,7 +119,15 @@
 		B55AFE512ADECFBD0050BBF5 /* GameDataTargetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDataTargetType.swift; sourceTree = "<group>"; };
 		B55AFE532ADED2220050BBF5 /* ProfileTargetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTargetType.swift; sourceTree = "<group>"; };
 		B55AFE552ADED2A60050BBF5 /* WITargetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WITargetType.swift; sourceTree = "<group>"; };
+		B56EEE822AE11D55008AF5F6 /* HomeCellType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCellType.swift; sourceTree = "<group>"; };
+		B56EEE842AE11D7F008AF5F6 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		B56EEE872AE13477008AF5F6 /* HomeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCell.swift; sourceTree = "<group>"; };
+		B56EEE882AE13477008AF5F6 /* HomeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCell.xib; sourceTree = "<group>"; };
 		B5CE03E42ADD8BD30069283A /* WISegue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WISegue.swift; sourceTree = "<group>"; };
+		B5DA60D32AE16090004B7F0E /* UIFont+WI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+WI.swift"; sourceTree = "<group>"; };
+		B5DA60D62AE16294004B7F0E /* MountListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MountListCell.swift; sourceTree = "<group>"; };
+		B5DA60D72AE16294004B7F0E /* MountListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MountListCell.xib; sourceTree = "<group>"; };
+		B5DA60DB2AE16B40004B7F0E /* MountDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MountDetailViewController.swift; sourceTree = "<group>"; };
 		BD3C74B5BC6235D5F67161E7 /* Pods-WoW-Inventory.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WoW-Inventory.release.xcconfig"; path = "Target Support Files/Pods-WoW-Inventory/Pods-WoW-Inventory.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -191,8 +207,8 @@
 				B552EDB12ADD7E80003810AF /* Services */,
 				B552EDB72ADD7E80003810AF /* Endpoints */,
 				B552EDB32ADD7E80003810AF /* API */,
-				B55AFE462ADEB45E0050BBF5 /* Extensions */,
 				B552EDAA2ADD7E80003810AF /* Enums */,
+				B55AFE462ADEB45E0050BBF5 /* Extensions */,
 				B552ED6E2ADD7D95003810AF /* Resources */,
 				B552ED452ADD7A24003810AF /* Info.plist */,
 			);
@@ -268,6 +284,7 @@
 		B552EDAA2ADD7E80003810AF /* Enums */ = {
 			isa = PBXGroup;
 			children = (
+				B56EEE822AE11D55008AF5F6 /* HomeCellType.swift */,
 				B552EDAB2ADD7E80003810AF /* UDKey.swift */,
 				B5CE03E42ADD8BD30069283A /* WISegue.swift */,
 			);
@@ -318,6 +335,7 @@
 			isa = PBXGroup;
 			children = (
 				B552EDBC2ADD7E80003810AF /* MountListViewModel.swift */,
+				B56EEE842AE11D7F008AF5F6 /* HomeViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -327,6 +345,7 @@
 			children = (
 				B55AFE3C2ADE74310050BBF5 /* Home.storyboard */,
 				B55AFE3A2ADE742B0050BBF5 /* HomeViewController.swift */,
+				B56EEE8B2AE134A4008AF5F6 /* HomeCell */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -335,6 +354,7 @@
 			isa = PBXGroup;
 			children = (
 				B55AFE472ADEB4730050BBF5 /* CALayer+WI.swift */,
+				B5DA60D32AE16090004B7F0E /* UIFont+WI.swift */,
 				B540B6942AE6697A00319774 /* String+WI.swift */,
 			);
 			path = Extensions;
@@ -359,11 +379,22 @@
 			path = Profile;
 			sourceTree = "<group>";
 		};
+		B56EEE8B2AE134A4008AF5F6 /* HomeCell */ = {
+			isa = PBXGroup;
+			children = (
+				B56EEE882AE13477008AF5F6 /* HomeCell.xib */,
+				B56EEE872AE13477008AF5F6 /* HomeCell.swift */,
+			);
+			path = HomeCell;
+			sourceTree = "<group>";
+		};
 		B5CE03E12ADD8B6F0069283A /* Mount */ = {
 			isa = PBXGroup;
 			children = (
+				B5DA60D52AE1627F004B7F0E /* MountListCell */,
 				B55AFE2E2ADE6CF90050BBF5 /* Mount.storyboard */,
 				B552ED772ADD7E43003810AF /* MountListViewController.swift */,
+				B5DA60DB2AE16B40004B7F0E /* MountDetailViewController.swift */,
 			);
 			path = Mount;
 			sourceTree = "<group>";
@@ -375,6 +406,15 @@
 				B552ED7A2ADD7E43003810AF /* LoginViewController.swift */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		B5DA60D52AE1627F004B7F0E /* MountListCell */ = {
+			isa = PBXGroup;
+			children = (
+				B5DA60D72AE16294004B7F0E /* MountListCell.xib */,
+				B5DA60D62AE16294004B7F0E /* MountListCell.swift */,
+			);
+			path = MountListCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -489,7 +529,9 @@
 				B552EDDA2ADD7E80003810AF /* Toy.json in Resources */,
 				B55AFE3D2ADE74310050BBF5 /* Home.storyboard in Resources */,
 				B552ED732ADD7D95003810AF /* Assets.xcassets in Resources */,
+				B5DA60D92AE16294004B7F0E /* MountListCell.xib in Resources */,
 				B552EDDD2ADD7E80003810AF /* Pet.json in Resources */,
+				B56EEE8A2AE13477008AF5F6 /* HomeCell.xib in Resources */,
 				B540B6932AE668A700319774 /* Localizable.xcstrings in Resources */,
 				B55AFE422ADE856F0050BBF5 /* Main.storyboard in Resources */,
 				B552ED742ADD7D95003810AF /* Morpheus.ttf in Resources */,
@@ -564,7 +606,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5CE03E52ADD8BD30069283A /* WISegue.swift in Sources */,
+				B5DA60D82AE16294004B7F0E /* MountListCell.swift in Sources */,
 				B552EDE12ADD7E80003810AF /* BlizzardCredentials.swift in Sources */,
+				B5DA60D42AE16090004B7F0E /* UIFont+WI.swift in Sources */,
 				B55AFE482ADEB4730050BBF5 /* CALayer+WI.swift in Sources */,
 				B55AFE3B2ADE742B0050BBF5 /* HomeViewController.swift in Sources */,
 				B552ED382ADD7A22003810AF /* AppDelegate.swift in Sources */,
@@ -577,15 +621,19 @@
 				B552EDBD2ADD7E80003810AF /* OAuthToken.swift in Sources */,
 				B552EDE42ADD7E80003810AF /* BlizzardOAuth.swift in Sources */,
 				B552EDDE2ADD7E80003810AF /* MountListServices.swift in Sources */,
+				B56EEE892AE13477008AF5F6 /* HomeCell.swift in Sources */,
 				B552EDE22ADD7E80003810AF /* PAccountProfile.swift in Sources */,
 				B55AFE562ADED2A60050BBF5 /* WITargetType.swift in Sources */,
 				B552EDDF2ADD7E80003810AF /* DataManager.swift in Sources */,
 				B540B6952AE6697A00319774 /* String+WI.swift in Sources */,
 				B552EDD92ADD7E80003810AF /* UDKey.swift in Sources */,
 				B55AFE542ADED2220050BBF5 /* ProfileTargetType.swift in Sources */,
+				B56EEE852AE11D7F008AF5F6 /* HomeViewModel.swift in Sources */,
+				B5DA60DC2AE16B40004B7F0E /* MountDetailViewController.swift in Sources */,
 				B552EDBE2ADD7E80003810AF /* Mount.swift in Sources */,
 				B55AFE4E2ADEC6D70050BBF5 /* GDCreature.swift in Sources */,
 				B55AFE3F2ADE7DA90050BBF5 /* DataType.swift in Sources */,
+				B56EEE832AE11D55008AF5F6 /* HomeCellType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

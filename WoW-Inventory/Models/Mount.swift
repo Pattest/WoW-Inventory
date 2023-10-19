@@ -20,6 +20,10 @@ struct Mount: Decodable {
         case mountInfo = "mount"
         case isFavorite = "is_favorite"
     }
+
+    func isFav() -> Bool {
+        return isFavorite ?? false
+    }
 }
 
 struct MountInformation: Decodable {

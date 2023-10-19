@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="uoh-Qt-0ir">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="uoh-Qt-0ir">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -33,11 +33,28 @@
                     <navigationItem key="navigationItem" id="3wb-A9-ECk"/>
                     <connections>
                         <outlet property="tableView" destination="GFx-Bf-xU8" id="5bP-gT-awO"/>
+                        <segue destination="N17-Ud-U25" kind="show" identifier="mountListToDetail" id="mPZ-8v-NlK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q7R-r6-Das" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1168.7022900763359" y="20.422535211267608"/>
+        </scene>
+        <!--Mount Detail View Controller-->
+        <scene sceneID="iPr-BH-eYc">
+            <objects>
+                <viewController storyboardIdentifier="MountDetailViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="N17-Ud-U25" customClass="MountDetailViewController" customModule="WoW_Inventory" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LiB-Nb-zJk">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="BFr-aN-fIr"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="6XT-YY-C4O"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IQf-FT-VQS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2253" y="20"/>
         </scene>
     </scenes>
     <resources>
