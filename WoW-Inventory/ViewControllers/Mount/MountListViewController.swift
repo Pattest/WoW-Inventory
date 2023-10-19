@@ -28,21 +28,46 @@ class MountListViewController: UIViewController {
     func setupTableView() {
         tableView.delegate = self
         tableView.dataSource = self
+        tableView.register(UINib(nibName: "MountListCell", bundle: nil),
+                           forCellReuseIdentifier: "MountListCell")
     }
 }
 
 extension MountListViewController: UITableViewDelegate,
-                              UITableViewDataSource {
+                                   UITableViewDataSource {
+
+    func tableView(_ tableView: UITableView,
+                   heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return UITableView.automaticDimension
+    }
+
     func tableView(_ tableView: UITableView, 
+                   estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 44
+    }
+    
+    func tableView(_ tableView: UITableView, 
+                   willDisplay cell: UITableViewCell,
+                   forRowAt indexPath: IndexPath) {
+        cell.layoutIfNeeded()
+    }
+
+    func tableView(_ tableView: UITableView,
                    numberOfRowsInSection section: Int) -> Int {
         return viewModel.getMounts().count
     }
     
     func tableView(_ tableView: UITableView, 
                    cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = tableView.dequeueReusableCell(
+            withIdentifier: "MountListCell",
+            for: indexPath) as? MountListCell
+        else {
+            return UITableViewCell()
+        }
+
         let mount = viewModel.getMounts()[indexPath.row]
-        let cell = UITableViewCell()
-        cell.textLabel?.text = "\(mount.mountInfo.name)"
+        cell.setup(for: mount)
         return cell
     }
 }

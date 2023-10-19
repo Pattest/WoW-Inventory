@@ -5,16 +5,16 @@
 //  Created by Baptiste Cadoux on 17/10/2023.
 //
 
-import Moya
+import Foundation
 
 protocol GameDataTargetType: WITargetType {
-    var gameDataBaseURL: String { get }
+    //
 }
 
 extension GameDataTargetType {
 
-    var gameDataBaseURL: String {
-        return "\(blizzardURL)/data/wow/"
+    var strBaseURL: String {
+        return "\(BlizzardCredentials.shared.baseURL)/data/wow/"
     }
 
     // MARK: - WITargetType
