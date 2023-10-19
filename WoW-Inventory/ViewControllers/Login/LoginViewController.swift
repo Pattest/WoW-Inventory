@@ -9,7 +9,6 @@
 import Foundation
 import UIKit
 import SafariServices
-import Moya
 
 class LoginViewController: UIViewController {
     
@@ -24,7 +23,7 @@ class LoginViewController: UIViewController {
     }
 
     func setupUI() {
-        loginButton.titleLabel?.font = UIFont(name: "LifeCraft", size: 30)
+        loginButton.titleLabel?.font = UIFont.lifeCraft(size: 30)
         loginButton.layer
             .cornerRadius(4)
             .basicShadow()
@@ -35,6 +34,7 @@ class LoginViewController: UIViewController {
     }
 
     @IBAction func loginButtonAction(_ sender: Any) {
+//        logInWithBlizzard()
         if BlizzardCredentials.shared.getAccessToken().isEmpty {
             logInWithBlizzard()
         } else {
@@ -43,7 +43,7 @@ class LoginViewController: UIViewController {
     }
 
     func logInWithBlizzard() {
-        //Blizzard OAuth URL
+        // Blizzard OAuth URL
         guard let authURL = URL(string: "https://oauth.battle.net/authorize?" +
                                 "client_id=\(BlizzardCredentials.shared.clientID)" +
                                 "&redirect_uri=\(BlizzardCredentials.shared.redirectUri)" +

@@ -8,30 +8,34 @@
 
 import Foundation
 
+enum CredentialKey: String {
+    case clientId
+}
+
 public class BlizzardCredentials {
 
     static var shared = BlizzardCredentials()
     
     private static let credentialsPlist: [String: String] = {
-        if let credentialsPlistPath = Bundle.main.url(forResource: "BlizzardCredentials",
-                                                      withExtension: "plist") {
-            let credentialsPlistData = try! Data(contentsOf: credentialsPlistPath)
-            
-            let dict = try! PropertyListSerialization.propertyList(
-                from: credentialsPlistData,
-                options: [],
-                format: nil) as! [String: String]
-            return dict
+        guard let credentialsPlistPath = Bundle.main.url(forResource: "BlizzardCredentials",
+                                                      withExtension: "plist")
+        else {
+            return [:]
         }
-        return [:]
+    
+        let credentialsPlistData = try! Data(contentsOf: credentialsPlistPath)
+            
+        let dict = try! PropertyListSerialization.propertyList(
+            from: credentialsPlistData,
+            options: [],
+            format: nil) as! [String: String]
+        return dict
     }()
 
     let clientID: String = credentialsPlist["client_id"]!
     let clientSecret: String = credentialsPlist["client_secret"]!
     let redirectUri: String = credentialsPlist["redirect_uri"]!
     let baseURL: String = credentialsPlist["base_url"]!
-
-    private var accessToken: String = ""
 
     //
 

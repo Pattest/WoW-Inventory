@@ -14,8 +14,12 @@ enum PAccountProfile {
 
 extension PAccountProfile: ProfileTargetType {
 
+    var strBaseURL: String {
+        return "\(BlizzardCredentials.shared.baseURL)/profile/user/wow/"
+    }
+
     var baseURL: URL {
-        return URL(string: "\(profileBaseURL)/user/wow/")!
+        return URL(string: strBaseURL)!
     }
     
     var path: String {

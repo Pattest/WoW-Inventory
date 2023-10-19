@@ -10,8 +10,15 @@ import Foundation
 enum WISegue: String {
 
     // MARK: - Login
+
     case loginToHome
 
     // MARK: - Home
+
     case homeToMountList
+
+    // MARK: - Mount
+
+    case mountListToDetail
+
 }

@@ -15,7 +15,7 @@ enum GDMount {
 extension GDMount: GameDataTargetType {
     
     var baseURL: URL {
-        return URL(string: "\(gameDataBaseURL)/mount/")!
+        return URL(string: "\(strBaseURL)/mount/")!
     }
     
     var path: String {
