@@ -14,6 +14,8 @@ class HomeViewController: UIViewController {
 
     @IBOutlet weak var collectionView: UICollectionView!
 
+    private var viewModel = HomeViewModel()
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -35,6 +37,9 @@ class HomeViewController: UIViewController {
     func setupCollectionView() {
         collectionView.delegate = self
         collectionView.dataSource = self
+
+        collectionView.register(UINib(nibName: "HomeCell", bundle: nil),
+                                forCellWithReuseIdentifier: "HomeCell")
     }
 
     // MARK: - Actions
@@ -47,15 +52,44 @@ class HomeViewController: UIViewController {
 extension HomeViewController: UICollectionViewDelegate,
                               UICollectionViewDataSource {
 
-    func collectionView(_ collectionView: UICollectionView, 
+    func collectionView(_ collectionView: UICollectionView,
                         numberOfItemsInSection section: Int) -> Int {
-        return 0
+        return viewModel.cellTypes.count
     }
     
     func collectionView(_ collectionView: UICollectionView,
                         cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        return UICollectionViewCell()
+        guard let cell = collectionView.dequeueReusableCell(
+            withReuseIdentifier: "HomeCell",
+            for: indexPath) as? HomeCell
+        else {
+            return UICollectionViewCell()
+        }
+
+        let homeCellType = viewModel.cellTypes[indexPath.row]
+        cell.setup(for: homeCellType)
+        return cell
+    }
+
+    func collectionView(_ collectionView: UICollectionView, 
+                        didSelectItemAt indexPath: IndexPath) {
+        let homeCellType =  viewModel.cellTypes[indexPath.row]
+        switch homeCellType {
+        case .mount:
+            performSegue(withIdentifier: WISegue.homeToMountList.rawValue,
+                         sender: nil)
+        }
     }
     
+}
+
+extension HomeViewController: UICollectionViewDelegateFlowLayout {
     
+    func collectionView(_ collectionView: UICollectionView, 
+                        layout collectionViewLayout: UICollectionViewLayout,
+                        sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: view.bounds.width / 3,
+                      height: view.bounds.width / 3)
+    }
+
 }

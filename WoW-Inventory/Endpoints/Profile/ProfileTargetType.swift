@@ -5,16 +5,16 @@
 //  Created by Baptiste Cadoux on 17/10/2023.
 //
 
-import Moya
+import Foundation
 
 protocol ProfileTargetType: WITargetType {
-    var profileBaseURL: String { get }
+    //
 }
 
 extension ProfileTargetType {
     
-    var profileBaseURL: String {
-        return "\(blizzardURL)/data/wow/"
+    var strBaseURL: String {
+        return "\(BlizzardCredentials.shared.baseURL)/profile/wow/"
     }
 
     // MARK: - WITargetType

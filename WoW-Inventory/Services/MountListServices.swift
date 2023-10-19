@@ -23,16 +23,29 @@ class MountListServices {
                     let data = moyaResponse.data
                     let decoder = JSONDecoder()
                     let mount = try decoder.decode(Mounts.self, from: data)
-                    handler(mount.mounts)
+                    var mounts = mount.mounts
+
+                    mounts.sort { mount1, mount2 in
+                        let name1 = mount1.mountInfo.name
+                        let name2 = mount2.mountInfo.name
+                        let result = name1.compare(name2, options: .diacriticInsensitive)
+                        return result == .orderedAscending
+                    }
+
+                    mounts.sort { firstMount, secondMount in
+                        firstMount.isFav() && !secondMount.isFav()
+                    }
+
+                    handler(mounts)
 
                 } catch {
-                    handler([])
                     print(error.localizedDescription)
+                    handler([])
                 }
 
             case let .failure(error):
-                handler([])
                 print(error)
+                handler([])
             }
         }
     }

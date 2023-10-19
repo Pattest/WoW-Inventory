@@ -16,7 +16,7 @@ enum GDCreature {
 extension GDCreature: GameDataTargetType {
     
     var baseURL: URL {
-        return URL(string: gameDataBaseURL)!
+        return URL(string: strBaseURL)!
     }
     
     var path: String {
@@ -40,11 +40,6 @@ extension GDCreature: GameDataTargetType {
     }
     
     var task: Task {
-        var parameters = [
-            "locale": Locale.current.identifier,
-            "namespace": "static-eu"
-        ]
-
         switch self {
         case .creature,
                 .creatureDisplayMedia,
