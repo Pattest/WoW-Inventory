@@ -1,0 +1,18 @@
+//
+//  String+WI.swift
+//  WoW-Inventory
+//
+//  Created by Baptiste Cadoux on 23/10/2023.
+//
+
+import Foundation
+
+// MARK: - Localization
+
+extension String {
+
+    var localized: String {
+        let stringLocalized = String.LocalizationValue(self)
+        return String(localized: stringLocalized)
+    }
+}
