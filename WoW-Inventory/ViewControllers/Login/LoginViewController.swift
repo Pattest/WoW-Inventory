@@ -31,7 +31,7 @@ class LoginViewController: UIViewController {
     }
 
     func setupText() {
-        loginButton.setTitle("Login", for: .normal)
+        loginButton.setTitle("LOGIN_CONNEXION_BUTTON".localized, for: .normal)
     }
 
     @IBAction func loginButtonAction(_ sender: Any) {
