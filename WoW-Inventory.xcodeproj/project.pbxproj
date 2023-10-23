@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		63854A3691F0BBB08EF0123E /* Pods_WoW_Inventory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83EF454355A0F6E9AF73F003 /* Pods_WoW_Inventory.framework */; };
+		B540B6932AE668A700319774 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = B540B6922AE668A700319774 /* Localizable.xcstrings */; };
+		B540B6952AE6697A00319774 /* String+WI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B540B6942AE6697A00319774 /* String+WI.swift */; };
 		B552ED382ADD7A22003810AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B552ED372ADD7A22003810AF /* AppDelegate.swift */; };
 		B552ED3A2ADD7A22003810AF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B552ED392ADD7A22003810AF /* SceneDelegate.swift */; };
 		B552ED4F2ADD7A24003810AF /* WoW_InventoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B552ED4E2ADD7A24003810AF /* WoW_InventoryTests.swift */; };
@@ -67,6 +69,8 @@
 /* Begin PBXFileReference section */
 		83EF454355A0F6E9AF73F003 /* Pods_WoW_Inventory.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WoW_Inventory.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		93A242233553E7DE975913FC /* Pods-WoW-Inventory.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WoW-Inventory.debug.xcconfig"; path = "Target Support Files/Pods-WoW-Inventory/Pods-WoW-Inventory.debug.xcconfig"; sourceTree = "<group>"; };
+		B540B6922AE668A700319774 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		B540B6942AE6697A00319774 /* String+WI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+WI.swift"; sourceTree = "<group>"; };
 		B552ED342ADD7A22003810AF /* WoW-Inventory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WoW-Inventory.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B552ED372ADD7A22003810AF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B552ED392ADD7A22003810AF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -219,6 +223,7 @@
 				B552ED6F2ADD7D95003810AF /* Assets.xcassets */,
 				B552ED702ADD7D95003810AF /* Fonts */,
 				B552EDAC2ADD7E80003810AF /* Json */,
+				B540B6922AE668A700319774 /* Localizable.xcstrings */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -330,6 +335,7 @@
 			isa = PBXGroup;
 			children = (
 				B55AFE472ADEB4730050BBF5 /* CALayer+WI.swift */,
+				B540B6942AE6697A00319774 /* String+WI.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -459,6 +465,7 @@
 			knownRegions = (
 				Base,
 				"fr-FR",
+				"en-GB",
 			);
 			mainGroup = B552ED2B2ADD7A22003810AF;
 			productRefGroup = B552ED352ADD7A22003810AF /* Products */;
@@ -483,6 +490,7 @@
 				B55AFE3D2ADE74310050BBF5 /* Home.storyboard in Resources */,
 				B552ED732ADD7D95003810AF /* Assets.xcassets in Resources */,
 				B552EDDD2ADD7E80003810AF /* Pet.json in Resources */,
+				B540B6932AE668A700319774 /* Localizable.xcstrings in Resources */,
 				B55AFE422ADE856F0050BBF5 /* Main.storyboard in Resources */,
 				B552ED742ADD7D95003810AF /* Morpheus.ttf in Resources */,
 				B552EDE02ADD7E80003810AF /* BlizzardCredentials.plist in Resources */,
@@ -572,6 +580,7 @@
 				B552EDE22ADD7E80003810AF /* PAccountProfile.swift in Sources */,
 				B55AFE562ADED2A60050BBF5 /* WITargetType.swift in Sources */,
 				B552EDDF2ADD7E80003810AF /* DataManager.swift in Sources */,
+				B540B6952AE6697A00319774 /* String+WI.swift in Sources */,
 				B552EDD92ADD7E80003810AF /* UDKey.swift in Sources */,
 				B55AFE542ADED2220050BBF5 /* ProfileTargetType.swift in Sources */,
 				B552EDBE2ADD7E80003810AF /* Mount.swift in Sources */,
