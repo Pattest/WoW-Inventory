@@ -12,20 +12,24 @@ class MountListViewModel {
 
     private var services = MountListServices()
 
-    private var mounts = [Mount]()
+    var mounts = [Mount]()
+    var selectedMount: Mount?
 
     func fetchMounts(handler: @escaping (Bool) -> Void) {
         services.fetchMounts() { mounts in
-            if !mounts.isEmpty {
-                self.mounts = mounts
+            self.mounts = mounts
+            handler(!mounts.isEmpty)
+        }
+    }
+
+    func fetchMountDetail(_ mountId: Int, handler: @escaping (Bool) -> Void) {
+        services.fetchMountDetail(mountId) { [weak self] mountDetail in
+            if let mountDetail {
+                self?.selectedMount?.detail = mountDetail
                 handler(true)
             } else {
                 handler(false)
             }
         }
-    }
-
-    func getMounts() -> [Mount] {
-        return mounts
     }
 }

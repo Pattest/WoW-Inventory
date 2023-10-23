@@ -8,9 +8,9 @@
 import Moya
 
 enum GDCreature {
-    case creature(id: String)
-    case creatureDisplayMedia(id: String)
-    case creatureFamilyMedia(id: String)
+    case creature(id: Int)
+    case creatureDisplayMedia(id: Int)
+    case creatureFamilyMedia(id: Int)
 }
 
 extension GDCreature: GameDataTargetType {
@@ -46,7 +46,8 @@ extension GDCreature: GameDataTargetType {
                 .creatureFamilyMedia:
             return .requestParameters(
                 parameters: parameters,
-                encoding: URLEncoding.queryString)
+                encoding: URLEncoding.default
+            )
         }
     }
 }

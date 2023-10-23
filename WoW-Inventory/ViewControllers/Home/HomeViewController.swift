@@ -20,6 +20,8 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        setupUI()
+        setupText()
         setupCollectionView()
         print("Bearer: \(BlizzardCredentials.shared.getAccessToken())")
     }
@@ -32,6 +34,14 @@ class HomeViewController: UIViewController {
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         navigationController?.isNavigationBarHidden = false
+    }
+
+    func setupUI() {
+        homeLabel.font = UIFont.lifeCraft(size: 50)
+    }
+
+    func setupText() {
+        homeLabel.text = "HOME_NAV_TITLE".localized
     }
 
     func setupCollectionView() {

@@ -28,6 +28,6 @@ class HomeCell: UICollectionViewCell {
 
         iconImageView.image = UIImage(named: cellType.iconName)
 
-        nameLabel.text = cellType.name
+        nameLabel.text = cellType.nameKey.localized
     }
 }
