@@ -6,24 +6,61 @@
 //
 
 import UIKit
+import AlamofireImage
 
 class MountDetailViewController: UIViewController {
 
+    private let viewModel = MountDetailViewModel()
+    
+    @IBOutlet weak var mountImageView: UIImageView!
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var descriptionLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        setupUI()
+        setupText(for: viewModel.mount)
     }
-    
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        title = nil
     }
-    */
+
+    func prepareData(mount: Mount?) {
+        viewModel.mount = mount
+    }
+
+    func setupUI() {
+        nameLabel.font = UIFont.lifeCraft(size: 40)
+        nameLabel.numberOfLines = 0
+
+        descriptionLabel.font = UIFont.systemFont(ofSize: 20)
+        descriptionLabel.numberOfLines = 0
+    }
+
+    func setupText(for mount: Mount?) {
+        guard let mount else { return }
+
+        if let creatureDisplay = mount.detail.creatureDisplays?.first {
+            viewModel.fetchCreatureDisplayMedia(id: creatureDisplay.id) {
+                self.setupImageView(with: self.viewModel.assets)
+            }
+        }
+        nameLabel.text = mount.detail.name
+
+        descriptionLabel.text = mount.detail.getDescription()
+    }
+
+    // TODO: Create carousel if multiple assets
+    func setupImageView(with assets: [Asset]) {
+        guard let firstAsset = assets.first else { return }
+
+        mountImageView.af.setImage(
+            withURL: URL(string: firstAsset.value)!,
+            imageTransition: .crossDissolve(0.2)
+        )
+    }
 
 }

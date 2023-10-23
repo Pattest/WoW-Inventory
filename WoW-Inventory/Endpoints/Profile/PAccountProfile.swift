@@ -41,7 +41,8 @@ extension PAccountProfile: ProfileTargetType {
         case .mounts:
             return .requestParameters(
                 parameters: parameters,
-                encoding: URLEncoding.default)
+                encoding: URLEncoding.default
+            )
         }
     }
 }
