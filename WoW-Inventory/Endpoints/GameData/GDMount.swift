@@ -9,7 +9,7 @@ import Moya
 
 enum GDMount {
     case mounts
-    case mount(id: String)
+    case mount(id: Int)
 }
 
 extension GDMount: GameDataTargetType {
@@ -41,7 +41,8 @@ extension GDMount: GameDataTargetType {
                 .mount:
             return .requestParameters(
                 parameters: parameters,
-                encoding: URLEncoding.queryString)
+                encoding: URLEncoding.queryString
+            )
         }
     }
 }

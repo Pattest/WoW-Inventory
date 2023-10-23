@@ -10,7 +10,7 @@ import UIKit
 
 class MountListViewController: UIViewController {
 
-    let viewModel = MountListViewModel()
+    private let viewModel = MountListViewModel()
 
     @IBOutlet weak var tableView: UITableView!
 
@@ -22,6 +22,23 @@ class MountListViewController: UIViewController {
             if success {
                 self?.tableView.reloadData()
             }
+        }
+    }
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        title = "MOUNT_NAV_TITLE".localized
+        viewModel.selectedMount = nil
+    }
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let identifier = segue.identifier else {
+            return
+        }
+
+        if identifier == WISegue.mountListToDetail.rawValue,
+           let viewController = segue.destination as? MountDetailViewController {
+            viewController.prepareData(mount: viewModel.selectedMount)
         }
     }
 
@@ -54,7 +71,7 @@ extension MountListViewController: UITableViewDelegate,
 
     func tableView(_ tableView: UITableView,
                    numberOfRowsInSection section: Int) -> Int {
-        return viewModel.getMounts().count
+        return viewModel.mounts.count
     }
     
     func tableView(_ tableView: UITableView, 
@@ -66,8 +83,20 @@ extension MountListViewController: UITableViewDelegate,
             return UITableViewCell()
         }
 
-        let mount = viewModel.getMounts()[indexPath.row]
+        let mount = viewModel.mounts[indexPath.row]
         cell.setup(for: mount)
         return cell
+    }
+
+    func tableView(_ tableView: UITableView, 
+                   didSelectRowAt indexPath: IndexPath) {
+        let mount = viewModel.mounts[indexPath.row]
+        viewModel.selectedMount = mount
+        viewModel.fetchMountDetail(mount.detail.id) { [weak self] success in
+            if success {
+                self?.performSegue(withIdentifier: WISegue.mountListToDetail.rawValue,
+                                   sender: nil)
+            }
+        }
     }
 }

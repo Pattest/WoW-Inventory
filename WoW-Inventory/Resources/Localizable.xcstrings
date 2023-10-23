@@ -1,18 +1,59 @@
 {
-  "sourceLanguage" : "fr-FR",
+  "sourceLanguage" : "fr",
   "strings" : {
+    "HOME_CELL_MOUNT" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mounts"
+          }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Mounts"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Montures"
+          }
+        },
+        "fr-FR" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Montures"
+          }
+        }
+      }
+    },
     "HOME_NAV_TITLE" : {
       "extractionState" : "manual",
       "localizations" : {
-        "en-GB" : {
+        "en" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Home"
           }
         },
-        "fr-FR" : {
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Home"
+          }
+        },
+        "fr" : {
           "stringUnit" : {
             "state" : "translated",
+            "value" : "Accueil"
+          }
+        },
+        "fr-FR" : {
+          "stringUnit" : {
+            "state" : "needs_review",
             "value" : "Accueil"
           }
         }
@@ -21,16 +62,57 @@
     "LOGIN_CONNEXION_BUTTON" : {
       "extractionState" : "manual",
       "localizations" : {
-        "en-GB" : {
+        "en" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Login"
           }
         },
-        "fr-FR" : {
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Login"
+          }
+        },
+        "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Connexion"
+          }
+        },
+        "fr-FR" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Connexion"
+          }
+        }
+      }
+    },
+    "MOUNT_NAV_TITLE" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mounts"
+          }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Mounts"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Montures"
+          }
+        },
+        "fr-FR" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Montures"
           }
         }
       }

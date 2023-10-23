@@ -29,7 +29,7 @@ class MountListCell: UITableViewCell {
     }
 
     func setup(for mount: Mount) {
-        nameLabel.text = mount.mountInfo.name
+        nameLabel.text = mount.detail.name
 
         let hideFavIcon = !(mount.isFavorite ?? false)
         favoriteImageView.isHidden = hideFavIcon
