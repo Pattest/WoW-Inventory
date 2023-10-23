@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct DataType {
+struct DataType: Decodable {
     let type: String
     let name: String
 }

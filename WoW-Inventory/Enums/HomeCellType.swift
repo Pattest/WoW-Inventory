@@ -10,10 +10,10 @@ import UIKit
 enum HomeCellType {
     case mount
 
-    var name: String {
+    var nameKey: String {
         switch self {
         case .mount:
-            return "Mount"
+            return "HOME_CELL_MOUNT"
         }
     }
 
