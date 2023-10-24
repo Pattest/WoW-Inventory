@@ -13,11 +13,14 @@ class MountListViewController: UIViewController {
     private let viewModel = MountListViewModel()
 
     @IBOutlet weak var tableView: UITableView!
-
+    @IBOutlet weak var searchBar: UISearchBar!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         setupTableView()
+        searchBar.delegate = self
+
         viewModel.fetchMounts() { [weak self] success in
             if success {
                 self?.tableView.reloadData()
@@ -45,10 +48,14 @@ class MountListViewController: UIViewController {
     func setupTableView() {
         tableView.delegate = self
         tableView.dataSource = self
+        tableView.keyboardDismissMode = .onDrag
+
         tableView.register(UINib(nibName: "MountListCell", bundle: nil),
                            forCellReuseIdentifier: "MountListCell")
-    }
+        }
 }
+
+// MARK: - UITableViewDelegate & DataSource
 
 extension MountListViewController: UITableViewDelegate,
                                    UITableViewDataSource {
@@ -71,7 +78,7 @@ extension MountListViewController: UITableViewDelegate,
 
     func tableView(_ tableView: UITableView,
                    numberOfRowsInSection section: Int) -> Int {
-        return viewModel.mounts.count
+        return viewModel.filteredMounts.count
     }
     
     func tableView(_ tableView: UITableView, 
@@ -83,14 +90,14 @@ extension MountListViewController: UITableViewDelegate,
             return UITableViewCell()
         }
 
-        let mount = viewModel.mounts[indexPath.row]
+        let mount = viewModel.filteredMounts[indexPath.row]
         cell.setup(for: mount)
         return cell
     }
 
     func tableView(_ tableView: UITableView, 
                    didSelectRowAt indexPath: IndexPath) {
-        let mount = viewModel.mounts[indexPath.row]
+        let mount = viewModel.filteredMounts[indexPath.row]
         viewModel.selectedMount = mount
         viewModel.fetchMountDetail(mount.detail.id) { [weak self] success in
             if success {
@@ -98,5 +105,32 @@ extension MountListViewController: UITableViewDelegate,
                                    sender: nil)
             }
         }
+    }
+}
+
+// MARK: - UISearchBarDelegate
+
+extension MountListViewController: UISearchBarDelegate {
+
+    func searchBar(_ searchBar: UISearchBar, 
+                   textDidChange searchText: String) {
+        var filteredMounts = [Mount]()
+
+        if searchText.isEmpty {
+            filteredMounts = viewModel.mounts
+        } else {
+            viewModel.mounts.forEach { mount in
+                let nameSearched = mount.detail.name.lowercased()
+                if nameSearched.contains(searchText.lowercased()) {
+                    filteredMounts.append(mount)
+                }
+            }
+        }
+        viewModel.filteredMounts = filteredMounts
+        tableView.reloadData()
+    }
+
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        searchBar.resignFirstResponder()
     }
 }
