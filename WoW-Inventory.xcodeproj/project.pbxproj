@@ -28,12 +28,12 @@
 		B552EDDC2ADD7E80003810AF /* Mounts.json in Resources */ = {isa = PBXBuildFile; fileRef = B552EDAF2ADD7E80003810AF /* Mounts.json */; };
 		B552EDDD2ADD7E80003810AF /* Pet.json in Resources */ = {isa = PBXBuildFile; fileRef = B552EDB02ADD7E80003810AF /* Pet.json */; };
 		B552EDDE2ADD7E80003810AF /* MountListServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = B552EDB22ADD7E80003810AF /* MountListServices.swift */; };
-		B552EDDF2ADD7E80003810AF /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B552EDB42ADD7E80003810AF /* DataManager.swift */; };
 		B552EDE02ADD7E80003810AF /* BlizzardCredentials.plist in Resources */ = {isa = PBXBuildFile; fileRef = B552EDB52ADD7E80003810AF /* BlizzardCredentials.plist */; };
 		B552EDE12ADD7E80003810AF /* BlizzardCredentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = B552EDB62ADD7E80003810AF /* BlizzardCredentials.swift */; };
 		B552EDE22ADD7E80003810AF /* PAccountProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = B552EDB82ADD7E80003810AF /* PAccountProfile.swift */; };
 		B552EDE42ADD7E80003810AF /* BlizzardOAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = B552EDBA2ADD7E80003810AF /* BlizzardOAuth.swift */; };
 		B552EDE52ADD7E80003810AF /* MountListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B552EDBC2ADD7E80003810AF /* MountListViewModel.swift */; };
+		B55429AC2AEA8F8F00182DB3 /* WIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55429AB2AEA8F8F00182DB3 /* WIError.swift */; };
 		B55AFE2F2ADE6CF90050BBF5 /* Mount.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B55AFE2E2ADE6CF90050BBF5 /* Mount.storyboard */; };
 		B55AFE3B2ADE742B0050BBF5 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55AFE3A2ADE742B0050BBF5 /* HomeViewController.swift */; };
 		B55AFE3D2ADE74310050BBF5 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B55AFE3C2ADE74310050BBF5 /* Home.storyboard */; };
@@ -58,7 +58,8 @@
 		B5747D0B2AE6BA3B009D80E2 /* Asset.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5747D0A2AE6BA3B009D80E2 /* Asset.swift */; };
 		B5747D0D2AE6BC40009D80E2 /* ResponseAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5747D0C2AE6BC40009D80E2 /* ResponseAsset.swift */; };
 		B5A099FF2AE7B0310063770B /* FactionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A099FE2AE7B0310063770B /* FactionType.swift */; };
-		B5A09A012AE7C1C70063770B /* UIViewController+WI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A09A002AE7C1C70063770B /* UIViewController+WI.swift */; };
+		B5A09A072AE807BA0063770B /* LoginServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A09A062AE807BA0063770B /* LoginServices.swift */; };
+		B5A09A092AE807C70063770B /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A09A082AE807C70063770B /* LoginViewModel.swift */; };
 		B5CE03E52ADD8BD30069283A /* WISegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CE03E42ADD8BD30069283A /* WISegue.swift */; };
 		B5DA60D42AE16090004B7F0E /* UIFont+WI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DA60D32AE16090004B7F0E /* UIFont+WI.swift */; };
 		B5DA60D82AE16294004B7F0E /* MountListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DA60D62AE16294004B7F0E /* MountListCell.swift */; };
@@ -110,12 +111,12 @@
 		B552EDAF2ADD7E80003810AF /* Mounts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Mounts.json; sourceTree = "<group>"; };
 		B552EDB02ADD7E80003810AF /* Pet.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Pet.json; sourceTree = "<group>"; };
 		B552EDB22ADD7E80003810AF /* MountListServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MountListServices.swift; sourceTree = "<group>"; };
-		B552EDB42ADD7E80003810AF /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		B552EDB52ADD7E80003810AF /* BlizzardCredentials.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = BlizzardCredentials.plist; sourceTree = "<group>"; };
 		B552EDB62ADD7E80003810AF /* BlizzardCredentials.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlizzardCredentials.swift; sourceTree = "<group>"; };
 		B552EDB82ADD7E80003810AF /* PAccountProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PAccountProfile.swift; sourceTree = "<group>"; };
 		B552EDBA2ADD7E80003810AF /* BlizzardOAuth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlizzardOAuth.swift; sourceTree = "<group>"; };
 		B552EDBC2ADD7E80003810AF /* MountListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MountListViewModel.swift; sourceTree = "<group>"; };
+		B55429AB2AEA8F8F00182DB3 /* WIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WIError.swift; sourceTree = "<group>"; };
 		B55AFE2E2ADE6CF90050BBF5 /* Mount.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Mount.storyboard; sourceTree = "<group>"; };
 		B55AFE3A2ADE742B0050BBF5 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		B55AFE3C2ADE74310050BBF5 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
@@ -140,7 +141,8 @@
 		B5747D0A2AE6BA3B009D80E2 /* Asset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Asset.swift; sourceTree = "<group>"; };
 		B5747D0C2AE6BC40009D80E2 /* ResponseAsset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseAsset.swift; sourceTree = "<group>"; };
 		B5A099FE2AE7B0310063770B /* FactionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactionType.swift; sourceTree = "<group>"; };
-		B5A09A002AE7C1C70063770B /* UIViewController+WI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+WI.swift"; sourceTree = "<group>"; };
+		B5A09A062AE807BA0063770B /* LoginServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginServices.swift; sourceTree = "<group>"; };
+		B5A09A082AE807C70063770B /* LoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		B5CE03E42ADD8BD30069283A /* WISegue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WISegue.swift; sourceTree = "<group>"; };
 		B5DA60D32AE16090004B7F0E /* UIFont+WI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+WI.swift"; sourceTree = "<group>"; };
 		B5DA60D62AE16294004B7F0E /* MountListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MountListCell.swift; sourceTree = "<group>"; };
@@ -224,7 +226,7 @@
 				B552EDBB2ADD7E80003810AF /* ViewModels */,
 				B552EDB12ADD7E80003810AF /* Services */,
 				B552EDB72ADD7E80003810AF /* Endpoints */,
-				B552EDB32ADD7E80003810AF /* API */,
+				B552EDB32ADD7E80003810AF /* Credentials */,
 				B552EDAA2ADD7E80003810AF /* Enums */,
 				B55AFE462ADEB45E0050BBF5 /* Extensions */,
 				B552ED6E2ADD7D95003810AF /* Resources */,
@@ -291,6 +293,7 @@
 				B552ED812ADD7E80003810AF /* Mount.swift */,
 				B5747D0E2AE6BFE2009D80E2 /* Responses */,
 				B552ED7F2ADD7E80003810AF /* Token */,
+				B55429AB2AEA8F8F00182DB3 /* WIError.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -328,19 +331,19 @@
 		B552EDB12ADD7E80003810AF /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				B5A09A062AE807BA0063770B /* LoginServices.swift */,
 				B5747D022AE67F55009D80E2 /* Mount */,
 			);
 			path = Services;
 			sourceTree = "<group>";
 		};
-		B552EDB32ADD7E80003810AF /* API */ = {
+		B552EDB32ADD7E80003810AF /* Credentials */ = {
 			isa = PBXGroup;
 			children = (
-				B552EDB42ADD7E80003810AF /* DataManager.swift */,
 				B552EDB52ADD7E80003810AF /* BlizzardCredentials.plist */,
 				B552EDB62ADD7E80003810AF /* BlizzardCredentials.swift */,
 			);
-			path = API;
+			path = Credentials;
 			sourceTree = "<group>";
 		};
 		B552EDB72ADD7E80003810AF /* Endpoints */ = {
@@ -357,8 +360,9 @@
 		B552EDBB2ADD7E80003810AF /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				B5747CFD2AE66F32009D80E2 /* Mount */,
 				B56EEE842AE11D7F008AF5F6 /* HomeViewModel.swift */,
+				B5A09A082AE807C70063770B /* LoginViewModel.swift */,
+				B5747CFD2AE66F32009D80E2 /* Mount */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -379,7 +383,6 @@
 				B55AFE472ADEB4730050BBF5 /* CALayer+WI.swift */,
 				B540B6942AE6697A00319774 /* String+WI.swift */,
 				B5DA60D32AE16090004B7F0E /* UIFont+WI.swift */,
-				B5A09A002AE7C1C70063770B /* UIViewController+WI.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -666,7 +669,6 @@
 				B552ED3A2ADD7A22003810AF /* SceneDelegate.swift in Sources */,
 				B55AFE4C2ADEC6CD0050BBF5 /* GDMount.swift in Sources */,
 				B552ED7D2ADD7E43003810AF /* LoginViewController.swift in Sources */,
-				B5A09A012AE7C1C70063770B /* UIViewController+WI.swift in Sources */,
 				B5A099FF2AE7B0310063770B /* FactionType.swift in Sources */,
 				B552ED7B2ADD7E43003810AF /* MountListViewController.swift in Sources */,
 				B55AFE522ADECFBD0050BBF5 /* GameDataTargetType.swift in Sources */,
@@ -674,6 +676,7 @@
 				B5747D042AE69401009D80E2 /* Key.swift in Sources */,
 				B552EDE52ADD7E80003810AF /* MountListViewModel.swift in Sources */,
 				B552EDBD2ADD7E80003810AF /* OAuthToken.swift in Sources */,
+				B55429AC2AEA8F8F00182DB3 /* WIError.swift in Sources */,
 				B552EDE42ADD7E80003810AF /* BlizzardOAuth.swift in Sources */,
 				B5747D092AE69638009D80E2 /* CreatureDisplay.swift in Sources */,
 				B552EDDE2ADD7E80003810AF /* MountListServices.swift in Sources */,
@@ -681,10 +684,11 @@
 				B552EDE22ADD7E80003810AF /* PAccountProfile.swift in Sources */,
 				B55AFE562ADED2A60050BBF5 /* WITargetType.swift in Sources */,
 				B5747D0B2AE6BA3B009D80E2 /* Asset.swift in Sources */,
-				B552EDDF2ADD7E80003810AF /* DataManager.swift in Sources */,
 				B540B6952AE6697A00319774 /* String+WI.swift in Sources */,
 				B552EDD92ADD7E80003810AF /* UDKey.swift in Sources */,
+				B5A09A092AE807C70063770B /* LoginViewModel.swift in Sources */,
 				B55AFE542ADED2220050BBF5 /* ProfileTargetType.swift in Sources */,
+				B5A09A072AE807BA0063770B /* LoginServices.swift in Sources */,
 				B5747D062AE695DE009D80E2 /* ResponseMount.swift in Sources */,
 				B5747CFF2AE66F41009D80E2 /* MountDetailViewModel.swift in Sources */,
 				B5747D0D2AE6BC40009D80E2 /* ResponseAsset.swift in Sources */,

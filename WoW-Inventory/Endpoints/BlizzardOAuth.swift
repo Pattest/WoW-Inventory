@@ -11,6 +11,7 @@ import Moya
 enum BlizzardOAuth {
     case authorize
     case token(code: String)
+    case checkToken(token: String)
 }
 
 extension BlizzardOAuth: TargetType {
@@ -26,6 +27,9 @@ extension BlizzardOAuth: TargetType {
 
         case .token:
             return "token"
+            
+        case .checkToken:
+            return "check_token"
         }
     }
     
@@ -34,7 +38,8 @@ extension BlizzardOAuth: TargetType {
         case .authorize:
             return .get
 
-        case .token:
+        case .token,
+                .checkToken:
             return .post
         }
     }
@@ -44,13 +49,12 @@ extension BlizzardOAuth: TargetType {
         case .authorize:
             return .requestParameters(
                 parameters: [
-                    "region": "eu",
                     "response_type": "code",
                     "client_id": BlizzardCredentials.shared.clientID,
                     "redirect_uri": BlizzardCredentials.shared.redirectUri,
                     "scope": "wow.profile"
                 ],
-                encoding: URLEncoding.queryString)
+                encoding: JSONEncoding.default)
 
         case .token(let code):
             return .requestParameters(
@@ -58,6 +62,13 @@ extension BlizzardOAuth: TargetType {
                     "grant_type": "authorization_code",
                     "code": code,
                     "redirect_uri": BlizzardCredentials.shared.redirectUri
+                ],
+                encoding: URLEncoding.httpBody)
+
+        case .checkToken(let token):
+            return .requestParameters(
+                parameters: [
+                    "token": token
                 ],
                 encoding: URLEncoding.httpBody)
         }
@@ -68,6 +79,11 @@ extension BlizzardOAuth: TargetType {
         case .authorize:
             return [
                 "Content-type": "application/json"
+            ]
+
+        case .checkToken:
+            return [
+                "Content-type": "application/x-www-form-urlencoded"
             ]
 
         case .token:

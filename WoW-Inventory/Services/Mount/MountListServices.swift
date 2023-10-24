@@ -21,6 +21,7 @@ class MountListServices {
                     let mount = try decoder.decode(ResponseMount.self, from: data)
                     var mounts = mount.mounts
                     
+                    // TODO: Export sort
                     mounts.sort {
                         let name1 = $0.detail.name
                         let name2 = $1.detail.name
@@ -31,7 +32,8 @@ class MountListServices {
                     mounts.sort {
                         $0.isFav() && !$1.isFav()
                     }
-                    
+                    //
+
                     handler(mounts)
 
                 } catch {
