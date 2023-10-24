@@ -25,6 +25,8 @@ class MountListCell: UITableViewCell {
     }
 
     func setupUI() {
+        selectionStyle = .none
+
         nameLabel.font = UIFont.morpheus(size: 20)
     }
 
