@@ -13,3 +13,9 @@ class HomeViewModel {
         .mount
     ]
 }
+
+// MARK: - Services
+
+extension HomeViewModel {
+    //
+}

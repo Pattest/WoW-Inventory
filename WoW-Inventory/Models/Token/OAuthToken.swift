@@ -9,10 +9,6 @@
 import Foundation
 
 struct OAuthToken: Decodable {
-    let accessToken: String
-    let tokenType: String
-    let expiresIn: Int
-    let scope: String
 
     enum CodingKeys: String, CodingKey {
         case accessToken = "access_token"
@@ -20,4 +16,9 @@ struct OAuthToken: Decodable {
         case expiresIn = "expires_in"
         case scope
     }
+
+    let accessToken: String
+    let tokenType: String
+    let expiresIn: Int
+    let scope: String
 }

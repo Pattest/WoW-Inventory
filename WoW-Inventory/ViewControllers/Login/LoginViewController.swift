@@ -12,7 +12,11 @@ import SafariServices
 
 class LoginViewController: UIViewController {
     
+    private var viewModel = LoginViewModel()
+
+    @IBOutlet weak var welcomeLabel: UILabel!
     @IBOutlet weak var logoImageView: UIImageView!
+    @IBOutlet weak var inventoryLabel: UILabel!
     @IBOutlet weak var loginButton: UIButton!
 
     override func viewDidLoad() {
@@ -23,6 +27,12 @@ class LoginViewController: UIViewController {
     }
 
     func setupUI() {
+        welcomeLabel.font = UIFont.lifeCraft(size: 40)
+        welcomeLabel.numberOfLines = 0
+
+        inventoryLabel.font = UIFont.lifeCraft(size: 40)
+        inventoryLabel.numberOfLines = 0
+
         loginButton.titleLabel?.font = UIFont.lifeCraft(size: 30)
         loginButton.layer
             .cornerRadius(4)
@@ -30,15 +40,27 @@ class LoginViewController: UIViewController {
     }
 
     func setupText() {
+        welcomeLabel.text = "LOGIN_WELCOME_LABEL".localized
+        inventoryLabel.text = "LOGIN_WELCOME_LABEL_2".localized
         loginButton.setTitle("LOGIN_CONNEXION_BUTTON".localized, for: .normal)
     }
 
     @IBAction func loginButtonAction(_ sender: Any) {
-//        logInWithBlizzard()
-        if BlizzardCredentials.shared.getAccessToken().isEmpty {
+        let accessToken = viewModel.getAccessToken()
+        if accessToken.isEmpty {
             logInWithBlizzard()
         } else {
-            goToHome()
+            checkTokenAvailability(accessToken)
+        }
+    }
+
+    func checkTokenAvailability(_ accessToken: String) {
+        viewModel.checkAccessToken(accessToken) { [weak self] success in
+            if success {
+                self?.goToHome()
+            } else {
+                self?.logInWithBlizzard()
+            }
         }
     }
 
@@ -70,13 +92,13 @@ extension LoginViewController: SFSafariViewControllerDelegate {
                               initialLoadDidRedirectTo URL: URL) {
         if URL.absoluteString.contains("/?code=") {
             let splitUrl = URL.absoluteString.split(separator: "=")
-            let authorizationToken = String(splitUrl[1])
-            DataManager.shared.getAccessToken(code: authorizationToken) { [weak self] success in
+            let authToken = String(splitUrl[1])
+            viewModel.fetchAccessToken(authToken) { [weak self] success in
                 if success {
                     self?.goToHome()
                 }
+                controller.dismiss(animated: true)
             }
-            controller.dismiss(animated: true)
         }
     }
     
