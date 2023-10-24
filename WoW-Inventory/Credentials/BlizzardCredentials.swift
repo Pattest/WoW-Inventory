@@ -47,7 +47,7 @@ public class BlizzardCredentials {
 
     // MARK: - Access token
 
-    func getAccessToken() -> String {
+    func loadAccessToken() -> String {
         let defaults = UserDefaults.standard
         let decoder = JSONDecoder()
         guard let tokenData = defaults.data(forKey: UDKey.accessToken.rawValue),
@@ -57,7 +57,7 @@ public class BlizzardCredentials {
         return decodedToken
     }
 
-    func setAccessToken(_ accessToken: String) {
+    func saveAccessToken(_ accessToken: String) {
         let defaults = UserDefaults.standard
         let encoder = JSONEncoder()
         if let encodedToken = try? encoder.encode(accessToken) {

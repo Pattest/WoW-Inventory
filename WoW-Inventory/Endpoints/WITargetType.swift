@@ -19,7 +19,7 @@ extension WITargetType {
     var headers: [String: String]? {
         return [
             "Content-type": "application/json",
-            "Authorization": "Bearer \(BlizzardCredentials.shared.getAccessToken())"
+            "Authorization": "Bearer \(BlizzardCredentials.shared.loadAccessToken())"
         ]
     }
 }
