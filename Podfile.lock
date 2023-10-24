@@ -2,6 +2,14 @@ PODS:
   - Alamofire (5.8.0)
   - AlamofireImage (4.3.0):
     - Alamofire (~> 5.8)
+  - AppCenter (5.0.4):
+    - AppCenter/Analytics (= 5.0.4)
+    - AppCenter/Crashes (= 5.0.4)
+  - AppCenter/Analytics (5.0.4):
+    - AppCenter/Core
+  - AppCenter/Core (5.0.4)
+  - AppCenter/Crashes (5.0.4):
+    - AppCenter/Core
   - Moya (15.0.0):
     - Moya/Core (= 15.0.0)
   - Moya/Core (15.0.0):
@@ -9,19 +17,22 @@ PODS:
 
 DEPENDENCIES:
   - AlamofireImage
+  - AppCenter
   - Moya
 
 SPEC REPOS:
   trunk:
     - Alamofire
     - AlamofireImage
+    - AppCenter
     - Moya
 
 SPEC CHECKSUMS:
   Alamofire: 0e92e751b3e9e66d7982db43919d01f313b8eb91
   AlamofireImage: 843953fa97bee5f561cf05d83abd759e590b068d
+  AppCenter: 85c92db0759d2792a65eb61d6842d2e86611a49a
   Moya: 138f0573e53411fb3dc17016add0b748dfbd78ee
 
-PODFILE CHECKSUM: 58d407388bdbd40eb39931f8afbde8926eaf13b3
+PODFILE CHECKSUM: 49314334cbbcb71627da1e468de9dfe0f5e9206a
 
 COCOAPODS: 1.13.0
