@@ -8,5 +8,6 @@ target 'WoW-Inventory' do
   # Pods for WoW-Inventory
   pod 'Moya'
   pod 'AlamofireImage'
+  pod 'AppCenter'
 
 end
