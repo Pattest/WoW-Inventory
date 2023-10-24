@@ -15,6 +15,7 @@ class MountDetailViewController: UIViewController {
     @IBOutlet weak var mountImageView: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
+    @IBOutlet var iconLabels: [UILabel]!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,10 +35,14 @@ class MountDetailViewController: UIViewController {
 
     func setupUI() {
         nameLabel.font = UIFont.lifeCraft(size: 40)
-        nameLabel.numberOfLines = 0
+        nameLabel.numberOfLines = 2
 
         descriptionLabel.font = UIFont.systemFont(ofSize: 20)
         descriptionLabel.numberOfLines = 0
+
+        iconLabels.forEach { iconLabel in
+            iconLabel.font = UIFont.lifeCraft(size: 60)
+        }
     }
 
     func setupText(for mount: Mount?) {
@@ -49,6 +54,17 @@ class MountDetailViewController: UIViewController {
             }
         }
         nameLabel.text = mount.detail.name
+
+        if let faction = mount.detail.faction,
+           let factionType = FactionType(rawValue: faction.type) {
+
+            iconLabels.forEach { iconLabel in
+                iconLabel.text = factionType.iconName
+                iconLabel.textColor = factionType.iconColor
+            }
+        } else {
+            iconLabels.forEach { $0.removeFromSuperview() }
+        }
 
         descriptionLabel.text = mount.detail.getDescription()
     }

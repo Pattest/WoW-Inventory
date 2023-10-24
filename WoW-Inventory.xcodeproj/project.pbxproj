@@ -57,6 +57,8 @@
 		B5747D092AE69638009D80E2 /* CreatureDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5747D082AE69638009D80E2 /* CreatureDisplay.swift */; };
 		B5747D0B2AE6BA3B009D80E2 /* Asset.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5747D0A2AE6BA3B009D80E2 /* Asset.swift */; };
 		B5747D0D2AE6BC40009D80E2 /* ResponseAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5747D0C2AE6BC40009D80E2 /* ResponseAsset.swift */; };
+		B5A099FF2AE7B0310063770B /* FactionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A099FE2AE7B0310063770B /* FactionType.swift */; };
+		B5A09A012AE7C1C70063770B /* UIViewController+WI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A09A002AE7C1C70063770B /* UIViewController+WI.swift */; };
 		B5CE03E52ADD8BD30069283A /* WISegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CE03E42ADD8BD30069283A /* WISegue.swift */; };
 		B5DA60D42AE16090004B7F0E /* UIFont+WI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DA60D32AE16090004B7F0E /* UIFont+WI.swift */; };
 		B5DA60D82AE16294004B7F0E /* MountListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DA60D62AE16294004B7F0E /* MountListCell.swift */; };
@@ -137,6 +139,8 @@
 		B5747D082AE69638009D80E2 /* CreatureDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatureDisplay.swift; sourceTree = "<group>"; };
 		B5747D0A2AE6BA3B009D80E2 /* Asset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Asset.swift; sourceTree = "<group>"; };
 		B5747D0C2AE6BC40009D80E2 /* ResponseAsset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseAsset.swift; sourceTree = "<group>"; };
+		B5A099FE2AE7B0310063770B /* FactionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactionType.swift; sourceTree = "<group>"; };
+		B5A09A002AE7C1C70063770B /* UIViewController+WI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+WI.swift"; sourceTree = "<group>"; };
 		B5CE03E42ADD8BD30069283A /* WISegue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WISegue.swift; sourceTree = "<group>"; };
 		B5DA60D32AE16090004B7F0E /* UIFont+WI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+WI.swift"; sourceTree = "<group>"; };
 		B5DA60D62AE16294004B7F0E /* MountListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MountListCell.swift; sourceTree = "<group>"; };
@@ -302,6 +306,7 @@
 		B552EDAA2ADD7E80003810AF /* Enums */ = {
 			isa = PBXGroup;
 			children = (
+				B5A099FE2AE7B0310063770B /* FactionType.swift */,
 				B56EEE822AE11D55008AF5F6 /* HomeCellType.swift */,
 				B552EDAB2ADD7E80003810AF /* UDKey.swift */,
 				B5CE03E42ADD8BD30069283A /* WISegue.swift */,
@@ -372,8 +377,9 @@
 			isa = PBXGroup;
 			children = (
 				B55AFE472ADEB4730050BBF5 /* CALayer+WI.swift */,
-				B5DA60D32AE16090004B7F0E /* UIFont+WI.swift */,
 				B540B6942AE6697A00319774 /* String+WI.swift */,
+				B5DA60D32AE16090004B7F0E /* UIFont+WI.swift */,
+				B5A09A002AE7C1C70063770B /* UIViewController+WI.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -660,6 +666,8 @@
 				B552ED3A2ADD7A22003810AF /* SceneDelegate.swift in Sources */,
 				B55AFE4C2ADEC6CD0050BBF5 /* GDMount.swift in Sources */,
 				B552ED7D2ADD7E43003810AF /* LoginViewController.swift in Sources */,
+				B5A09A012AE7C1C70063770B /* UIViewController+WI.swift in Sources */,
+				B5A099FF2AE7B0310063770B /* FactionType.swift in Sources */,
 				B552ED7B2ADD7E43003810AF /* MountListViewController.swift in Sources */,
 				B55AFE522ADECFBD0050BBF5 /* GameDataTargetType.swift in Sources */,
 				B5747D012AE67DCA009D80E2 /* MountDetailServices.swift in Sources */,
