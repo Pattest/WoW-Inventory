@@ -10,21 +10,9 @@
             "value" : "Mounts"
           }
         },
-        "en-GB" : {
-          "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "Mounts"
-          }
-        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Montures"
-          }
-        },
-        "fr-FR" : {
-          "stringUnit" : {
-            "state" : "needs_review",
             "value" : "Montures"
           }
         }
@@ -39,21 +27,9 @@
             "value" : "Home"
           }
         },
-        "en-GB" : {
-          "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "Home"
-          }
-        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Accueil"
-          }
-        },
-        "fr-FR" : {
-          "stringUnit" : {
-            "state" : "needs_review",
             "value" : "Accueil"
           }
         }
@@ -68,22 +44,44 @@
             "value" : "Login"
           }
         },
-        "en-GB" : {
-          "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "Login"
-          }
-        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Connexion"
           }
-        },
-        "fr-FR" : {
+        }
+      }
+    },
+    "LOGIN_WELCOME_LABEL" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "Connexion"
+            "state" : "translated",
+            "value" : "Welcome to"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bienvenue dans"
+          }
+        }
+      }
+    },
+    "LOGIN_WELCOME_LABEL_2" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "INVENTORY"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "INVENTORY"
           }
         }
       }
@@ -97,21 +95,9 @@
             "value" : "Mounts"
           }
         },
-        "en-GB" : {
-          "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "Mounts"
-          }
-        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Montures"
-          }
-        },
-        "fr-FR" : {
-          "stringUnit" : {
-            "state" : "needs_review",
             "value" : "Montures"
           }
         }

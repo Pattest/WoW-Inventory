@@ -23,7 +23,7 @@ class HomeViewController: UIViewController {
         setupUI()
         setupText()
         setupCollectionView()
-        print("Bearer: \(BlizzardCredentials.shared.getAccessToken())")
+        print("Bearer: \(BlizzardCredentials.shared.loadAccessToken())")
     }
 
     override func viewWillAppear(_ animated: Bool) {
