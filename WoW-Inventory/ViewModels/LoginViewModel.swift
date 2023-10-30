@@ -14,12 +14,12 @@ class LoginViewModel {
     // MARK: - AccessToken
 
     func getAccessToken() -> String {
-        let accessToken = BlizzardCredentials.shared.loadAccessToken()
+        let accessToken = WICredentials.shared.loadAccessToken()
         return accessToken
     }
 
     func setAccessToken(_ token: String) {
-        BlizzardCredentials.shared.saveAccessToken(token)
+        WICredentials.shared.saveAccessToken(token)
     }
 }
 

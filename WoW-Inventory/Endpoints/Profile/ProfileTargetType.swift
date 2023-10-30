@@ -14,7 +14,7 @@ protocol ProfileTargetType: WITargetType {
 extension ProfileTargetType {
     
     var strBaseURL: String {
-        return "\(BlizzardCredentials.shared.baseURL)/profile/wow/"
+        return "\(WICredentials.shared.baseURL)/profile/wow/"
     }
 
     // MARK: - WITargetType

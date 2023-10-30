@@ -50,8 +50,8 @@ extension BlizzardOAuth: TargetType {
             return .requestParameters(
                 parameters: [
                     "response_type": "code",
-                    "client_id": BlizzardCredentials.shared.clientID,
-                    "redirect_uri": BlizzardCredentials.shared.redirectUri,
+                    "client_id": WICredentials.shared.clientID,
+                    "redirect_uri": WICredentials.shared.redirectUri,
                     "scope": "wow.profile"
                 ],
                 encoding: JSONEncoding.default)
@@ -61,7 +61,7 @@ extension BlizzardOAuth: TargetType {
                 parameters: [
                     "grant_type": "authorization_code",
                     "code": code,
-                    "redirect_uri": BlizzardCredentials.shared.redirectUri
+                    "redirect_uri": WICredentials.shared.redirectUri
                 ],
                 encoding: URLEncoding.httpBody)
 
@@ -87,7 +87,7 @@ extension BlizzardOAuth: TargetType {
             ]
 
         case .token:
-            let base64LoginString = BlizzardCredentials.shared.getBase64LoginString()
+            let base64LoginString = WICredentials.shared.getBase64LoginString()
             return [
                 "Content-type": "application/x-www-form-urlencoded",
                 "Authorization": "Basic \(base64LoginString)"
