@@ -35,7 +35,7 @@ class LoginServices {
                     let data = moyaResponse.data
                     let decoder = JSONDecoder()
                     let oauthToken = try decoder.decode(OAuthToken.self, from: data)
-                    BlizzardCredentials.shared.saveAccessToken(oauthToken.accessToken)
+                    WICredentials.shared.saveAccessToken(oauthToken.accessToken)
                     handler(true)
 
                 } catch {

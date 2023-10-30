@@ -14,7 +14,7 @@ protocol GameDataTargetType: WITargetType {
 extension GameDataTargetType {
 
     var strBaseURL: String {
-        return "\(BlizzardCredentials.shared.baseURL)/data/wow/"
+        return "\(WICredentials.shared.baseURL)/data/wow/"
     }
 
     // MARK: - WITargetType

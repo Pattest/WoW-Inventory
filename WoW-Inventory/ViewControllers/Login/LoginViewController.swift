@@ -67,8 +67,8 @@ class LoginViewController: UIViewController {
     func logInWithBlizzard() {
         // Blizzard OAuth URL
         guard let authURL = URL(string: "https://oauth.battle.net/authorize?" +
-                                "client_id=\(BlizzardCredentials.shared.clientID)" +
-                                "&redirect_uri=\(BlizzardCredentials.shared.redirectUri)" +
+                                "client_id=\(WICredentials.shared.clientID)" +
+                                "&redirect_uri=\(WICredentials.shared.redirectUri)" +
                                 "&response_type=code" +
                                 "&region=eu" +
                                 "&scope=wow.profile") else {

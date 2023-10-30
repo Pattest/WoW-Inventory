@@ -28,12 +28,12 @@
 		B552EDDC2ADD7E80003810AF /* Mounts.json in Resources */ = {isa = PBXBuildFile; fileRef = B552EDAF2ADD7E80003810AF /* Mounts.json */; };
 		B552EDDD2ADD7E80003810AF /* Pet.json in Resources */ = {isa = PBXBuildFile; fileRef = B552EDB02ADD7E80003810AF /* Pet.json */; };
 		B552EDDE2ADD7E80003810AF /* MountListServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = B552EDB22ADD7E80003810AF /* MountListServices.swift */; };
-		B552EDE02ADD7E80003810AF /* BlizzardCredentials.plist in Resources */ = {isa = PBXBuildFile; fileRef = B552EDB52ADD7E80003810AF /* BlizzardCredentials.plist */; };
-		B552EDE12ADD7E80003810AF /* BlizzardCredentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = B552EDB62ADD7E80003810AF /* BlizzardCredentials.swift */; };
+		B552EDE12ADD7E80003810AF /* WICredentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = B552EDB62ADD7E80003810AF /* WICredentials.swift */; };
 		B552EDE22ADD7E80003810AF /* PAccountProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = B552EDB82ADD7E80003810AF /* PAccountProfile.swift */; };
 		B552EDE42ADD7E80003810AF /* BlizzardOAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = B552EDBA2ADD7E80003810AF /* BlizzardOAuth.swift */; };
 		B552EDE52ADD7E80003810AF /* MountListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B552EDBC2ADD7E80003810AF /* MountListViewModel.swift */; };
 		B55429AC2AEA8F8F00182DB3 /* WIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55429AB2AEA8F8F00182DB3 /* WIError.swift */; };
+		B556A4912AEAB7CC0092D09C /* WICredentials.plist in Resources */ = {isa = PBXBuildFile; fileRef = B552EDB52ADD7E80003810AF /* WICredentials.plist */; };
 		B55AFE2F2ADE6CF90050BBF5 /* Mount.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B55AFE2E2ADE6CF90050BBF5 /* Mount.storyboard */; };
 		B55AFE3B2ADE742B0050BBF5 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55AFE3A2ADE742B0050BBF5 /* HomeViewController.swift */; };
 		B55AFE3D2ADE74310050BBF5 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B55AFE3C2ADE74310050BBF5 /* Home.storyboard */; };
@@ -87,6 +87,7 @@
 /* Begin PBXFileReference section */
 		83EF454355A0F6E9AF73F003 /* Pods_WoW_Inventory.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WoW_Inventory.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		93A242233553E7DE975913FC /* Pods-WoW-Inventory.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WoW-Inventory.debug.xcconfig"; path = "Target Support Files/Pods-WoW-Inventory/Pods-WoW-Inventory.debug.xcconfig"; sourceTree = "<group>"; };
+		B53366172AEFEC1B00C69321 /* WoW-Inventory.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "WoW-Inventory.entitlements"; sourceTree = "<group>"; };
 		B540B6922AE668A700319774 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		B540B6942AE6697A00319774 /* String+WI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+WI.swift"; sourceTree = "<group>"; };
 		B552ED342ADD7A22003810AF /* WoW-Inventory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WoW-Inventory.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -111,8 +112,8 @@
 		B552EDAF2ADD7E80003810AF /* Mounts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Mounts.json; sourceTree = "<group>"; };
 		B552EDB02ADD7E80003810AF /* Pet.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Pet.json; sourceTree = "<group>"; };
 		B552EDB22ADD7E80003810AF /* MountListServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MountListServices.swift; sourceTree = "<group>"; };
-		B552EDB52ADD7E80003810AF /* BlizzardCredentials.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = BlizzardCredentials.plist; sourceTree = "<group>"; };
-		B552EDB62ADD7E80003810AF /* BlizzardCredentials.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlizzardCredentials.swift; sourceTree = "<group>"; };
+		B552EDB52ADD7E80003810AF /* WICredentials.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = WICredentials.plist; sourceTree = "<group>"; };
+		B552EDB62ADD7E80003810AF /* WICredentials.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WICredentials.swift; sourceTree = "<group>"; };
 		B552EDB82ADD7E80003810AF /* PAccountProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PAccountProfile.swift; sourceTree = "<group>"; };
 		B552EDBA2ADD7E80003810AF /* BlizzardOAuth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlizzardOAuth.swift; sourceTree = "<group>"; };
 		B552EDBC2ADD7E80003810AF /* MountListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MountListViewModel.swift; sourceTree = "<group>"; };
@@ -219,6 +220,7 @@
 		B552ED362ADD7A22003810AF /* WoW-Inventory */ = {
 			isa = PBXGroup;
 			children = (
+				B53366172AEFEC1B00C69321 /* WoW-Inventory.entitlements */,
 				B552ED372ADD7A22003810AF /* AppDelegate.swift */,
 				B552ED392ADD7A22003810AF /* SceneDelegate.swift */,
 				B552ED762ADD7E43003810AF /* ViewControllers */,
@@ -340,8 +342,8 @@
 		B552EDB32ADD7E80003810AF /* Credentials */ = {
 			isa = PBXGroup;
 			children = (
-				B552EDB52ADD7E80003810AF /* BlizzardCredentials.plist */,
-				B552EDB62ADD7E80003810AF /* BlizzardCredentials.swift */,
+				B552EDB52ADD7E80003810AF /* WICredentials.plist */,
+				B552EDB62ADD7E80003810AF /* WICredentials.swift */,
 			);
 			path = Credentials;
 			sourceTree = "<group>";
@@ -589,8 +591,8 @@
 				B540B6932AE668A700319774 /* Localizable.xcstrings in Resources */,
 				B55AFE422ADE856F0050BBF5 /* Main.storyboard in Resources */,
 				B552ED742ADD7D95003810AF /* Morpheus.ttf in Resources */,
-				B552EDE02ADD7E80003810AF /* BlizzardCredentials.plist in Resources */,
 				B552EDDC2ADD7E80003810AF /* Mounts.json in Resources */,
+				B556A4912AEAB7CC0092D09C /* WICredentials.plist in Resources */,
 				B552EDDB2ADD7E80003810AF /* Mount.json in Resources */,
 				B552ED752ADD7D95003810AF /* LifeCraft.ttf in Resources */,
 			);
@@ -661,7 +663,7 @@
 			files = (
 				B5CE03E52ADD8BD30069283A /* WISegue.swift in Sources */,
 				B5DA60D82AE16294004B7F0E /* MountListCell.swift in Sources */,
-				B552EDE12ADD7E80003810AF /* BlizzardCredentials.swift in Sources */,
+				B552EDE12ADD7E80003810AF /* WICredentials.swift in Sources */,
 				B5DA60D42AE16090004B7F0E /* UIFont+WI.swift in Sources */,
 				B55AFE482ADEB4730050BBF5 /* CALayer+WI.swift in Sources */,
 				B55AFE3B2ADE742B0050BBF5 /* HomeViewController.swift in Sources */,
@@ -861,6 +863,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "WoW-Inventory/WoW-Inventory.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 95Q5YEGF4A;
@@ -890,6 +893,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "WoW-Inventory/WoW-Inventory.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 95Q5YEGF4A;

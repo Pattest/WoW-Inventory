@@ -12,13 +12,13 @@ enum CredentialKey: String {
     case clientId
 }
 
-public class BlizzardCredentials {
+public class WICredentials {
 
-    static var shared = BlizzardCredentials()
+    static var shared = WICredentials()
     
     private static let credentialsPlist: [String: String] = {
-        guard let credentialsPlistPath = Bundle.main.url(forResource: "BlizzardCredentials",
-                                                      withExtension: "plist")
+        guard let credentialsPlistPath = Bundle.main.url(forResource: "WICredentials",
+                                                         withExtension: "plist")
         else {
             return [:]
         }
@@ -32,10 +32,11 @@ public class BlizzardCredentials {
         return dict
     }()
 
-    let clientID: String = credentialsPlist["client_id"]!
-    let clientSecret: String = credentialsPlist["client_secret"]!
-    let redirectUri: String = credentialsPlist["redirect_uri"]!
-    let baseURL: String = credentialsPlist["base_url"]!
+    let appCenterSecret: String = credentialsPlist["APP_CENTER_SECRET"]!
+    let clientID: String = credentialsPlist["CLIENT_ID"]!
+    let clientSecret: String = credentialsPlist["CLIENT_SECRET"]!
+    let redirectUri: String = credentialsPlist["REDIRECT_URI"]!
+    let baseURL: String = credentialsPlist["BASE_URL"]!
 
     //
 
