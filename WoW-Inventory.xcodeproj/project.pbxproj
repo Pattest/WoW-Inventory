@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		63854A3691F0BBB08EF0123E /* Pods_WoW_Inventory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83EF454355A0F6E9AF73F003 /* Pods_WoW_Inventory.framework */; };
+		B53366192AEFF37A00C69321 /* UIView+WI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53366182AEFF37A00C69321 /* UIView+WI.swift */; };
 		B540B6932AE668A700319774 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = B540B6922AE668A700319774 /* Localizable.xcstrings */; };
 		B540B6952AE6697A00319774 /* String+WI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B540B6942AE6697A00319774 /* String+WI.swift */; };
 		B552ED382ADD7A22003810AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B552ED372ADD7A22003810AF /* AppDelegate.swift */; };
@@ -34,13 +35,13 @@
 		B552EDE52ADD7E80003810AF /* MountListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B552EDBC2ADD7E80003810AF /* MountListViewModel.swift */; };
 		B55429AC2AEA8F8F00182DB3 /* WIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55429AB2AEA8F8F00182DB3 /* WIError.swift */; };
 		B556A4912AEAB7CC0092D09C /* WICredentials.plist in Resources */ = {isa = PBXBuildFile; fileRef = B552EDB52ADD7E80003810AF /* WICredentials.plist */; };
+		B557663A2AEFFDE300C89A9D /* UIImage+WI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55766392AEFFDE300C89A9D /* UIImage+WI.swift */; };
 		B55AFE2F2ADE6CF90050BBF5 /* Mount.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B55AFE2E2ADE6CF90050BBF5 /* Mount.storyboard */; };
 		B55AFE3B2ADE742B0050BBF5 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55AFE3A2ADE742B0050BBF5 /* HomeViewController.swift */; };
 		B55AFE3D2ADE74310050BBF5 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B55AFE3C2ADE74310050BBF5 /* Home.storyboard */; };
 		B55AFE3F2ADE7DA90050BBF5 /* DataType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55AFE3E2ADE7DA90050BBF5 /* DataType.swift */; };
 		B55AFE422ADE856F0050BBF5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B55AFE432ADE856F0050BBF5 /* Main.storyboard */; };
 		B55AFE442ADE85870050BBF5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B55AFE452ADE85870050BBF5 /* LaunchScreen.storyboard */; };
-		B55AFE482ADEB4730050BBF5 /* CALayer+WI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55AFE472ADEB4730050BBF5 /* CALayer+WI.swift */; };
 		B55AFE4C2ADEC6CD0050BBF5 /* GDMount.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55AFE4B2ADEC6CD0050BBF5 /* GDMount.swift */; };
 		B55AFE4E2ADEC6D70050BBF5 /* GDCreature.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55AFE4D2ADEC6D70050BBF5 /* GDCreature.swift */; };
 		B55AFE522ADECFBD0050BBF5 /* GameDataTargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55AFE512ADECFBD0050BBF5 /* GameDataTargetType.swift */; };
@@ -88,6 +89,7 @@
 		83EF454355A0F6E9AF73F003 /* Pods_WoW_Inventory.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WoW_Inventory.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		93A242233553E7DE975913FC /* Pods-WoW-Inventory.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WoW-Inventory.debug.xcconfig"; path = "Target Support Files/Pods-WoW-Inventory/Pods-WoW-Inventory.debug.xcconfig"; sourceTree = "<group>"; };
 		B53366172AEFEC1B00C69321 /* WoW-Inventory.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "WoW-Inventory.entitlements"; sourceTree = "<group>"; };
+		B53366182AEFF37A00C69321 /* UIView+WI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+WI.swift"; sourceTree = "<group>"; };
 		B540B6922AE668A700319774 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		B540B6942AE6697A00319774 /* String+WI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+WI.swift"; sourceTree = "<group>"; };
 		B552ED342ADD7A22003810AF /* WoW-Inventory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WoW-Inventory.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -118,13 +120,13 @@
 		B552EDBA2ADD7E80003810AF /* BlizzardOAuth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlizzardOAuth.swift; sourceTree = "<group>"; };
 		B552EDBC2ADD7E80003810AF /* MountListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MountListViewModel.swift; sourceTree = "<group>"; };
 		B55429AB2AEA8F8F00182DB3 /* WIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WIError.swift; sourceTree = "<group>"; };
+		B55766392AEFFDE300C89A9D /* UIImage+WI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+WI.swift"; sourceTree = "<group>"; };
 		B55AFE2E2ADE6CF90050BBF5 /* Mount.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Mount.storyboard; sourceTree = "<group>"; };
 		B55AFE3A2ADE742B0050BBF5 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		B55AFE3C2ADE74310050BBF5 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		B55AFE3E2ADE7DA90050BBF5 /* DataType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataType.swift; sourceTree = "<group>"; };
 		B55AFE432ADE856F0050BBF5 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		B55AFE452ADE85870050BBF5 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
-		B55AFE472ADEB4730050BBF5 /* CALayer+WI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+WI.swift"; sourceTree = "<group>"; };
 		B55AFE4B2ADEC6CD0050BBF5 /* GDMount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GDMount.swift; sourceTree = "<group>"; };
 		B55AFE4D2ADEC6D70050BBF5 /* GDCreature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GDCreature.swift; sourceTree = "<group>"; };
 		B55AFE512ADECFBD0050BBF5 /* GameDataTargetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDataTargetType.swift; sourceTree = "<group>"; };
@@ -382,9 +384,10 @@
 		B55AFE462ADEB45E0050BBF5 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				B55AFE472ADEB4730050BBF5 /* CALayer+WI.swift */,
 				B540B6942AE6697A00319774 /* String+WI.swift */,
 				B5DA60D32AE16090004B7F0E /* UIFont+WI.swift */,
+				B55766392AEFFDE300C89A9D /* UIImage+WI.swift */,
+				B53366182AEFF37A00C69321 /* UIView+WI.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -665,7 +668,6 @@
 				B5DA60D82AE16294004B7F0E /* MountListCell.swift in Sources */,
 				B552EDE12ADD7E80003810AF /* WICredentials.swift in Sources */,
 				B5DA60D42AE16090004B7F0E /* UIFont+WI.swift in Sources */,
-				B55AFE482ADEB4730050BBF5 /* CALayer+WI.swift in Sources */,
 				B55AFE3B2ADE742B0050BBF5 /* HomeViewController.swift in Sources */,
 				B552ED382ADD7A22003810AF /* AppDelegate.swift in Sources */,
 				B552ED3A2ADD7A22003810AF /* SceneDelegate.swift in Sources */,
@@ -675,9 +677,11 @@
 				B552ED7B2ADD7E43003810AF /* MountListViewController.swift in Sources */,
 				B55AFE522ADECFBD0050BBF5 /* GameDataTargetType.swift in Sources */,
 				B5747D012AE67DCA009D80E2 /* MountDetailServices.swift in Sources */,
+				B53366192AEFF37A00C69321 /* UIView+WI.swift in Sources */,
 				B5747D042AE69401009D80E2 /* Key.swift in Sources */,
 				B552EDE52ADD7E80003810AF /* MountListViewModel.swift in Sources */,
 				B552EDBD2ADD7E80003810AF /* OAuthToken.swift in Sources */,
+				B557663A2AEFFDE300C89A9D /* UIImage+WI.swift in Sources */,
 				B55429AC2AEA8F8F00182DB3 /* WIError.swift in Sources */,
 				B552EDE42ADD7E80003810AF /* BlizzardOAuth.swift in Sources */,
 				B5747D092AE69638009D80E2 /* CreatureDisplay.swift in Sources */,
@@ -869,6 +873,7 @@
 				DEVELOPMENT_TEAM = 95Q5YEGF4A;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "WoW-Inventory/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "WoW Inventory";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -899,6 +904,7 @@
 				DEVELOPMENT_TEAM = 95Q5YEGF4A;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "WoW-Inventory/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "WoW Inventory";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
