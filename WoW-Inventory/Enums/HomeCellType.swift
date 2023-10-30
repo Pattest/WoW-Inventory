@@ -20,7 +20,7 @@ enum HomeCellType {
     var iconName: String {
         switch self {
         case .mount:
-            return "mount"
+            return AssetName.mount.rawValue
         }
     }
 

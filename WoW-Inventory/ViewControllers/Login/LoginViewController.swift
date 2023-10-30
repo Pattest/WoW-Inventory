@@ -14,9 +14,13 @@ class LoginViewController: UIViewController {
     
     private var viewModel = LoginViewModel()
 
+    @IBOutlet weak var backgroundImageView: UIImageView!
+
+    @IBOutlet weak var logoView: UIView!
     @IBOutlet weak var welcomeLabel: UILabel!
     @IBOutlet weak var logoImageView: UIImageView!
     @IBOutlet weak var inventoryLabel: UILabel!
+
     @IBOutlet weak var loginButton: UIButton!
 
     override func viewDidLoad() {
@@ -27,21 +31,35 @@ class LoginViewController: UIViewController {
     }
 
     func setupUI() {
-        welcomeLabel.font = UIFont.lifeCraft(size: 40)
+        logoView
+            .backgroundColor(UIColor(white: 1, alpha: 0.75))
+            .cornerRadius(10)
+            .borderColor(.systemBrown)
+            .borderWidth(2)
+
+        welcomeLabel.font = UIFont.lifeCraft(size: 35)
+        welcomeLabel.textColor = .systemBrown
         welcomeLabel.numberOfLines = 0
 
-        inventoryLabel.font = UIFont.lifeCraft(size: 40)
+        inventoryLabel.font = UIFont.lifeCraft(size: 35)
+        inventoryLabel.textColor = .systemBrown
         inventoryLabel.numberOfLines = 0
 
         loginButton.titleLabel?.font = UIFont.lifeCraft(size: 30)
-        loginButton.layer
-            .cornerRadius(4)
+        loginButton.setTitleColor(.white, for: .normal)
+        loginButton
+            .backgroundColor(.systemBrown)
+            .cornerRadius(10)
             .basicShadow()
     }
 
     func setupText() {
+        backgroundImageView.image = AssetName.backgroundApp.image
+
         welcomeLabel.text = "LOGIN_WELCOME_LABEL".localized
+        logoImageView.image = AssetName.logoApp.image
         inventoryLabel.text = "LOGIN_WELCOME_LABEL_2".localized
+
         loginButton.setTitle("LOGIN_CONNEXION_BUTTON".localized, for: .normal)
     }
 
