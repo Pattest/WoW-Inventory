@@ -19,7 +19,7 @@ extension BlizzardOAuth: TargetType {
     var baseURL: URL {
         return URL(string: "https://oauth.battle.net/")!
     }
-    
+
     var path: String {
         switch self {
         case .authorize:
@@ -27,12 +27,12 @@ extension BlizzardOAuth: TargetType {
 
         case .token:
             return "token"
-            
+
         case .checkToken:
             return "check_token"
         }
     }
-    
+
     var method: Method {
         switch self {
         case .authorize:
@@ -43,7 +43,7 @@ extension BlizzardOAuth: TargetType {
             return .post
         }
     }
-    
+
     var task: Task {
         switch self {
         case .authorize:
@@ -93,6 +93,5 @@ extension BlizzardOAuth: TargetType {
                 "Authorization": "Basic \(base64LoginString)"
             ]
         }
-        
     }
 }

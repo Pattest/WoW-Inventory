@@ -36,5 +36,5 @@ class MountListCell: UITableViewCell {
         let hideFavIcon = !(mount.isFavorite ?? false)
         favoriteImageView.isHidden = hideFavIcon
     }
-    
+
 }

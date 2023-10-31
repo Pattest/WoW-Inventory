@@ -19,12 +19,12 @@ class MountDetailServices {
                     let decoder = JSONDecoder()
                     let assetData = try decoder.decode(ResponseAsset.self, from: data)
                     handler(assetData.assets)
-                    
+
                 } catch {
                     print("fetchCreatureDisplay: \(error.localizedDescription)")
                     handler([])
                 }
-                
+
             case let .failure(error):
                 print("fetchCreatureDisplay: \(error)")
                 handler([])

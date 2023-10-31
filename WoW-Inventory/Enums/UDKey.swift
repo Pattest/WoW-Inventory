@@ -9,7 +9,7 @@
 import Foundation
 
 enum UDKey: String {
-    
+
     // MARK: - CredentialsBlizzard
     case accessToken
 

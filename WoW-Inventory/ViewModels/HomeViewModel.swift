@@ -8,10 +8,11 @@
 import Foundation
 
 class HomeViewModel {
-    
+
     var cellTypes: [HomeCellType] = [
         .mount
     ]
+
 }
 
 // MARK: - Services

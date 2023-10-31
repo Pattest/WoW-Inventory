@@ -8,9 +8,9 @@
 import UIKit
 
 extension UIView {
-    
+
     // MARK: - Background color
-    
+
     @discardableResult
     func backgroundColor(_ backgroundColor: UIColor) -> UIView {
         self.backgroundColor = backgroundColor
@@ -55,7 +55,7 @@ extension UIView {
         self.layer.shadowColor = shadowColor.cgColor
         return self
     }
-    
+
     @discardableResult
     func shadowOpacity(_ shadowOpacity: Float) -> UIView {
         self.layer.shadowOpacity = shadowOpacity

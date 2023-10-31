@@ -11,7 +11,7 @@ import UIKit
 import SafariServices
 
 class LoginViewController: UIViewController {
-    
+
     private var viewModel = LoginViewModel()
 
     @IBOutlet weak var backgroundImageView: UIImageView!
@@ -27,7 +27,7 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
 
         setupUI()
-        setupText()
+        setupData()
     }
 
     func setupUI() {
@@ -53,7 +53,7 @@ class LoginViewController: UIViewController {
             .basicShadow()
     }
 
-    func setupText() {
+    func setupData() {
         backgroundImageView.image = AssetName.backgroundApp.image
 
         welcomeLabel.text = "LOGIN_WELCOME_LABEL".localized
@@ -105,7 +105,7 @@ class LoginViewController: UIViewController {
 }
 
 extension LoginViewController: SFSafariViewControllerDelegate {
-    
+
     func safariViewController(_ controller: SFSafariViewController,
                               initialLoadDidRedirectTo URL: URL) {
         if URL.absoluteString.contains("/?code=") {
@@ -119,5 +119,5 @@ extension LoginViewController: SFSafariViewControllerDelegate {
             }
         }
     }
-    
+
 }
