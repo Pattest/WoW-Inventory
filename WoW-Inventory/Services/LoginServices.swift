@@ -15,7 +15,7 @@ class LoginServices {
         provider.request(.checkToken(token: token)) { result in
             switch result {
             case .success(let moyaResponse):
-                if let error = WIError.decodeError(from: moyaResponse.data) {
+                if WIError.decodeError(from: moyaResponse.data) != nil {
                     handler(false)
                 } else {
                     handler(true)

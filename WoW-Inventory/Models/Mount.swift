@@ -9,7 +9,7 @@
 import Foundation
 
 struct Mount: Decodable {
-    
+
     enum CodingKeys: String, CodingKey {
         case detail = "mount"
         case isFavorite = "is_favorite"
@@ -17,7 +17,9 @@ struct Mount: Decodable {
 
     var detail: Detail
     let isFavorite: Bool?
-    
+
+    //
+
     func isFav() -> Bool {
         return isFavorite ?? false
     }
@@ -26,7 +28,7 @@ struct Mount: Decodable {
 extension Mount {
 
     struct Detail: Decodable {
-        
+
         enum CodingKeys: String, CodingKey {
             case id
             case key

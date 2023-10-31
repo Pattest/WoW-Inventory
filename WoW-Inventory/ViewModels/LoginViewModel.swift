@@ -10,7 +10,7 @@ import Foundation
 class LoginViewModel {
 
     private var services = LoginServices()
-    
+
     // MARK: - AccessToken
 
     func getAccessToken() -> String {

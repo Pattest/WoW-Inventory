@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		63854A3691F0BBB08EF0123E /* Pods_WoW_Inventory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83EF454355A0F6E9AF73F003 /* Pods_WoW_Inventory.framework */; };
 		B53366192AEFF37A00C69321 /* UIView+WI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53366182AEFF37A00C69321 /* UIView+WI.swift */; };
 		B540B6932AE668A700319774 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = B540B6922AE668A700319774 /* Localizable.xcstrings */; };
 		B540B6952AE6697A00319774 /* String+WI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B540B6942AE6697A00319774 /* String+WI.swift */; };
@@ -66,6 +65,7 @@
 		B5DA60D82AE16294004B7F0E /* MountListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DA60D62AE16294004B7F0E /* MountListCell.swift */; };
 		B5DA60D92AE16294004B7F0E /* MountListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5DA60D72AE16294004B7F0E /* MountListCell.xib */; };
 		B5DA60DC2AE16B40004B7F0E /* MountDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DA60DB2AE16B40004B7F0E /* MountDetailViewController.swift */; };
+		CF74D32D0423A6C3296FBE02 /* Pods_WoW_Inventory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0795D46F77D5621E8D07416 /* Pods_WoW_Inventory.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,9 +86,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		83EF454355A0F6E9AF73F003 /* Pods_WoW_Inventory.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WoW_Inventory.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		93A242233553E7DE975913FC /* Pods-WoW-Inventory.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WoW-Inventory.debug.xcconfig"; path = "Target Support Files/Pods-WoW-Inventory/Pods-WoW-Inventory.debug.xcconfig"; sourceTree = "<group>"; };
-		B53366172AEFEC1B00C69321 /* WoW-Inventory.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "WoW-Inventory.entitlements"; sourceTree = "<group>"; };
+		1FEF71DDAF64767D552BE621 /* Pods-WoW-Inventory.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WoW-Inventory.release.xcconfig"; path = "Target Support Files/Pods-WoW-Inventory/Pods-WoW-Inventory.release.xcconfig"; sourceTree = "<group>"; };
+		77EB57B5F5D06D812AB69F47 /* Pods-WoW-Inventory.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WoW-Inventory.debug.xcconfig"; path = "Target Support Files/Pods-WoW-Inventory/Pods-WoW-Inventory.debug.xcconfig"; sourceTree = "<group>"; };
+		A0795D46F77D5621E8D07416 /* Pods_WoW_Inventory.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WoW_Inventory.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B53366182AEFF37A00C69321 /* UIView+WI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+WI.swift"; sourceTree = "<group>"; };
 		B540B6922AE668A700319774 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		B540B6942AE6697A00319774 /* String+WI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+WI.swift"; sourceTree = "<group>"; };
@@ -151,7 +151,6 @@
 		B5DA60D62AE16294004B7F0E /* MountListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MountListCell.swift; sourceTree = "<group>"; };
 		B5DA60D72AE16294004B7F0E /* MountListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MountListCell.xib; sourceTree = "<group>"; };
 		B5DA60DB2AE16B40004B7F0E /* MountDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MountDetailViewController.swift; sourceTree = "<group>"; };
-		BD3C74B5BC6235D5F67161E7 /* Pods-WoW-Inventory.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WoW-Inventory.release.xcconfig"; path = "Target Support Files/Pods-WoW-Inventory/Pods-WoW-Inventory.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,7 +158,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				63854A3691F0BBB08EF0123E /* Pods_WoW_Inventory.framework in Frameworks */,
+				CF74D32D0423A6C3296FBE02 /* Pods_WoW_Inventory.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -183,16 +182,16 @@
 		17D23178D0150BB85D580F27 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				93A242233553E7DE975913FC /* Pods-WoW-Inventory.debug.xcconfig */,
-				BD3C74B5BC6235D5F67161E7 /* Pods-WoW-Inventory.release.xcconfig */,
+				77EB57B5F5D06D812AB69F47 /* Pods-WoW-Inventory.debug.xcconfig */,
+				1FEF71DDAF64767D552BE621 /* Pods-WoW-Inventory.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		A17377CA60226B819A8C6DF5 /* Frameworks */ = {
+		5FE5DB728091EE70402BA65C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				83EF454355A0F6E9AF73F003 /* Pods_WoW_Inventory.framework */,
+				A0795D46F77D5621E8D07416 /* Pods_WoW_Inventory.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -205,7 +204,7 @@
 				B552ED572ADD7A24003810AF /* WoW-InventoryUITests */,
 				B552ED352ADD7A22003810AF /* Products */,
 				17D23178D0150BB85D580F27 /* Pods */,
-				A17377CA60226B819A8C6DF5 /* Frameworks */,
+				5FE5DB728091EE70402BA65C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -222,7 +221,6 @@
 		B552ED362ADD7A22003810AF /* WoW-Inventory */ = {
 			isa = PBXGroup;
 			children = (
-				B53366172AEFEC1B00C69321 /* WoW-Inventory.entitlements */,
 				B552ED372ADD7A22003810AF /* AppDelegate.swift */,
 				B552ED392ADD7A22003810AF /* SceneDelegate.swift */,
 				B552ED762ADD7E43003810AF /* ViewControllers */,
@@ -450,10 +448,10 @@
 		B5CE03E12ADD8B6F0069283A /* Mount */ = {
 			isa = PBXGroup;
 			children = (
-				B5DA60D52AE1627F004B7F0E /* MountListCell */,
 				B55AFE2E2ADE6CF90050BBF5 /* Mount.storyboard */,
 				B552ED772ADD7E43003810AF /* MountListViewController.swift */,
 				B5DA60DB2AE16B40004B7F0E /* MountDetailViewController.swift */,
+				B5DA60D52AE1627F004B7F0E /* MountListCell */,
 			);
 			path = Mount;
 			sourceTree = "<group>";
@@ -483,11 +481,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B552ED5E2ADD7A24003810AF /* Build configuration list for PBXNativeTarget "WoW-Inventory" */;
 			buildPhases = (
-				0F2EF7874C1B43655B9A3900 /* [CP] Check Pods Manifest.lock */,
+				00BB1C0A30E988B642B748FC /* [CP] Check Pods Manifest.lock */,
+				B593FD802AF0F37B00B387DD /* Swiftlint */,
 				B552ED302ADD7A22003810AF /* Sources */,
 				B552ED312ADD7A22003810AF /* Frameworks */,
 				B552ED322ADD7A22003810AF /* Resources */,
-				8B6B42B42A407F2D980DD6AE /* [CP] Embed Pods Frameworks */,
+				9B28B7A968F58E51B9DC5ED0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -618,7 +617,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0F2EF7874C1B43655B9A3900 /* [CP] Check Pods Manifest.lock */ = {
+		00BB1C0A30E988B642B748FC /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -640,7 +639,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		8B6B42B42A407F2D980DD6AE /* [CP] Embed Pods Frameworks */ = {
+		9B28B7A968F58E51B9DC5ED0 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -656,6 +655,25 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WoW-Inventory/Pods-WoW-Inventory-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		B593FD802AF0F37B00B387DD /* Swiftlint */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 12;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Swiftlint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -793,7 +811,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -851,7 +869,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -863,10 +881,11 @@
 		};
 		B552ED5F2ADD7A24003810AF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 93A242233553E7DE975913FC /* Pods-WoW-Inventory.debug.xcconfig */;
+			baseConfigurationReference = 77EB57B5F5D06D812AB69F47 /* Pods-WoW-Inventory.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = "";
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_ENTITLEMENTS = "WoW-Inventory/WoW-Inventory.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -875,8 +894,9 @@
 				INFOPLIST_FILE = "WoW-Inventory/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "WoW Inventory";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -894,10 +914,11 @@
 		};
 		B552ED602ADD7A24003810AF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BD3C74B5BC6235D5F67161E7 /* Pods-WoW-Inventory.release.xcconfig */;
+			baseConfigurationReference = 1FEF71DDAF64767D552BE621 /* Pods-WoW-Inventory.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = "";
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_ENTITLEMENTS = "WoW-Inventory/WoW-Inventory.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -906,8 +927,9 @@
 				INFOPLIST_FILE = "WoW-Inventory/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "WoW Inventory";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -932,10 +954,11 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 95Q5YEGF4A;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "pattest.WoW-InventoryTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -952,10 +975,11 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 95Q5YEGF4A;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "pattest.WoW-InventoryTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -974,6 +998,8 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "pattest.WoW-InventoryUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -992,6 +1018,8 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "pattest.WoW-InventoryUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

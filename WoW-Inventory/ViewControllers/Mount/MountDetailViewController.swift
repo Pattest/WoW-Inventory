@@ -11,17 +11,17 @@ import AlamofireImage
 class MountDetailViewController: UIViewController {
 
     private let viewModel = MountDetailViewModel()
-    
+
     @IBOutlet weak var mountImageView: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet var iconLabels: [UILabel]!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
         setupUI()
-        setupText(for: viewModel.mount)
+        setupData(for: viewModel.mount)
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -45,7 +45,7 @@ class MountDetailViewController: UIViewController {
         }
     }
 
-    func setupText(for mount: Mount?) {
+    func setupData(for mount: Mount?) {
         guard let mount else { return }
 
         if let creatureDisplay = mount.detail.creatureDisplays?.first {

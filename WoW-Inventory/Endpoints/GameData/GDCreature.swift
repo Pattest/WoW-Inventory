@@ -14,11 +14,11 @@ enum GDCreature {
 }
 
 extension GDCreature: GameDataTargetType {
-    
+
     var baseURL: URL {
         return URL(string: strBaseURL)!
     }
-    
+
     var path: String {
         switch self {
         case .creature(let id):
@@ -29,7 +29,7 @@ extension GDCreature: GameDataTargetType {
             return "media/creature-family/\(id)"
         }
     }
-    
+
     var method: Method {
         switch self {
         case .creature,
@@ -38,7 +38,7 @@ extension GDCreature: GameDataTargetType {
             return .get
         }
     }
-    
+
     var task: Task {
         switch self {
         case .creature,
