@@ -15,20 +15,19 @@ enum CredentialKey: String {
 public class WICredentials {
 
     static var shared = WICredentials()
-    
+
     private static let credentialsPlist: [String: String] = {
         guard let credentialsPlistPath = Bundle.main.url(forResource: "WICredentials",
-                                                         withExtension: "plist")
+                                                         withExtension: "plist"),
+              let credentialsPlistData = try? Data(contentsOf: credentialsPlistPath),
+              let dict = try? PropertyListSerialization.propertyList(
+                from: credentialsPlistData,
+                options: [],
+                format: nil) as? [String: String]
         else {
             return [:]
         }
-    
-        let credentialsPlistData = try! Data(contentsOf: credentialsPlistPath)
-            
-        let dict = try! PropertyListSerialization.propertyList(
-            from: credentialsPlistData,
-            options: [],
-            format: nil) as! [String: String]
+
         return dict
     }()
 

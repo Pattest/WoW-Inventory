@@ -21,21 +21,21 @@ extension PAccountProfile: ProfileTargetType {
     var baseURL: URL {
         return URL(string: strBaseURL)!
     }
-    
+
     var path: String {
         switch self {
         case .mounts:
             return "collections/mounts"
         }
     }
-    
+
     var method: Moya.Method {
         switch self {
         case .mounts:
             return .get
         }
     }
-    
+
     var task: Task {
         switch self {
         case .mounts:

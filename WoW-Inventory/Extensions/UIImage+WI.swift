@@ -15,9 +15,9 @@ enum AssetName: String {
 }
 
 extension AssetName {
-    
+
     var image: UIImage? {
         return UIImage(named: self.rawValue)
     }
-    
+
 }

@@ -1,0 +1,8 @@
+disabled_rules:
+ - nesting
+
+included:
+ - WoW-Inventory
+
+excluded:
+ - Pods

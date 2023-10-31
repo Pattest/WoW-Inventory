@@ -21,7 +21,7 @@ class HomeViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         setupUI()
-        setupText()
+        setupData()
         setupCollectionView()
         print("Bearer: \(WICredentials.shared.loadAccessToken())")
     }
@@ -40,7 +40,7 @@ class HomeViewController: UIViewController {
         homeLabel.font = UIFont.lifeCraft(size: 50)
     }
 
-    func setupText() {
+    func setupData() {
         homeLabel.text = "HOME_NAV_TITLE".localized
     }
 
@@ -66,7 +66,7 @@ extension HomeViewController: UICollectionViewDelegate,
                         numberOfItemsInSection section: Int) -> Int {
         return viewModel.cellTypes.count
     }
-    
+
     func collectionView(_ collectionView: UICollectionView,
                         cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(
@@ -81,7 +81,7 @@ extension HomeViewController: UICollectionViewDelegate,
         return cell
     }
 
-    func collectionView(_ collectionView: UICollectionView, 
+    func collectionView(_ collectionView: UICollectionView,
                         didSelectItemAt indexPath: IndexPath) {
         let homeCellType =  viewModel.cellTypes[indexPath.row]
         switch homeCellType {
@@ -90,12 +90,11 @@ extension HomeViewController: UICollectionViewDelegate,
                          sender: nil)
         }
     }
-    
 }
 
 extension HomeViewController: UICollectionViewDelegateFlowLayout {
-    
-    func collectionView(_ collectionView: UICollectionView, 
+
+    func collectionView(_ collectionView: UICollectionView,
                         layout collectionViewLayout: UICollectionViewLayout,
                         sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: view.bounds.width / 3,

@@ -13,11 +13,11 @@ enum GDMount {
 }
 
 extension GDMount: GameDataTargetType {
-    
+
     var baseURL: URL {
         return URL(string: "\(strBaseURL)/mount/")!
     }
-    
+
     var path: String {
         switch self {
         case .mounts:
@@ -26,7 +26,7 @@ extension GDMount: GameDataTargetType {
             return "\(id)"
         }
     }
-    
+
     var method: Method {
         switch self {
         case .mounts,
@@ -34,7 +34,7 @@ extension GDMount: GameDataTargetType {
             return .get
         }
     }
-    
+
     var task: Task {
         switch self {
         case .mounts,

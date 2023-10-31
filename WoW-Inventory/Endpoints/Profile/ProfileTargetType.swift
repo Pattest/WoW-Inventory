@@ -12,7 +12,7 @@ protocol ProfileTargetType: WITargetType {
 }
 
 extension ProfileTargetType {
-    
+
     var strBaseURL: String {
         return "\(WICredentials.shared.baseURL)/profile/wow/"
     }

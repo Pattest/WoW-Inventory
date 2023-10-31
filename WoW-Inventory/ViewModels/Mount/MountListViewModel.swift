@@ -9,21 +9,21 @@
 import Foundation
 
 class MountListViewModel {
-    
+
     private var services = MountListServices()
-    
+
     var mounts = [Mount]()
     var filteredMounts = [Mount]()
     var selectedMount: Mount?
-    
+
 }
 
 // MARK: - Services
 
 extension MountListViewModel {
-        
+
     func fetchMounts(handler: @escaping (Bool) -> Void) {
-        services.fetchMounts() { mounts in
+        services.fetchMounts { mounts in
             self.mounts = mounts
             self.filteredMounts = mounts
             handler(!mounts.isEmpty)
