@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		B5062F432AFCF03E00390B03 /* MountTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5062F422AFCF03E00390B03 /* MountTests.swift */; };
+		B5062F462AFD177900390B03 /* HomeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5062F452AFD177900390B03 /* HomeViewModelTests.swift */; };
+		B5062F482AFD1A5F00390B03 /* LoginViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5062F472AFD1A5F00390B03 /* LoginViewModelTests.swift */; };
+		B5062F4A2AFD1D8300390B03 /* MountListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5062F492AFD1D8300390B03 /* MountListViewModelTests.swift */; };
+		B5062F4D2AFD258600390B03 /* MountDetailViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5062F4C2AFD258600390B03 /* MountDetailViewModelTests.swift */; };
 		B53366192AEFF37A00C69321 /* UIView+WI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53366182AEFF37A00C69321 /* UIView+WI.swift */; };
 		B540B6932AE668A700319774 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = B540B6922AE668A700319774 /* Localizable.xcstrings */; };
 		B540B6952AE6697A00319774 /* String+WI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B540B6942AE6697A00319774 /* String+WI.swift */; };
@@ -91,6 +95,10 @@
 		77EB57B5F5D06D812AB69F47 /* Pods-WoW-Inventory.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WoW-Inventory.debug.xcconfig"; path = "Target Support Files/Pods-WoW-Inventory/Pods-WoW-Inventory.debug.xcconfig"; sourceTree = "<group>"; };
 		A0795D46F77D5621E8D07416 /* Pods_WoW_Inventory.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WoW_Inventory.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5062F422AFCF03E00390B03 /* MountTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MountTests.swift; sourceTree = "<group>"; };
+		B5062F452AFD177900390B03 /* HomeViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelTests.swift; sourceTree = "<group>"; };
+		B5062F472AFD1A5F00390B03 /* LoginViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModelTests.swift; sourceTree = "<group>"; };
+		B5062F492AFD1D8300390B03 /* MountListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MountListViewModelTests.swift; sourceTree = "<group>"; };
+		B5062F4C2AFD258600390B03 /* MountDetailViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MountDetailViewModelTests.swift; sourceTree = "<group>"; };
 		B53366182AEFF37A00C69321 /* UIView+WI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+WI.swift"; sourceTree = "<group>"; };
 		B540B6922AE668A700319774 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		B540B6942AE6697A00319774 /* String+WI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+WI.swift"; sourceTree = "<group>"; };
@@ -198,6 +206,25 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		B5062F442AFD174600390B03 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				B5062F452AFD177900390B03 /* HomeViewModelTests.swift */,
+				B5062F472AFD1A5F00390B03 /* LoginViewModelTests.swift */,
+				B5062F4B2AFD1D8500390B03 /* Mount */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		B5062F4B2AFD1D8500390B03 /* Mount */ = {
+			isa = PBXGroup;
+			children = (
+				B5062F492AFD1D8300390B03 /* MountListViewModelTests.swift */,
+				B5062F4C2AFD258600390B03 /* MountDetailViewModelTests.swift */,
+			);
+			path = Mount;
+			sourceTree = "<group>";
+		};
 		B50EB8302AF1635B0066E0B8 /* Mock */ = {
 			isa = PBXGroup;
 			children = (
@@ -251,9 +278,10 @@
 		B552ED4D2ADD7A24003810AF /* WoW-InventoryTests */ = {
 			isa = PBXGroup;
 			children = (
+				B552ED4E2ADD7A24003810AF /* WoW_InventoryTests.swift */,
 				B50EB8302AF1635B0066E0B8 /* Mock */,
 				B5F084D22AF15BD50054D802 /* Models */,
-				B552ED4E2ADD7A24003810AF /* WoW_InventoryTests.swift */,
+				B5062F442AFD174600390B03 /* ViewModels */,
 			);
 			path = "WoW-InventoryTests";
 			sourceTree = "<group>";
@@ -747,9 +775,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5062F482AFD1A5F00390B03 /* LoginViewModelTests.swift in Sources */,
 				B552ED4F2ADD7A24003810AF /* WoW_InventoryTests.swift in Sources */,
 				B5062F432AFCF03E00390B03 /* MountTests.swift in Sources */,
 				B5F084D62AF15D8D0054D802 /* MockLoader.swift in Sources */,
+				B5062F4D2AFD258600390B03 /* MountDetailViewModelTests.swift in Sources */,
+				B5062F4A2AFD1D8300390B03 /* MountListViewModelTests.swift in Sources */,
+				B5062F462AFD177900390B03 /* HomeViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -20,23 +20,31 @@ final class MountTests: XCTestCase {
         mount = nil
     }
 
-    func testMountAttributes() throws {
-        // Id
+    func testGetId() throws {
+        let expectedId = 6
+
         XCTAssertEqual(mount.id,
-                       6)
+                       expectedId)
+    }
 
-        // Name
+    func testGetName() throws {
+        let expectedName = "Cheval bai"
+
         XCTAssertEqual(mount.name,
-                       "Cheval bai")
+                       expectedName)
+    }
 
-        // Faction
+    func testGetFaction() {
+        let expectedFaction = FactionType.alliance.rawValue
+
         XCTAssertEqual(mount.faction!.name.uppercased(),
-                       FactionType.alliance.rawValue)
+                       expectedFaction)
     }
 
     func testGetDescription() throws {
+        let expectedDescription = "Très apprécié des gardes de Hurlevent en raison de sa patience et de son endurance."
         XCTAssertEqual(mount.getDescription(),
-                       "Très apprécié des gardes de Hurlevent en raison de sa patience et de son endurance.")
+                       expectedDescription)
     }
 
     func testGetCreatureDisplays() throws {
@@ -44,7 +52,8 @@ final class MountTests: XCTestCase {
 
         XCTAssertNotNil(creatureDisplay)
 
+        let expectedId = 2404
         XCTAssertEqual(creatureDisplay!.id,
-                       2404)
+                       expectedId)
     }
 }
