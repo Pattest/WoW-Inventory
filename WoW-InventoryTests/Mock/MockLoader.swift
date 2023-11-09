@@ -31,4 +31,25 @@ class MockLoader {
 
         return nil
     }
+
+    func loadJsonArray<T: Decodable>(fileName: String, extName: String = "json") -> [T] {
+
+        guard let dataSourceURL = Bundle.main.url(forResource: fileName,
+                                                  withExtension: extName)
+        else {
+            return []
+        }
+
+        let data = try! Data(contentsOf: dataSourceURL)
+        let decoder = JSONDecoder()
+        do {
+            let result = try decoder.decode([T].self, from: data)
+            return result
+
+        } catch {
+            print(error.localizedDescription)
+        }
+
+        return []
+    }
 }
