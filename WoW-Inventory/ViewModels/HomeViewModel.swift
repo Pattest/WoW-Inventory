@@ -15,7 +15,7 @@ class HomeViewModel {
 
 }
 
-// MARK: - Services
+// MARK: - Service
 
 extension HomeViewModel {
     //
