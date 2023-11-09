@@ -9,7 +9,7 @@ import Foundation
 
 class LoginViewModel {
 
-    private var services = LoginServices()
+    private var services = LoginService()
 
     // MARK: - AccessToken
 
@@ -23,7 +23,7 @@ class LoginViewModel {
     }
 }
 
-// MARK: - Services
+// MARK: - Service
 
 extension LoginViewModel {
 

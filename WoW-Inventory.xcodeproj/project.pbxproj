@@ -12,6 +12,7 @@
 		B5062F482AFD1A5F00390B03 /* LoginViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5062F472AFD1A5F00390B03 /* LoginViewModelTests.swift */; };
 		B5062F4A2AFD1D8300390B03 /* MountListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5062F492AFD1D8300390B03 /* MountListViewModelTests.swift */; };
 		B5062F4D2AFD258600390B03 /* MountDetailViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5062F4C2AFD258600390B03 /* MountDetailViewModelTests.swift */; };
+		B5062F4F2AFD277800390B03 /* DataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5062F4E2AFD277800390B03 /* DataLoader.swift */; };
 		B53366192AEFF37A00C69321 /* UIView+WI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53366182AEFF37A00C69321 /* UIView+WI.swift */; };
 		B540B6932AE668A700319774 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = B540B6922AE668A700319774 /* Localizable.xcstrings */; };
 		B540B6952AE6697A00319774 /* String+WI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B540B6942AE6697A00319774 /* String+WI.swift */; };
@@ -32,7 +33,7 @@
 		B552EDDB2ADD7E80003810AF /* Mount.json in Resources */ = {isa = PBXBuildFile; fileRef = B552EDAE2ADD7E80003810AF /* Mount.json */; };
 		B552EDDC2ADD7E80003810AF /* Mounts.json in Resources */ = {isa = PBXBuildFile; fileRef = B552EDAF2ADD7E80003810AF /* Mounts.json */; };
 		B552EDDD2ADD7E80003810AF /* Pet.json in Resources */ = {isa = PBXBuildFile; fileRef = B552EDB02ADD7E80003810AF /* Pet.json */; };
-		B552EDDE2ADD7E80003810AF /* MountListServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = B552EDB22ADD7E80003810AF /* MountListServices.swift */; };
+		B552EDDE2ADD7E80003810AF /* MountListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B552EDB22ADD7E80003810AF /* MountListService.swift */; };
 		B552EDE12ADD7E80003810AF /* WICredentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = B552EDB62ADD7E80003810AF /* WICredentials.swift */; };
 		B552EDE22ADD7E80003810AF /* PAccountProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = B552EDB82ADD7E80003810AF /* PAccountProfile.swift */; };
 		B552EDE42ADD7E80003810AF /* BlizzardOAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = B552EDBA2ADD7E80003810AF /* BlizzardOAuth.swift */; };
@@ -55,14 +56,14 @@
 		B56EEE892AE13477008AF5F6 /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56EEE872AE13477008AF5F6 /* HomeCell.swift */; };
 		B56EEE8A2AE13477008AF5F6 /* HomeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B56EEE882AE13477008AF5F6 /* HomeCell.xib */; };
 		B5747CFF2AE66F41009D80E2 /* MountDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5747CFE2AE66F41009D80E2 /* MountDetailViewModel.swift */; };
-		B5747D012AE67DCA009D80E2 /* MountDetailServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5747D002AE67DCA009D80E2 /* MountDetailServices.swift */; };
+		B5747D012AE67DCA009D80E2 /* MountDetailService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5747D002AE67DCA009D80E2 /* MountDetailService.swift */; };
 		B5747D042AE69401009D80E2 /* Key.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5747D032AE69401009D80E2 /* Key.swift */; };
 		B5747D062AE695DE009D80E2 /* ResponseMount.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5747D052AE695DE009D80E2 /* ResponseMount.swift */; };
 		B5747D092AE69638009D80E2 /* CreatureDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5747D082AE69638009D80E2 /* CreatureDisplay.swift */; };
 		B5747D0B2AE6BA3B009D80E2 /* Asset.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5747D0A2AE6BA3B009D80E2 /* Asset.swift */; };
 		B5747D0D2AE6BC40009D80E2 /* ResponseAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5747D0C2AE6BC40009D80E2 /* ResponseAsset.swift */; };
 		B5A099FF2AE7B0310063770B /* FactionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A099FE2AE7B0310063770B /* FactionType.swift */; };
-		B5A09A072AE807BA0063770B /* LoginServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A09A062AE807BA0063770B /* LoginServices.swift */; };
+		B5A09A072AE807BA0063770B /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A09A062AE807BA0063770B /* LoginService.swift */; };
 		B5A09A092AE807C70063770B /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A09A082AE807C70063770B /* LoginViewModel.swift */; };
 		B5CE03E52ADD8BD30069283A /* WISegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CE03E42ADD8BD30069283A /* WISegue.swift */; };
 		B5DA60D42AE16090004B7F0E /* UIFont+WI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DA60D32AE16090004B7F0E /* UIFont+WI.swift */; };
@@ -99,6 +100,7 @@
 		B5062F472AFD1A5F00390B03 /* LoginViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModelTests.swift; sourceTree = "<group>"; };
 		B5062F492AFD1D8300390B03 /* MountListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MountListViewModelTests.swift; sourceTree = "<group>"; };
 		B5062F4C2AFD258600390B03 /* MountDetailViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MountDetailViewModelTests.swift; sourceTree = "<group>"; };
+		B5062F4E2AFD277800390B03 /* DataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLoader.swift; sourceTree = "<group>"; };
 		B53366182AEFF37A00C69321 /* UIView+WI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+WI.swift"; sourceTree = "<group>"; };
 		B540B6922AE668A700319774 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		B540B6942AE6697A00319774 /* String+WI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+WI.swift"; sourceTree = "<group>"; };
@@ -123,7 +125,7 @@
 		B552EDAE2ADD7E80003810AF /* Mount.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Mount.json; sourceTree = "<group>"; };
 		B552EDAF2ADD7E80003810AF /* Mounts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Mounts.json; sourceTree = "<group>"; };
 		B552EDB02ADD7E80003810AF /* Pet.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Pet.json; sourceTree = "<group>"; };
-		B552EDB22ADD7E80003810AF /* MountListServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MountListServices.swift; sourceTree = "<group>"; };
+		B552EDB22ADD7E80003810AF /* MountListService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MountListService.swift; sourceTree = "<group>"; };
 		B552EDB62ADD7E80003810AF /* WICredentials.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WICredentials.swift; sourceTree = "<group>"; };
 		B552EDB82ADD7E80003810AF /* PAccountProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PAccountProfile.swift; sourceTree = "<group>"; };
 		B552EDBA2ADD7E80003810AF /* BlizzardOAuth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlizzardOAuth.swift; sourceTree = "<group>"; };
@@ -146,14 +148,14 @@
 		B56EEE872AE13477008AF5F6 /* HomeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCell.swift; sourceTree = "<group>"; };
 		B56EEE882AE13477008AF5F6 /* HomeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCell.xib; sourceTree = "<group>"; };
 		B5747CFE2AE66F41009D80E2 /* MountDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MountDetailViewModel.swift; sourceTree = "<group>"; };
-		B5747D002AE67DCA009D80E2 /* MountDetailServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MountDetailServices.swift; sourceTree = "<group>"; };
+		B5747D002AE67DCA009D80E2 /* MountDetailService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MountDetailService.swift; sourceTree = "<group>"; };
 		B5747D032AE69401009D80E2 /* Key.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Key.swift; sourceTree = "<group>"; };
 		B5747D052AE695DE009D80E2 /* ResponseMount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseMount.swift; sourceTree = "<group>"; };
 		B5747D082AE69638009D80E2 /* CreatureDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatureDisplay.swift; sourceTree = "<group>"; };
 		B5747D0A2AE6BA3B009D80E2 /* Asset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Asset.swift; sourceTree = "<group>"; };
 		B5747D0C2AE6BC40009D80E2 /* ResponseAsset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseAsset.swift; sourceTree = "<group>"; };
 		B5A099FE2AE7B0310063770B /* FactionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactionType.swift; sourceTree = "<group>"; };
-		B5A09A062AE807BA0063770B /* LoginServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginServices.swift; sourceTree = "<group>"; };
+		B5A09A062AE807BA0063770B /* LoginService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
 		B5A09A082AE807C70063770B /* LoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		B5CE03E42ADD8BD30069283A /* WISegue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WISegue.swift; sourceTree = "<group>"; };
 		B5DA60D32AE16090004B7F0E /* UIFont+WI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+WI.swift"; sourceTree = "<group>"; };
@@ -225,6 +227,15 @@
 			path = Mount;
 			sourceTree = "<group>";
 		};
+		B5062F512AFD330500390B03 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B5A09A062AE807BA0063770B /* LoginService.swift */,
+				B5747D022AE67F55009D80E2 /* Mount */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		B50EB8302AF1635B0066E0B8 /* Mock */ = {
 			isa = PBXGroup;
 			children = (
@@ -261,12 +272,12 @@
 			children = (
 				B552ED372ADD7A22003810AF /* AppDelegate.swift */,
 				B552ED392ADD7A22003810AF /* SceneDelegate.swift */,
-				B552ED762ADD7E43003810AF /* ViewControllers */,
+				B552ED762ADD7E43003810AF /* Views */,
 				B552ED7E2ADD7E80003810AF /* Models */,
+				B552EDB12ADD7E80003810AF /* Network */,
 				B552EDBB2ADD7E80003810AF /* ViewModels */,
-				B552EDB12ADD7E80003810AF /* Services */,
-				B552EDB72ADD7E80003810AF /* Endpoints */,
 				B552EDB32ADD7E80003810AF /* Credentials */,
+				B552EDB72ADD7E80003810AF /* Endpoints */,
 				B552EDAA2ADD7E80003810AF /* Enums */,
 				B55AFE462ADEB45E0050BBF5 /* Extensions */,
 				B552ED6E2ADD7D95003810AF /* Resources */,
@@ -315,14 +326,14 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
-		B552ED762ADD7E43003810AF /* ViewControllers */ = {
+		B552ED762ADD7E43003810AF /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				B5CE03E22ADD8B7A0069283A /* Login */,
 				B55AFE372ADE740B0050BBF5 /* Home */,
 				B5CE03E12ADD8B6F0069283A /* Mount */,
 			);
-			path = ViewControllers;
+			path = Views;
 			sourceTree = "<group>";
 		};
 		B552ED7E2ADD7E80003810AF /* Models */ = {
@@ -370,13 +381,13 @@
 			path = Json;
 			sourceTree = "<group>";
 		};
-		B552EDB12ADD7E80003810AF /* Services */ = {
+		B552EDB12ADD7E80003810AF /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				B5A09A062AE807BA0063770B /* LoginServices.swift */,
-				B5747D022AE67F55009D80E2 /* Mount */,
+				B5062F4E2AFD277800390B03 /* DataLoader.swift */,
+				B5062F512AFD330500390B03 /* Services */,
 			);
-			path = Services;
+			path = Network;
 			sourceTree = "<group>";
 		};
 		B552EDB32ADD7E80003810AF /* Credentials */ = {
@@ -469,8 +480,8 @@
 		B5747D022AE67F55009D80E2 /* Mount */ = {
 			isa = PBXGroup;
 			children = (
-				B552EDB22ADD7E80003810AF /* MountListServices.swift */,
-				B5747D002AE67DCA009D80E2 /* MountDetailServices.swift */,
+				B552EDB22ADD7E80003810AF /* MountListService.swift */,
+				B5747D002AE67DCA009D80E2 /* MountDetailService.swift */,
 			);
 			path = Mount;
 			sourceTree = "<group>";
@@ -740,7 +751,7 @@
 				B5A099FF2AE7B0310063770B /* FactionType.swift in Sources */,
 				B552ED7B2ADD7E43003810AF /* MountListViewController.swift in Sources */,
 				B55AFE522ADECFBD0050BBF5 /* GameDataTargetType.swift in Sources */,
-				B5747D012AE67DCA009D80E2 /* MountDetailServices.swift in Sources */,
+				B5747D012AE67DCA009D80E2 /* MountDetailService.swift in Sources */,
 				B53366192AEFF37A00C69321 /* UIView+WI.swift in Sources */,
 				B5747D042AE69401009D80E2 /* Key.swift in Sources */,
 				B552EDE52ADD7E80003810AF /* MountListViewModel.swift in Sources */,
@@ -749,16 +760,17 @@
 				B55429AC2AEA8F8F00182DB3 /* WIError.swift in Sources */,
 				B552EDE42ADD7E80003810AF /* BlizzardOAuth.swift in Sources */,
 				B5747D092AE69638009D80E2 /* CreatureDisplay.swift in Sources */,
-				B552EDDE2ADD7E80003810AF /* MountListServices.swift in Sources */,
+				B552EDDE2ADD7E80003810AF /* MountListService.swift in Sources */,
 				B56EEE892AE13477008AF5F6 /* HomeCell.swift in Sources */,
 				B552EDE22ADD7E80003810AF /* PAccountProfile.swift in Sources */,
 				B55AFE562ADED2A60050BBF5 /* WITargetType.swift in Sources */,
 				B5747D0B2AE6BA3B009D80E2 /* Asset.swift in Sources */,
 				B540B6952AE6697A00319774 /* String+WI.swift in Sources */,
+				B5062F4F2AFD277800390B03 /* DataLoader.swift in Sources */,
 				B552EDD92ADD7E80003810AF /* UDKey.swift in Sources */,
 				B5A09A092AE807C70063770B /* LoginViewModel.swift in Sources */,
 				B55AFE542ADED2220050BBF5 /* ProfileTargetType.swift in Sources */,
-				B5A09A072AE807BA0063770B /* LoginServices.swift in Sources */,
+				B5A09A072AE807BA0063770B /* LoginService.swift in Sources */,
 				B5747D062AE695DE009D80E2 /* ResponseMount.swift in Sources */,
 				B5747CFF2AE66F41009D80E2 /* MountDetailViewModel.swift in Sources */,
 				B5747D0D2AE6BC40009D80E2 /* ResponseAsset.swift in Sources */,

@@ -10,7 +10,7 @@ import Foundation
 
 class MountListViewModel {
 
-    private var services = MountListServices()
+    private var services = MountListService()
 
     var mounts = [Mount]()
     var filteredMounts = [Mount]()
@@ -18,7 +18,7 @@ class MountListViewModel {
 
 }
 
-// MARK: - Services
+// MARK: - Service
 
 extension MountListViewModel {
 
