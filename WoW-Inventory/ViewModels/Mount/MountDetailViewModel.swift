@@ -9,14 +9,14 @@ import Foundation
 
 class MountDetailViewModel {
 
-    private var services = MountDetailServices()
+    private var services = MountDetailService()
 
     var mount: Mount?
     var assets = [Asset]()
 
 }
 
-// MARK: - Services
+// MARK: - Service
 
 extension MountDetailViewModel {
 
