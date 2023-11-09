@@ -31,11 +31,14 @@ public class WICredentials {
         return dict
     }()
 
-    let appCenterSecret: String = credentialsPlist["APP_CENTER_SECRET"]!
-    let clientID: String = credentialsPlist["CLIENT_ID"]!
-    let clientSecret: String = credentialsPlist["CLIENT_SECRET"]!
-    let redirectUri: String = credentialsPlist["REDIRECT_URI"]!
-    let baseURL: String = credentialsPlist["BASE_URL"]!
+    let appCenterSecret: String = credentialsPlist["APP_CENTER_SECRET"] ?? ""
+    let clientID: String = credentialsPlist["CLIENT_ID"] ?? ""
+    let clientSecret: String = credentialsPlist["CLIENT_SECRET"] ?? ""
+    let redirectUri: String = credentialsPlist["REDIRECT_URI"] ?? ""
+
+    let baseURL: String = {
+        return Bundle.main.infoDictionary?["BASE_URL"] as? String ?? ""
+    }()
 
     //
 

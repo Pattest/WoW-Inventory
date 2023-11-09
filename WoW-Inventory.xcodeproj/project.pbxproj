@@ -33,7 +33,6 @@
 		B552EDE42ADD7E80003810AF /* BlizzardOAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = B552EDBA2ADD7E80003810AF /* BlizzardOAuth.swift */; };
 		B552EDE52ADD7E80003810AF /* MountListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B552EDBC2ADD7E80003810AF /* MountListViewModel.swift */; };
 		B55429AC2AEA8F8F00182DB3 /* WIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55429AB2AEA8F8F00182DB3 /* WIError.swift */; };
-		B556A4912AEAB7CC0092D09C /* WICredentials.plist in Resources */ = {isa = PBXBuildFile; fileRef = B552EDB52ADD7E80003810AF /* WICredentials.plist */; };
 		B557663A2AEFFDE300C89A9D /* UIImage+WI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55766392AEFFDE300C89A9D /* UIImage+WI.swift */; };
 		B55AFE2F2ADE6CF90050BBF5 /* Mount.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B55AFE2E2ADE6CF90050BBF5 /* Mount.storyboard */; };
 		B55AFE3B2ADE742B0050BBF5 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55AFE3A2ADE742B0050BBF5 /* HomeViewController.swift */; };
@@ -114,7 +113,6 @@
 		B552EDAF2ADD7E80003810AF /* Mounts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Mounts.json; sourceTree = "<group>"; };
 		B552EDB02ADD7E80003810AF /* Pet.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Pet.json; sourceTree = "<group>"; };
 		B552EDB22ADD7E80003810AF /* MountListServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MountListServices.swift; sourceTree = "<group>"; };
-		B552EDB52ADD7E80003810AF /* WICredentials.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = WICredentials.plist; sourceTree = "<group>"; };
 		B552EDB62ADD7E80003810AF /* WICredentials.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WICredentials.swift; sourceTree = "<group>"; };
 		B552EDB82ADD7E80003810AF /* PAccountProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PAccountProfile.swift; sourceTree = "<group>"; };
 		B552EDBA2ADD7E80003810AF /* BlizzardOAuth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlizzardOAuth.swift; sourceTree = "<group>"; };
@@ -342,7 +340,6 @@
 		B552EDB32ADD7E80003810AF /* Credentials */ = {
 			isa = PBXGroup;
 			children = (
-				B552EDB52ADD7E80003810AF /* WICredentials.plist */,
 				B552EDB62ADD7E80003810AF /* WICredentials.swift */,
 			);
 			path = Credentials;
@@ -594,7 +591,6 @@
 				B55AFE422ADE856F0050BBF5 /* Main.storyboard in Resources */,
 				B552ED742ADD7D95003810AF /* Morpheus.ttf in Resources */,
 				B552EDDC2ADD7E80003810AF /* Mounts.json in Resources */,
-				B556A4912AEAB7CC0092D09C /* WICredentials.plist in Resources */,
 				B552EDDB2ADD7E80003810AF /* Mount.json in Resources */,
 				B552ED752ADD7D95003810AF /* LifeCraft.ttf in Resources */,
 			);
