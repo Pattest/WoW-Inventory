@@ -71,10 +71,12 @@ class MountDetailViewController: UIViewController {
 
     // TODO: Create carousel if multiple assets
     func setupImageView(with assets: [Asset]) {
-        guard let firstAsset = assets.first else { return }
+        guard let firstAsset = assets.first,
+              let assetURL = URL(string: firstAsset.value)
+        else { return }
 
         mountImageView.af.setImage(
-            withURL: URL(string: firstAsset.value)!,
+            withURL: assetURL,
             imageTransition: .crossDissolve(0.2)
         )
     }
