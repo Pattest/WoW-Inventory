@@ -71,6 +71,12 @@
 		B5DA60D92AE16294004B7F0E /* MountListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5DA60D72AE16294004B7F0E /* MountListCell.xib */; };
 		B5DA60DC2AE16B40004B7F0E /* MountDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DA60DB2AE16B40004B7F0E /* MountDetailViewController.swift */; };
 		B5F084D62AF15D8D0054D802 /* MockLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F084D52AF15D8D0054D802 /* MockLoader.swift */; };
+		CA0552CA2B4D5F0E00A7D8CB /* HomeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0552C92B4D5F0E00A7D8CB /* HomeService.swift */; };
+		CA0552CC2B4D7C3400A7D8CB /* GDWoWToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0552CB2B4D7C3400A7D8CB /* GDWoWToken.swift */; };
+		CA0552CE2B4D7EB800A7D8CB /* WoWToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0552CD2B4D7EB800A7D8CB /* WoWToken.swift */; };
+		CA0945EC2B4C4E8900545C54 /* WICredentials.plist in Resources */ = {isa = PBXBuildFile; fileRef = CA0945EB2B4C4E8900545C54 /* WICredentials.plist */; };
+		CA0945EF2B4C535B00545C54 /* TokenPriceView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA0945EE2B4C535B00545C54 /* TokenPriceView.xib */; };
+		CA0945F12B4C548800545C54 /* TokenPriceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0945F02B4C548800545C54 /* TokenPriceView.swift */; };
 		CF74D32D0423A6C3296FBE02 /* Pods_WoW_Inventory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0795D46F77D5621E8D07416 /* Pods_WoW_Inventory.framework */; };
 /* End PBXBuildFile section */
 
@@ -163,6 +169,12 @@
 		B5DA60D72AE16294004B7F0E /* MountListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MountListCell.xib; sourceTree = "<group>"; };
 		B5DA60DB2AE16B40004B7F0E /* MountDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MountDetailViewController.swift; sourceTree = "<group>"; };
 		B5F084D52AF15D8D0054D802 /* MockLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockLoader.swift; sourceTree = "<group>"; };
+		CA0552C92B4D5F0E00A7D8CB /* HomeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeService.swift; sourceTree = "<group>"; };
+		CA0552CB2B4D7C3400A7D8CB /* GDWoWToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GDWoWToken.swift; sourceTree = "<group>"; };
+		CA0552CD2B4D7EB800A7D8CB /* WoWToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WoWToken.swift; sourceTree = "<group>"; };
+		CA0945EB2B4C4E8900545C54 /* WICredentials.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = WICredentials.plist; sourceTree = "<group>"; };
+		CA0945EE2B4C535B00545C54 /* TokenPriceView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TokenPriceView.xib; sourceTree = "<group>"; };
+		CA0945F02B4C548800545C54 /* TokenPriceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenPriceView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -230,6 +242,7 @@
 		B5062F512AFD330500390B03 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				CA0552C92B4D5F0E00A7D8CB /* HomeService.swift */,
 				B5A09A062AE807BA0063770B /* LoginService.swift */,
 				B5747D022AE67F55009D80E2 /* Mount */,
 			);
@@ -332,6 +345,7 @@
 				B5CE03E22ADD8B7A0069283A /* Login */,
 				B55AFE372ADE740B0050BBF5 /* Home */,
 				B5CE03E12ADD8B6F0069283A /* Mount */,
+				CA0945F22B4C55E000545C54 /* Common */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -344,19 +358,20 @@
 				B55AFE3E2ADE7DA90050BBF5 /* DataType.swift */,
 				B5747D032AE69401009D80E2 /* Key.swift */,
 				B552ED812ADD7E80003810AF /* Mount.swift */,
+				CA0552CD2B4D7EB800A7D8CB /* WoWToken.swift */,
+				B552ED7F2ADD7E80003810AF /* OAuthToken */,
 				B5747D0E2AE6BFE2009D80E2 /* Responses */,
-				B552ED7F2ADD7E80003810AF /* Token */,
 				B55429AB2AEA8F8F00182DB3 /* WIError.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
 		};
-		B552ED7F2ADD7E80003810AF /* Token */ = {
+		B552ED7F2ADD7E80003810AF /* OAuthToken */ = {
 			isa = PBXGroup;
 			children = (
 				B552ED802ADD7E80003810AF /* OAuthToken.swift */,
 			);
-			path = Token;
+			path = OAuthToken;
 			sourceTree = "<group>";
 		};
 		B552EDAA2ADD7E80003810AF /* Enums */ = {
@@ -393,6 +408,7 @@
 		B552EDB32ADD7E80003810AF /* Credentials */ = {
 			isa = PBXGroup;
 			children = (
+				CA0945EB2B4C4E8900545C54 /* WICredentials.plist */,
 				B552EDB62ADD7E80003810AF /* WICredentials.swift */,
 			);
 			path = Credentials;
@@ -403,8 +419,8 @@
 			children = (
 				B552EDBA2ADD7E80003810AF /* BlizzardOAuth.swift */,
 				B55AFE552ADED2A60050BBF5 /* WITargetType.swift */,
-				B55AFE4A2ADEC6B60050BBF5 /* Profile */,
 				B55AFE492ADEC6AC0050BBF5 /* GameData */,
+				B55AFE4A2ADEC6B60050BBF5 /* Profile */,
 			);
 			path = Endpoints;
 			sourceTree = "<group>";
@@ -446,6 +462,7 @@
 				B55AFE512ADECFBD0050BBF5 /* GameDataTargetType.swift */,
 				B55AFE4D2ADEC6D70050BBF5 /* GDCreature.swift */,
 				B55AFE4B2ADEC6CD0050BBF5 /* GDMount.swift */,
+				CA0552CB2B4D7C3400A7D8CB /* GDWoWToken.swift */,
 			);
 			path = GameData;
 			sourceTree = "<group>";
@@ -530,6 +547,23 @@
 				B5062F422AFCF03E00390B03 /* MountTests.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		CA0945ED2B4C534900545C54 /* Token */ = {
+			isa = PBXGroup;
+			children = (
+				CA0945EE2B4C535B00545C54 /* TokenPriceView.xib */,
+				CA0945F02B4C548800545C54 /* TokenPriceView.swift */,
+			);
+			path = Token;
+			sourceTree = "<group>";
+		};
+		CA0945F22B4C55E000545C54 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				CA0945ED2B4C534900545C54 /* Token */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -642,6 +676,7 @@
 			files = (
 				B55AFE442ADE85870050BBF5 /* LaunchScreen.storyboard in Resources */,
 				B55AFE2F2ADE6CF90050BBF5 /* Mount.storyboard in Resources */,
+				CA0945EF2B4C535B00545C54 /* TokenPriceView.xib in Resources */,
 				B552EDDA2ADD7E80003810AF /* Toy.json in Resources */,
 				B55AFE3D2ADE74310050BBF5 /* Home.storyboard in Resources */,
 				B552ED732ADD7D95003810AF /* Assets.xcassets in Resources */,
@@ -652,6 +687,7 @@
 				B55AFE422ADE856F0050BBF5 /* Main.storyboard in Resources */,
 				B552ED742ADD7D95003810AF /* Morpheus.ttf in Resources */,
 				B552EDDC2ADD7E80003810AF /* Mounts.json in Resources */,
+				CA0945EC2B4C4E8900545C54 /* WICredentials.plist in Resources */,
 				B552EDDB2ADD7E80003810AF /* Mount.json in Resources */,
 				B552ED752ADD7D95003810AF /* LifeCraft.ttf in Resources */,
 			);
@@ -741,6 +777,7 @@
 			files = (
 				B5CE03E52ADD8BD30069283A /* WISegue.swift in Sources */,
 				B5DA60D82AE16294004B7F0E /* MountListCell.swift in Sources */,
+				CA0945F12B4C548800545C54 /* TokenPriceView.swift in Sources */,
 				B552EDE12ADD7E80003810AF /* WICredentials.swift in Sources */,
 				B5DA60D42AE16090004B7F0E /* UIFont+WI.swift in Sources */,
 				B55AFE3B2ADE742B0050BBF5 /* HomeViewController.swift in Sources */,
@@ -750,7 +787,9 @@
 				B552ED7D2ADD7E43003810AF /* LoginViewController.swift in Sources */,
 				B5A099FF2AE7B0310063770B /* FactionType.swift in Sources */,
 				B552ED7B2ADD7E43003810AF /* MountListViewController.swift in Sources */,
+				CA0552CC2B4D7C3400A7D8CB /* GDWoWToken.swift in Sources */,
 				B55AFE522ADECFBD0050BBF5 /* GameDataTargetType.swift in Sources */,
+				CA0552CE2B4D7EB800A7D8CB /* WoWToken.swift in Sources */,
 				B5747D012AE67DCA009D80E2 /* MountDetailService.swift in Sources */,
 				B53366192AEFF37A00C69321 /* UIView+WI.swift in Sources */,
 				B5747D042AE69401009D80E2 /* Key.swift in Sources */,
@@ -774,6 +813,7 @@
 				B5747D062AE695DE009D80E2 /* ResponseMount.swift in Sources */,
 				B5747CFF2AE66F41009D80E2 /* MountDetailViewModel.swift in Sources */,
 				B5747D0D2AE6BC40009D80E2 /* ResponseAsset.swift in Sources */,
+				CA0552CA2B4D5F0E00A7D8CB /* HomeService.swift in Sources */,
 				B56EEE852AE11D7F008AF5F6 /* HomeViewModel.swift in Sources */,
 				B5DA60DC2AE16B40004B7F0E /* MountDetailViewController.swift in Sources */,
 				B552EDBE2ADD7E80003810AF /* Mount.swift in Sources */,

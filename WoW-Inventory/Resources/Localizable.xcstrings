@@ -102,6 +102,23 @@
           }
         }
       }
+    },
+    "TOKEN_PRICE_LABEL" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Price Token"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Prix du Token"
+          }
+        }
+      }
     }
   },
   "version" : "1.0"

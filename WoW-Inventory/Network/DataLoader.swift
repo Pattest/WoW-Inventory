@@ -12,6 +12,24 @@ class DataLoader {
     static var shared = DataLoader()
 }
 
+// MARK: - HomeService
+
+extension DataLoader {
+
+    func fetchTokenPrice(handler: @escaping (Response?) -> Void) {
+        MoyaProvider<GDWoWToken>().request(.index) { result in
+            switch result {
+            case let .success(response):
+                handler(response)
+
+            case let .failure(error):
+                print("DataLoader > fetchTokenPrice: \(error)")
+                handler(nil)
+            }
+        }
+    }
+}
+
 // MARK: - LoginService
 
 extension DataLoader {

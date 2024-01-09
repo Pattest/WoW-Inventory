@@ -6,20 +6,20 @@
 //
 
 import UIKit
-import AppCenter
-import AppCenterAnalytics
-import AppCenterCrashes
+//import AppCenter
+//import AppCenterAnalytics
+//import AppCenterCrashes
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication,
                      didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        AppCenter.start(withAppSecret: WICredentials.shared.appCenterSecret,
-                        services: [
-                            Analytics.self,
-                            Crashes.self
-                        ])
+//        AppCenter.start(withAppSecret: WICredentials.shared.appCenterSecret,
+//                        services: [
+//                            Analytics.self,
+//                            Crashes.self
+//                        ])
         return true
     }
 

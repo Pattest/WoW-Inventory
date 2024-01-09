@@ -6,6 +6,7 @@
 //
 
 import Moya
+import Foundation
 
 enum GDCreature {
     case creature(id: Int)
@@ -15,6 +16,10 @@ enum GDCreature {
 
 extension GDCreature: GameDataTargetType {
 
+    var namespace: String {
+        return "static-eu"
+    }
+
     var baseURL: URL {
         return URL(string: strBaseURL)!
     }
@@ -22,15 +27,15 @@ extension GDCreature: GameDataTargetType {
     var path: String {
         switch self {
         case .creature(let id):
-            return "creature/\(id)"
+            return "/creature/\(id)"
         case .creatureDisplayMedia(let id):
-            return "media/creature-display/\(id)"
+            return "/media/creature-display/\(id)"
         case .creatureFamilyMedia(let id):
-            return "media/creature-family/\(id)"
+            return "/media/creature-family/\(id)"
         }
     }
 
-    var method: Method {
+    var method: Moya.Method {
         switch self {
         case .creature,
                 .creatureDisplayMedia,

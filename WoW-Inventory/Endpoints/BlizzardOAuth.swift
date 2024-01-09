@@ -7,6 +7,7 @@
 //
 
 import Moya
+import Foundation
 
 enum BlizzardOAuth {
     case authorize
@@ -33,7 +34,7 @@ extension BlizzardOAuth: TargetType {
         }
     }
 
-    var method: Method {
+    var method: Moya.Method {
         switch self {
         case .authorize:
             return .get

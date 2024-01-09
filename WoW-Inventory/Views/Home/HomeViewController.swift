@@ -14,6 +14,8 @@ class HomeViewController: UIViewController {
 
     @IBOutlet weak var collectionView: UICollectionView!
 
+    @IBOutlet weak var tokenPriceView: TokenPriceView!
+
     private var viewModel = HomeViewModel()
 
     override func viewDidLoad() {
@@ -23,6 +25,11 @@ class HomeViewController: UIViewController {
         setupUI()
         setupData()
         setupCollectionView()
+
+        viewModel.fetchTokenPrice { [weak self] tokenPrice in
+            self?.tokenPriceView.setupData(with: tokenPrice)
+        }
+
         print("Bearer: \(WICredentials.shared.loadAccessToken())")
     }
 
@@ -37,6 +44,11 @@ class HomeViewController: UIViewController {
     }
 
     func setupUI() {
+        tokenPriceView
+            .backgroundColor(.systemBrown)
+            .cornerRadius(10)
+            .basicShadow()
+
         homeLabel.font = UIFont.lifeCraft(size: 50)
     }
 
