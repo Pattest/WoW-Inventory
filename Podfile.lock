@@ -1,5 +1,5 @@
 PODS:
-  - Alamofire (5.8.0)
+  - Alamofire (5.8.1)
   - AlamofireImage (4.3.0):
     - Alamofire (~> 5.8)
   - AppCenter (5.0.4):
@@ -28,11 +28,11 @@ SPEC REPOS:
     - Moya
 
 SPEC CHECKSUMS:
-  Alamofire: 0e92e751b3e9e66d7982db43919d01f313b8eb91
+  Alamofire: 3ca42e259043ee0dc5c0cdd76c4bc568b8e42af7
   AlamofireImage: 843953fa97bee5f561cf05d83abd759e590b068d
   AppCenter: 85c92db0759d2792a65eb61d6842d2e86611a49a
   Moya: 138f0573e53411fb3dc17016add0b748dfbd78ee
 
 PODFILE CHECKSUM: a2d2aeecdc436b1da5246ef1e010d69262e1d5a3
 
-COCOAPODS: 1.13.0
+COCOAPODS: 1.14.3

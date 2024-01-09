@@ -1,49 +1,44 @@
 //
-//  GDMount.swift
+//  GDWoWToken.swift
 //  WoW-Inventory
 //
-//  Created by Baptiste Cadoux on 17/10/2023.
+//  Created by Baptiste Cadoux on 09/01/2024.
 //
 
 import Moya
 import Foundation
 
-enum GDMount {
-    case mounts
-    case mount(id: Int)
+enum GDWoWToken {
+    case index
 }
 
-extension GDMount: GameDataTargetType {
+extension GDWoWToken: GameDataTargetType {
 
     var namespace: String {
-        return "static-eu"
+        return "dynamic-eu"
     }
 
     var baseURL: URL {
-        return URL(string: "\(strBaseURL)/mount")!
+        return URL(string: "\(strBaseURL)/token")!
     }
 
     var path: String {
         switch self {
-        case .mounts:
-            return "/"
-        case .mount(let id):
-            return "/\(id)"
+        case .index:
+            return "/index"
         }
     }
 
     var method: Moya.Method {
         switch self {
-        case .mounts,
-                .mount:
+        case .index:
             return .get
         }
     }
 
     var task: Task {
         switch self {
-        case .mounts,
-                .mount:
+        case .index:
             return .requestParameters(
                 parameters: parameters,
                 encoding: URLEncoding.queryString

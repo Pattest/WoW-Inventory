@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -34,7 +34,7 @@
                                 </connections>
                             </button>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ksQ-dn-75j">
-                                <rect key="frame" x="0.0" y="143" width="393" height="709"/>
+                                <rect key="frame" x="0.0" y="143" width="393" height="590"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="EYl-ov-99N">
                                     <size key="itemSize" width="128" height="128"/>
@@ -44,11 +44,19 @@
                                 </collectionViewFlowLayout>
                                 <cells/>
                             </collectionView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VfK-Mk-mht" customClass="TokenPriceView" customModule="WoW_Inventory" customModuleProvider="target">
+                                <rect key="frame" x="75" y="743" width="243" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="ckM-Gm-QIe"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="VfK-Mk-mht" secondAttribute="trailing" constant="75" id="DXs-SA-KI9"/>
                             <constraint firstItem="89t-Z4-shL" firstAttribute="height" secondItem="SpH-uv-WMH" secondAttribute="height" id="EgT-6V-lDr"/>
+                            <constraint firstItem="VfK-Mk-mht" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="75" id="G6m-hf-bdg"/>
                             <constraint firstAttribute="trailing" secondItem="ksQ-dn-75j" secondAttribute="trailing" id="JZe-mV-NyH"/>
                             <constraint firstItem="SpH-uv-WMH" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="Mww-r3-GKl"/>
                             <constraint firstItem="89t-Z4-shL" firstAttribute="centerY" secondItem="SpH-uv-WMH" secondAttribute="centerY" id="Tjn-iV-9g2"/>
@@ -56,14 +64,16 @@
                             <constraint firstItem="89t-Z4-shL" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="XSc-1q-6xK"/>
                             <constraint firstItem="ksQ-dn-75j" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" id="YQu-HJ-gRy"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="SpH-uv-WMH" secondAttribute="trailing" constant="20" id="cbN-UL-wlf"/>
-                            <constraint firstAttribute="bottom" secondItem="ksQ-dn-75j" secondAttribute="bottom" id="fXa-M5-etr"/>
+                            <constraint firstItem="VfK-Mk-mht" firstAttribute="top" secondItem="ksQ-dn-75j" secondAttribute="bottom" constant="10" id="h5H-HN-Z9f"/>
                             <constraint firstItem="SpH-uv-WMH" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="10" id="pM2-ls-mN8"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="VfK-Mk-mht" secondAttribute="bottom" id="sZ9-1M-vI2"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="collectionView" destination="ksQ-dn-75j" id="dwK-x2-yiI"/>
                         <outlet property="disconnectButton" destination="89t-Z4-shL" id="tu5-vP-zfM"/>
                         <outlet property="homeLabel" destination="SpH-uv-WMH" id="wHy-eF-aNq"/>
+                        <outlet property="tokenPriceView" destination="VfK-Mk-mht" id="O5E-OM-w5Z"/>
                         <segue destination="aOS-tQ-pxo" kind="show" identifier="homeToMountList" id="yVY-dk-trg"/>
                     </connections>
                 </viewController>

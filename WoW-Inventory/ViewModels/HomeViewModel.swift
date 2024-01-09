@@ -9,6 +9,8 @@ import Foundation
 
 class HomeViewModel {
 
+    private var service = HomeService()
+
     var cellTypes: [HomeCellType] = [
         .mount
     ]
@@ -18,5 +20,10 @@ class HomeViewModel {
 // MARK: - Service
 
 extension HomeViewModel {
-    //
+
+    func fetchTokenPrice(handler: @escaping (String) -> Void) {
+        service.fetchTokenPrice { tokenPrice in
+            handler(tokenPrice)
+        }
+    }
 }

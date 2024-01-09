@@ -7,6 +7,7 @@
 //
 
 import Moya
+import Foundation
 
 enum PAccountProfile {
     case mounts
@@ -25,7 +26,7 @@ extension PAccountProfile: ProfileTargetType {
     var path: String {
         switch self {
         case .mounts:
-            return "collections/mounts"
+            return "/collections/mounts"
         }
     }
 

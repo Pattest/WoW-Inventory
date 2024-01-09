@@ -10,7 +10,7 @@ import Foundation
 
 class MountListViewModel {
 
-    private var services = MountListService()
+    private var service = MountListService()
 
     var mounts = [Mount]()
     var filteredMounts = [Mount]()
@@ -23,7 +23,7 @@ class MountListViewModel {
 extension MountListViewModel {
 
     func fetchMounts(handler: @escaping (Bool) -> Void) {
-        services.fetchMounts { mounts in
+        service.fetchMounts { mounts in
             self.mounts = mounts
             self.filteredMounts = mounts
             handler(!mounts.isEmpty)
@@ -31,7 +31,7 @@ extension MountListViewModel {
     }
 
     func fetchMountDetail(_ mountId: Int, handler: @escaping (Bool) -> Void) {
-        services.fetchMountDetail(mountId) { [weak self] mountDetail in
+        service.fetchMountDetail(mountId) { [weak self] mountDetail in
             if let mountDetail {
                 self?.selectedMount?.detail = mountDetail
                 handler(true)

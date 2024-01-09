@@ -9,7 +9,7 @@ import Foundation
 
 class LoginViewModel {
 
-    private var services = LoginService()
+    private var service = LoginService()
 
     // MARK: - AccessToken
 
@@ -28,10 +28,10 @@ class LoginViewModel {
 extension LoginViewModel {
 
     func checkAccessToken(_ token: String, handler: @escaping (Bool) -> Void) {
-        services.checkTokenAvailability(token, handler: handler)
+        service.checkTokenAvailability(token, handler: handler)
     }
 
     func fetchAccessToken(_ authToken: String, handler: @escaping (Bool) -> Void) {
-        services.fetchAccessToken(authToken, handler: handler)
+        service.fetchAccessToken(authToken, handler: handler)
     }
 }

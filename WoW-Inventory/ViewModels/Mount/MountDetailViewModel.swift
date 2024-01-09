@@ -9,7 +9,7 @@ import Foundation
 
 class MountDetailViewModel {
 
-    private var services = MountDetailService()
+    private var service = MountDetailService()
 
     var mount: Mount?
     var assets = [Asset]()
@@ -21,7 +21,7 @@ class MountDetailViewModel {
 extension MountDetailViewModel {
 
     func fetchCreatureDisplayMedia(id: Int, handler: @escaping () -> Void) {
-        services.fetchCreatureDisplayMedia(id: id) { [weak self] assets in
+        service.fetchCreatureDisplayMedia(id: id) { [weak self] assets in
             self?.assets = assets
             handler()
         }
