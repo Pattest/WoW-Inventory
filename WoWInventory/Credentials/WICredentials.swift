@@ -14,7 +14,8 @@ enum CredentialKey: String {
 
 public class WICredentials {
 
-    static var shared = WICredentials()
+    // TODO: ?
+    nonisolated(unsafe) static var shared = WICredentials()
 
     private static let credentialsPlist: [String: String] = {
         guard let credentialsPlistPath = Bundle.main.url(forResource: "WICredentials",
@@ -52,7 +53,7 @@ public class WICredentials {
     func loadAccessToken() -> String {
         let defaults = UserDefaults.standard
         let decoder = JSONDecoder()
-        guard let tokenData = defaults.data(forKey: UDKey.accessToken.rawValue),
+        guard let tokenData = defaults.data(forKey: UserDefaultsKey.accessToken.rawValue),
               let decodedToken = try? decoder.decode(String.self, from: tokenData) else {
             return ""
         }
@@ -63,7 +64,7 @@ public class WICredentials {
         let defaults = UserDefaults.standard
         let encoder = JSONEncoder()
         if let encodedToken = try? encoder.encode(accessToken) {
-            defaults.setValue(encodedToken, forKey: UDKey.accessToken.rawValue)
+            defaults.setValue(encodedToken, forKey: UserDefaultsKey.accessToken.rawValue)
         }
     }
 }

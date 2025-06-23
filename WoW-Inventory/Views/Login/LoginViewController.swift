@@ -104,7 +104,7 @@ class LoginViewController: UIViewController {
     }
 }
 
-extension LoginViewController: SFSafariViewControllerDelegate {
+extension LoginViewController: @preconcurrency SFSafariViewControllerDelegate {
 
     func safariViewController(_ controller: SFSafariViewController,
                               initialLoadDidRedirectTo URL: URL) {

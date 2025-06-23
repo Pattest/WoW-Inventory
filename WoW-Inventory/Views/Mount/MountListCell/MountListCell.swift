@@ -16,7 +16,7 @@ class MountListCell: UITableViewCell {
         super.awakeFromNib()
 
         // Initialization code
-        setupUI()
+//        setupUI()
     }
 
     override func prepareForReuse() {

@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum UDKey: String {
+enum UserDefaultsKey: String {
 
     // MARK: - CredentialsBlizzard
     case accessToken

@@ -21,8 +21,8 @@ class MountListService: MountListServiceProtocol {
 
             do {
                 let decoder = JSONDecoder()
-                let mount = try decoder.decode(ResponseMount.self, from: data)
-                let sortedMounts = mount.getSortedMounts()
+                let responseMount = try decoder.decode(ResponseMount.self, from: data)
+                let sortedMounts = responseMount.getSortedMounts()
                 handler(sortedMounts)
 
             } catch {

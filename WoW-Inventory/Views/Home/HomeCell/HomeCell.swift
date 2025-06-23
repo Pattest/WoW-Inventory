@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import WoWLibrary
 
 class HomeCell: UICollectionViewCell {
 
@@ -16,7 +17,7 @@ class HomeCell: UICollectionViewCell {
         super.awakeFromNib()
 
         // Initialization code
-        setupUI()
+//        setupUI()
     }
 
     func setupUI() {

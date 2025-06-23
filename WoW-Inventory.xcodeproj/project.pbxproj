@@ -3,196 +3,79 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		6A05FA573034761200C51D57 /* WICredentials.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6A05FA563034760600C51D57 /* WICredentials.plist */; };
-		6A3A44E6303474E500A6A7A9 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 6A3A44E5303474E500A6A7A9 /* Alamofire */; };
-		6A3A44EB303474F000A6A7A9 /* AlamofireImage in Frameworks */ = {isa = PBXBuildFile; productRef = 6A3A44EA303474F000A6A7A9 /* AlamofireImage */; };
-		B5062F432AFCF03E00390B03 /* MountTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5062F422AFCF03E00390B03 /* MountTests.swift */; };
-		B5062F462AFD177900390B03 /* HomeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5062F452AFD177900390B03 /* HomeViewModelTests.swift */; };
-		B5062F482AFD1A5F00390B03 /* LoginViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5062F472AFD1A5F00390B03 /* LoginViewModelTests.swift */; };
-		B5062F4A2AFD1D8300390B03 /* MountListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5062F492AFD1D8300390B03 /* MountListViewModelTests.swift */; };
-		B5062F4D2AFD258600390B03 /* MountDetailViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5062F4C2AFD258600390B03 /* MountDetailViewModelTests.swift */; };
-		B5062F4F2AFD277800390B03 /* DataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5062F4E2AFD277800390B03 /* DataLoader.swift */; };
-		B53366192AEFF37A00C69321 /* UIView+WI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53366182AEFF37A00C69321 /* UIView+WI.swift */; };
 		B540B6932AE668A700319774 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = B540B6922AE668A700319774 /* Localizable.xcstrings */; };
-		B540B6952AE6697A00319774 /* String+WI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B540B6942AE6697A00319774 /* String+WI.swift */; };
-		B552ED382ADD7A22003810AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B552ED372ADD7A22003810AF /* AppDelegate.swift */; };
-		B552ED3A2ADD7A22003810AF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B552ED392ADD7A22003810AF /* SceneDelegate.swift */; };
-		B552ED4F2ADD7A24003810AF /* WoW_InventoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B552ED4E2ADD7A24003810AF /* WoW_InventoryTests.swift */; };
-		B552ED592ADD7A24003810AF /* WoW_InventoryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B552ED582ADD7A24003810AF /* WoW_InventoryUITests.swift */; };
-		B552ED5B2ADD7A24003810AF /* WoW_InventoryUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B552ED5A2ADD7A24003810AF /* WoW_InventoryUITestsLaunchTests.swift */; };
 		B552ED732ADD7D95003810AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B552ED6F2ADD7D95003810AF /* Assets.xcassets */; };
 		B552ED742ADD7D95003810AF /* Morpheus.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B552ED712ADD7D95003810AF /* Morpheus.ttf */; };
 		B552ED752ADD7D95003810AF /* LifeCraft.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B552ED722ADD7D95003810AF /* LifeCraft.ttf */; };
-		B552ED7B2ADD7E43003810AF /* MountListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B552ED772ADD7E43003810AF /* MountListViewController.swift */; };
-		B552ED7D2ADD7E43003810AF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B552ED7A2ADD7E43003810AF /* LoginViewController.swift */; };
-		B552EDBD2ADD7E80003810AF /* OAuthToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = B552ED802ADD7E80003810AF /* OAuthToken.swift */; };
-		B552EDBE2ADD7E80003810AF /* Mount.swift in Sources */ = {isa = PBXBuildFile; fileRef = B552ED812ADD7E80003810AF /* Mount.swift */; };
-		B552EDD92ADD7E80003810AF /* UDKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = B552EDAB2ADD7E80003810AF /* UDKey.swift */; };
 		B552EDDA2ADD7E80003810AF /* Toy.json in Resources */ = {isa = PBXBuildFile; fileRef = B552EDAD2ADD7E80003810AF /* Toy.json */; };
 		B552EDDB2ADD7E80003810AF /* Mount.json in Resources */ = {isa = PBXBuildFile; fileRef = B552EDAE2ADD7E80003810AF /* Mount.json */; };
 		B552EDDC2ADD7E80003810AF /* Mounts.json in Resources */ = {isa = PBXBuildFile; fileRef = B552EDAF2ADD7E80003810AF /* Mounts.json */; };
 		B552EDDD2ADD7E80003810AF /* Pet.json in Resources */ = {isa = PBXBuildFile; fileRef = B552EDB02ADD7E80003810AF /* Pet.json */; };
-		B552EDDE2ADD7E80003810AF /* MountListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B552EDB22ADD7E80003810AF /* MountListService.swift */; };
-		B552EDE12ADD7E80003810AF /* WICredentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = B552EDB62ADD7E80003810AF /* WICredentials.swift */; };
-		B552EDE22ADD7E80003810AF /* PAccountProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = B552EDB82ADD7E80003810AF /* PAccountProfile.swift */; };
-		B552EDE42ADD7E80003810AF /* BlizzardOAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = B552EDBA2ADD7E80003810AF /* BlizzardOAuth.swift */; };
-		B552EDE52ADD7E80003810AF /* MountListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B552EDBC2ADD7E80003810AF /* MountListViewModel.swift */; };
-		B55429AC2AEA8F8F00182DB3 /* WIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55429AB2AEA8F8F00182DB3 /* WIError.swift */; };
-		B557663A2AEFFDE300C89A9D /* UIImage+WI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55766392AEFFDE300C89A9D /* UIImage+WI.swift */; };
 		B55AFE2F2ADE6CF90050BBF5 /* Mount.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B55AFE2E2ADE6CF90050BBF5 /* Mount.storyboard */; };
-		B55AFE3B2ADE742B0050BBF5 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55AFE3A2ADE742B0050BBF5 /* HomeViewController.swift */; };
 		B55AFE3D2ADE74310050BBF5 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B55AFE3C2ADE74310050BBF5 /* Home.storyboard */; };
-		B55AFE3F2ADE7DA90050BBF5 /* DataType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55AFE3E2ADE7DA90050BBF5 /* DataType.swift */; };
 		B55AFE422ADE856F0050BBF5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B55AFE432ADE856F0050BBF5 /* Main.storyboard */; };
 		B55AFE442ADE85870050BBF5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B55AFE452ADE85870050BBF5 /* LaunchScreen.storyboard */; };
-		B55AFE4C2ADEC6CD0050BBF5 /* GDMount.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55AFE4B2ADEC6CD0050BBF5 /* GDMount.swift */; };
-		B55AFE4E2ADEC6D70050BBF5 /* GDCreature.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55AFE4D2ADEC6D70050BBF5 /* GDCreature.swift */; };
-		B55AFE522ADECFBD0050BBF5 /* GameDataTargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55AFE512ADECFBD0050BBF5 /* GameDataTargetType.swift */; };
-		B55AFE542ADED2220050BBF5 /* ProfileTargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55AFE532ADED2220050BBF5 /* ProfileTargetType.swift */; };
-		B55AFE562ADED2A60050BBF5 /* WITargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55AFE552ADED2A60050BBF5 /* WITargetType.swift */; };
-		B56EEE832AE11D55008AF5F6 /* HomeCellType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56EEE822AE11D55008AF5F6 /* HomeCellType.swift */; };
-		B56EEE852AE11D7F008AF5F6 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56EEE842AE11D7F008AF5F6 /* HomeViewModel.swift */; };
-		B56EEE892AE13477008AF5F6 /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56EEE872AE13477008AF5F6 /* HomeCell.swift */; };
 		B56EEE8A2AE13477008AF5F6 /* HomeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B56EEE882AE13477008AF5F6 /* HomeCell.xib */; };
-		B5747CFF2AE66F41009D80E2 /* MountDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5747CFE2AE66F41009D80E2 /* MountDetailViewModel.swift */; };
-		B5747D012AE67DCA009D80E2 /* MountDetailService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5747D002AE67DCA009D80E2 /* MountDetailService.swift */; };
-		B5747D042AE69401009D80E2 /* Key.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5747D032AE69401009D80E2 /* Key.swift */; };
-		B5747D062AE695DE009D80E2 /* ResponseMount.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5747D052AE695DE009D80E2 /* ResponseMount.swift */; };
-		B5747D092AE69638009D80E2 /* CreatureDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5747D082AE69638009D80E2 /* CreatureDisplay.swift */; };
-		B5747D0B2AE6BA3B009D80E2 /* Asset.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5747D0A2AE6BA3B009D80E2 /* Asset.swift */; };
-		B5747D0D2AE6BC40009D80E2 /* ResponseAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5747D0C2AE6BC40009D80E2 /* ResponseAsset.swift */; };
-		B5A099FF2AE7B0310063770B /* FactionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A099FE2AE7B0310063770B /* FactionType.swift */; };
-		B5A09A072AE807BA0063770B /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A09A062AE807BA0063770B /* LoginService.swift */; };
-		B5A09A092AE807C70063770B /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A09A082AE807C70063770B /* LoginViewModel.swift */; };
-		B5CE03E52ADD8BD30069283A /* WISegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CE03E42ADD8BD30069283A /* WISegue.swift */; };
-		B5DA60D42AE16090004B7F0E /* UIFont+WI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DA60D32AE16090004B7F0E /* UIFont+WI.swift */; };
-		B5DA60D82AE16294004B7F0E /* MountListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DA60D62AE16294004B7F0E /* MountListCell.swift */; };
 		B5DA60D92AE16294004B7F0E /* MountListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5DA60D72AE16294004B7F0E /* MountListCell.xib */; };
-		B5DA60DC2AE16B40004B7F0E /* MountDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DA60DB2AE16B40004B7F0E /* MountDetailViewController.swift */; };
-		B5F084D62AF15D8D0054D802 /* MockLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F084D52AF15D8D0054D802 /* MockLoader.swift */; };
-		CA0552CA2B4D5F0E00A7D8CB /* HomeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0552C92B4D5F0E00A7D8CB /* HomeService.swift */; };
-		CA0552CC2B4D7C3400A7D8CB /* GDWoWToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0552CB2B4D7C3400A7D8CB /* GDWoWToken.swift */; };
-		CA0552CE2B4D7EB800A7D8CB /* WoWToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0552CD2B4D7EB800A7D8CB /* WoWToken.swift */; };
 		CA0945EF2B4C535B00545C54 /* TokenPriceView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA0945EE2B4C535B00545C54 /* TokenPriceView.xib */; };
-		CA0945F12B4C548800545C54 /* TokenPriceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0945F02B4C548800545C54 /* TokenPriceView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		B552ED4B2ADD7A24003810AF /* PBXContainerItemProxy */ = {
+		6A7091472E09757B006C568C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B552ED2C2ADD7A22003810AF /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = B552ED332ADD7A22003810AF;
-			remoteInfo = "WoW-Inventory";
+			remoteGlobalIDString = 6A7091392E09757A006C568C;
+			remoteInfo = WoWInventory;
 		};
-		B552ED552ADD7A24003810AF /* PBXContainerItemProxy */ = {
+		6A7091512E09757B006C568C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B552ED2C2ADD7A22003810AF /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = B552ED332ADD7A22003810AF;
-			remoteInfo = "WoW-Inventory";
+			remoteGlobalIDString = 6A7091392E09757A006C568C;
+			remoteInfo = WoWInventory;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		6A05FA563034760600C51D57 /* WICredentials.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = WICredentials.plist; sourceTree = "<group>"; };
-		B5062F422AFCF03E00390B03 /* MountTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MountTests.swift; sourceTree = "<group>"; };
-		B5062F452AFD177900390B03 /* HomeViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelTests.swift; sourceTree = "<group>"; };
-		B5062F472AFD1A5F00390B03 /* LoginViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModelTests.swift; sourceTree = "<group>"; };
-		B5062F492AFD1D8300390B03 /* MountListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MountListViewModelTests.swift; sourceTree = "<group>"; };
-		B5062F4C2AFD258600390B03 /* MountDetailViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MountDetailViewModelTests.swift; sourceTree = "<group>"; };
-		B5062F4E2AFD277800390B03 /* DataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLoader.swift; sourceTree = "<group>"; };
-		B53366182AEFF37A00C69321 /* UIView+WI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+WI.swift"; sourceTree = "<group>"; };
 		B540B6922AE668A700319774 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
-		B540B6942AE6697A00319774 /* String+WI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+WI.swift"; sourceTree = "<group>"; };
-		B552ED342ADD7A22003810AF /* WoW-Inventory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WoW-Inventory.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B552ED372ADD7A22003810AF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B552ED392ADD7A22003810AF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B552ED452ADD7A24003810AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B552ED4A2ADD7A24003810AF /* WoW-InventoryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "WoW-InventoryTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B552ED4E2ADD7A24003810AF /* WoW_InventoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WoW_InventoryTests.swift; sourceTree = "<group>"; };
-		B552ED542ADD7A24003810AF /* WoW-InventoryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "WoW-InventoryUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B552ED582ADD7A24003810AF /* WoW_InventoryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WoW_InventoryUITests.swift; sourceTree = "<group>"; };
-		B552ED5A2ADD7A24003810AF /* WoW_InventoryUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WoW_InventoryUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		B552ED6F2ADD7D95003810AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B552ED712ADD7D95003810AF /* Morpheus.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Morpheus.ttf; sourceTree = "<group>"; };
 		B552ED722ADD7D95003810AF /* LifeCraft.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = LifeCraft.ttf; sourceTree = "<group>"; };
-		B552ED772ADD7E43003810AF /* MountListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MountListViewController.swift; sourceTree = "<group>"; };
-		B552ED7A2ADD7E43003810AF /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		B552ED802ADD7E80003810AF /* OAuthToken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OAuthToken.swift; sourceTree = "<group>"; };
-		B552ED812ADD7E80003810AF /* Mount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mount.swift; sourceTree = "<group>"; };
-		B552EDAB2ADD7E80003810AF /* UDKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UDKey.swift; sourceTree = "<group>"; };
 		B552EDAD2ADD7E80003810AF /* Toy.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Toy.json; sourceTree = "<group>"; };
 		B552EDAE2ADD7E80003810AF /* Mount.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Mount.json; sourceTree = "<group>"; };
 		B552EDAF2ADD7E80003810AF /* Mounts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Mounts.json; sourceTree = "<group>"; };
 		B552EDB02ADD7E80003810AF /* Pet.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Pet.json; sourceTree = "<group>"; };
-		B552EDB22ADD7E80003810AF /* MountListService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MountListService.swift; sourceTree = "<group>"; };
-		B552EDB62ADD7E80003810AF /* WICredentials.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WICredentials.swift; sourceTree = "<group>"; };
-		B552EDB82ADD7E80003810AF /* PAccountProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PAccountProfile.swift; sourceTree = "<group>"; };
-		B552EDBA2ADD7E80003810AF /* BlizzardOAuth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlizzardOAuth.swift; sourceTree = "<group>"; };
-		B552EDBC2ADD7E80003810AF /* MountListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MountListViewModel.swift; sourceTree = "<group>"; };
-		B55429AB2AEA8F8F00182DB3 /* WIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WIError.swift; sourceTree = "<group>"; };
-		B55766392AEFFDE300C89A9D /* UIImage+WI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+WI.swift"; sourceTree = "<group>"; };
 		B55AFE2E2ADE6CF90050BBF5 /* Mount.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Mount.storyboard; sourceTree = "<group>"; };
-		B55AFE3A2ADE742B0050BBF5 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		B55AFE3C2ADE74310050BBF5 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
-		B55AFE3E2ADE7DA90050BBF5 /* DataType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataType.swift; sourceTree = "<group>"; };
 		B55AFE432ADE856F0050BBF5 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		B55AFE452ADE85870050BBF5 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
-		B55AFE4B2ADEC6CD0050BBF5 /* GDMount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GDMount.swift; sourceTree = "<group>"; };
-		B55AFE4D2ADEC6D70050BBF5 /* GDCreature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GDCreature.swift; sourceTree = "<group>"; };
-		B55AFE512ADECFBD0050BBF5 /* GameDataTargetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDataTargetType.swift; sourceTree = "<group>"; };
-		B55AFE532ADED2220050BBF5 /* ProfileTargetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTargetType.swift; sourceTree = "<group>"; };
-		B55AFE552ADED2A60050BBF5 /* WITargetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WITargetType.swift; sourceTree = "<group>"; };
-		B56EEE822AE11D55008AF5F6 /* HomeCellType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCellType.swift; sourceTree = "<group>"; };
-		B56EEE842AE11D7F008AF5F6 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
-		B56EEE872AE13477008AF5F6 /* HomeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCell.swift; sourceTree = "<group>"; };
 		B56EEE882AE13477008AF5F6 /* HomeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCell.xib; sourceTree = "<group>"; };
-		B5747CFE2AE66F41009D80E2 /* MountDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MountDetailViewModel.swift; sourceTree = "<group>"; };
-		B5747D002AE67DCA009D80E2 /* MountDetailService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MountDetailService.swift; sourceTree = "<group>"; };
-		B5747D032AE69401009D80E2 /* Key.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Key.swift; sourceTree = "<group>"; };
-		B5747D052AE695DE009D80E2 /* ResponseMount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseMount.swift; sourceTree = "<group>"; };
-		B5747D082AE69638009D80E2 /* CreatureDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatureDisplay.swift; sourceTree = "<group>"; };
-		B5747D0A2AE6BA3B009D80E2 /* Asset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Asset.swift; sourceTree = "<group>"; };
-		B5747D0C2AE6BC40009D80E2 /* ResponseAsset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseAsset.swift; sourceTree = "<group>"; };
-		B5A099FE2AE7B0310063770B /* FactionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactionType.swift; sourceTree = "<group>"; };
-		B5A09A062AE807BA0063770B /* LoginService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
-		B5A09A082AE807C70063770B /* LoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
-		B5CE03E42ADD8BD30069283A /* WISegue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WISegue.swift; sourceTree = "<group>"; };
-		B5DA60D32AE16090004B7F0E /* UIFont+WI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+WI.swift"; sourceTree = "<group>"; };
-		B5DA60D62AE16294004B7F0E /* MountListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MountListCell.swift; sourceTree = "<group>"; };
 		B5DA60D72AE16294004B7F0E /* MountListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MountListCell.xib; sourceTree = "<group>"; };
-		B5DA60DB2AE16B40004B7F0E /* MountDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MountDetailViewController.swift; sourceTree = "<group>"; };
-		B5F084D52AF15D8D0054D802 /* MockLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockLoader.swift; sourceTree = "<group>"; };
-		CA0552C92B4D5F0E00A7D8CB /* HomeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeService.swift; sourceTree = "<group>"; };
-		CA0552CB2B4D7C3400A7D8CB /* GDWoWToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GDWoWToken.swift; sourceTree = "<group>"; };
-		CA0552CD2B4D7EB800A7D8CB /* WoWToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WoWToken.swift; sourceTree = "<group>"; };
 		CA0945EE2B4C535B00545C54 /* TokenPriceView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TokenPriceView.xib; sourceTree = "<group>"; };
-		CA0945F02B4C548800545C54 /* TokenPriceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenPriceView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		6A70913B2E09757A006C568C /* WoWInventory */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = WoWInventory; sourceTree = "<group>"; };
+		6A7091492E09757B006C568C /* WoWInventoryTests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = WoWInventoryTests; sourceTree = "<group>"; };
+		6A7091532E09757B006C568C /* WoWInventoryUITests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = WoWInventoryUITests; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
+
 /* Begin PBXFrameworksBuildPhase section */
-		B552ED312ADD7A22003810AF /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6A3A44EB303474F000A6A7A9 /* AlamofireImage in Frameworks */,
-				6A3A44E6303474E500A6A7A9 /* Alamofire in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B552ED472ADD7A24003810AF /* Frameworks */ = {
+		6A7091432E09757B006C568C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B552ED512ADD7A24003810AF /* Frameworks */ = {
+		6A70914D2E09757B006C568C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -209,406 +92,113 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		B5062F442AFD174600390B03 /* ViewModels */ = {
+		6A05FB663034817A00C51D57 /* Recovered References */ = {
 			isa = PBXGroup;
 			children = (
-				B5062F452AFD177900390B03 /* HomeViewModelTests.swift */,
-				B5062F472AFD1A5F00390B03 /* LoginViewModelTests.swift */,
-				B5062F4B2AFD1D8500390B03 /* Mount */,
+				B55AFE452ADE85870050BBF5 /* LaunchScreen.storyboard */,
+				B55AFE2E2ADE6CF90050BBF5 /* Mount.storyboard */,
+				CA0945EE2B4C535B00545C54 /* TokenPriceView.xib */,
+				B552EDAD2ADD7E80003810AF /* Toy.json */,
+				6A05FA563034760600C51D57 /* WICredentials.plist */,
+				B55AFE3C2ADE74310050BBF5 /* Home.storyboard */,
+				B552ED6F2ADD7D95003810AF /* Assets.xcassets */,
+				B5DA60D72AE16294004B7F0E /* MountListCell.xib */,
+				B552EDB02ADD7E80003810AF /* Pet.json */,
+				B56EEE882AE13477008AF5F6 /* HomeCell.xib */,
+				B540B6922AE668A700319774 /* Localizable.xcstrings */,
+				B55AFE432ADE856F0050BBF5 /* Main.storyboard */,
+				B552ED712ADD7D95003810AF /* Morpheus.ttf */,
+				B552EDAF2ADD7E80003810AF /* Mounts.json */,
+				B552EDAE2ADD7E80003810AF /* Mount.json */,
+				B552ED722ADD7D95003810AF /* LifeCraft.ttf */,
 			);
-			path = ViewModels;
-			sourceTree = "<group>";
-		};
-		B5062F4B2AFD1D8500390B03 /* Mount */ = {
-			isa = PBXGroup;
-			children = (
-				B5062F492AFD1D8300390B03 /* MountListViewModelTests.swift */,
-				B5062F4C2AFD258600390B03 /* MountDetailViewModelTests.swift */,
-			);
-			path = Mount;
-			sourceTree = "<group>";
-		};
-		B5062F512AFD330500390B03 /* Services */ = {
-			isa = PBXGroup;
-			children = (
-				CA0552C92B4D5F0E00A7D8CB /* HomeService.swift */,
-				B5A09A062AE807BA0063770B /* LoginService.swift */,
-				B5747D022AE67F55009D80E2 /* Mount */,
-			);
-			path = Services;
-			sourceTree = "<group>";
-		};
-		B50EB8302AF1635B0066E0B8 /* Mock */ = {
-			isa = PBXGroup;
-			children = (
-				B5F084D52AF15D8D0054D802 /* MockLoader.swift */,
-				B552EDAC2ADD7E80003810AF /* Json */,
-			);
-			path = Mock;
+			name = "Recovered References";
 			sourceTree = "<group>";
 		};
 		B552ED2B2ADD7A22003810AF = {
 			isa = PBXGroup;
 			children = (
-				B552ED362ADD7A22003810AF /* WoW-Inventory */,
-				B552ED4D2ADD7A24003810AF /* WoW-InventoryTests */,
-				B552ED572ADD7A24003810AF /* WoW-InventoryUITests */,
+				6A70913B2E09757A006C568C /* WoWInventory */,
+				6A7091492E09757B006C568C /* WoWInventoryTests */,
+				6A7091532E09757B006C568C /* WoWInventoryUITests */,
 				B552ED352ADD7A22003810AF /* Products */,
 				17D23178D0150BB85D580F27 /* Pods */,
+				6A05FB663034817A00C51D57 /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
 		B552ED352ADD7A22003810AF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B552ED342ADD7A22003810AF /* WoW-Inventory.app */,
-				B552ED4A2ADD7A24003810AF /* WoW-InventoryTests.xctest */,
-				B552ED542ADD7A24003810AF /* WoW-InventoryUITests.xctest */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		B552ED362ADD7A22003810AF /* WoW-Inventory */ = {
-			isa = PBXGroup;
-			children = (
-				B552ED372ADD7A22003810AF /* AppDelegate.swift */,
-				B552ED392ADD7A22003810AF /* SceneDelegate.swift */,
-				B552ED762ADD7E43003810AF /* Views */,
-				B552ED7E2ADD7E80003810AF /* Models */,
-				B552EDB12ADD7E80003810AF /* Network */,
-				B552EDBB2ADD7E80003810AF /* ViewModels */,
-				B552EDB32ADD7E80003810AF /* Credentials */,
-				B552EDB72ADD7E80003810AF /* Endpoints */,
-				B552EDAA2ADD7E80003810AF /* Enums */,
-				B55AFE462ADEB45E0050BBF5 /* Extensions */,
-				B552ED6E2ADD7D95003810AF /* Resources */,
-				B552ED452ADD7A24003810AF /* Info.plist */,
-			);
-			path = "WoW-Inventory";
-			sourceTree = "<group>";
-		};
-		B552ED4D2ADD7A24003810AF /* WoW-InventoryTests */ = {
-			isa = PBXGroup;
-			children = (
-				B552ED4E2ADD7A24003810AF /* WoW_InventoryTests.swift */,
-				B50EB8302AF1635B0066E0B8 /* Mock */,
-				B5F084D22AF15BD50054D802 /* Models */,
-				B5062F442AFD174600390B03 /* ViewModels */,
-			);
-			path = "WoW-InventoryTests";
-			sourceTree = "<group>";
-		};
-		B552ED572ADD7A24003810AF /* WoW-InventoryUITests */ = {
-			isa = PBXGroup;
-			children = (
-				B552ED582ADD7A24003810AF /* WoW_InventoryUITests.swift */,
-				B552ED5A2ADD7A24003810AF /* WoW_InventoryUITestsLaunchTests.swift */,
-			);
-			path = "WoW-InventoryUITests";
-			sourceTree = "<group>";
-		};
-		B552ED6E2ADD7D95003810AF /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				B540B6922AE668A700319774 /* Localizable.xcstrings */,
-				B552ED6F2ADD7D95003810AF /* Assets.xcassets */,
-				B552ED702ADD7D95003810AF /* Fonts */,
-				B55AFE452ADE85870050BBF5 /* LaunchScreen.storyboard */,
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
-		B552ED702ADD7D95003810AF /* Fonts */ = {
-			isa = PBXGroup;
-			children = (
-				B552ED722ADD7D95003810AF /* LifeCraft.ttf */,
-				B552ED712ADD7D95003810AF /* Morpheus.ttf */,
-			);
-			path = Fonts;
-			sourceTree = "<group>";
-		};
-		B552ED762ADD7E43003810AF /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				B5CE03E22ADD8B7A0069283A /* Login */,
-				B55AFE372ADE740B0050BBF5 /* Home */,
-				B5CE03E12ADD8B6F0069283A /* Mount */,
-				CA0945F22B4C55E000545C54 /* Common */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		B552ED7E2ADD7E80003810AF /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				B5747D0A2AE6BA3B009D80E2 /* Asset.swift */,
-				B5747D082AE69638009D80E2 /* CreatureDisplay.swift */,
-				B55AFE3E2ADE7DA90050BBF5 /* DataType.swift */,
-				B5747D032AE69401009D80E2 /* Key.swift */,
-				B552ED812ADD7E80003810AF /* Mount.swift */,
-				CA0552CD2B4D7EB800A7D8CB /* WoWToken.swift */,
-				B552ED7F2ADD7E80003810AF /* OAuthToken */,
-				B5747D0E2AE6BFE2009D80E2 /* Responses */,
-				B55429AB2AEA8F8F00182DB3 /* WIError.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		B552ED7F2ADD7E80003810AF /* OAuthToken */ = {
-			isa = PBXGroup;
-			children = (
-				B552ED802ADD7E80003810AF /* OAuthToken.swift */,
-			);
-			path = OAuthToken;
-			sourceTree = "<group>";
-		};
-		B552EDAA2ADD7E80003810AF /* Enums */ = {
-			isa = PBXGroup;
-			children = (
-				B5A099FE2AE7B0310063770B /* FactionType.swift */,
-				B56EEE822AE11D55008AF5F6 /* HomeCellType.swift */,
-				B552EDAB2ADD7E80003810AF /* UDKey.swift */,
-				B5CE03E42ADD8BD30069283A /* WISegue.swift */,
-			);
-			path = Enums;
-			sourceTree = "<group>";
-		};
-		B552EDAC2ADD7E80003810AF /* Json */ = {
-			isa = PBXGroup;
-			children = (
-				B552EDAE2ADD7E80003810AF /* Mount.json */,
-				B552EDAF2ADD7E80003810AF /* Mounts.json */,
-				B552EDB02ADD7E80003810AF /* Pet.json */,
-				B552EDAD2ADD7E80003810AF /* Toy.json */,
-			);
-			path = Json;
-			sourceTree = "<group>";
-		};
-		B552EDB12ADD7E80003810AF /* Network */ = {
-			isa = PBXGroup;
-			children = (
-				B5062F4E2AFD277800390B03 /* DataLoader.swift */,
-				B5062F512AFD330500390B03 /* Services */,
-			);
-			path = Network;
-			sourceTree = "<group>";
-		};
-		B552EDB32ADD7E80003810AF /* Credentials */ = {
-			isa = PBXGroup;
-			children = (
-				6A05FA563034760600C51D57 /* WICredentials.plist */,
-				B552EDB62ADD7E80003810AF /* WICredentials.swift */,
-			);
-			path = Credentials;
-			sourceTree = "<group>";
-		};
-		B552EDB72ADD7E80003810AF /* Endpoints */ = {
-			isa = PBXGroup;
-			children = (
-				B552EDBA2ADD7E80003810AF /* BlizzardOAuth.swift */,
-				B55AFE552ADED2A60050BBF5 /* WITargetType.swift */,
-				B55AFE492ADEC6AC0050BBF5 /* GameData */,
-				B55AFE4A2ADEC6B60050BBF5 /* Profile */,
-			);
-			path = Endpoints;
-			sourceTree = "<group>";
-		};
-		B552EDBB2ADD7E80003810AF /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-				B56EEE842AE11D7F008AF5F6 /* HomeViewModel.swift */,
-				B5A09A082AE807C70063770B /* LoginViewModel.swift */,
-				B5747CFD2AE66F32009D80E2 /* Mount */,
-			);
-			path = ViewModels;
-			sourceTree = "<group>";
-		};
-		B55AFE372ADE740B0050BBF5 /* Home */ = {
-			isa = PBXGroup;
-			children = (
-				B55AFE3C2ADE74310050BBF5 /* Home.storyboard */,
-				B55AFE3A2ADE742B0050BBF5 /* HomeViewController.swift */,
-				B56EEE8B2AE134A4008AF5F6 /* HomeCell */,
-			);
-			path = Home;
-			sourceTree = "<group>";
-		};
-		B55AFE462ADEB45E0050BBF5 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				B540B6942AE6697A00319774 /* String+WI.swift */,
-				B5DA60D32AE16090004B7F0E /* UIFont+WI.swift */,
-				B55766392AEFFDE300C89A9D /* UIImage+WI.swift */,
-				B53366182AEFF37A00C69321 /* UIView+WI.swift */,
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
-		B55AFE492ADEC6AC0050BBF5 /* GameData */ = {
-			isa = PBXGroup;
-			children = (
-				B55AFE512ADECFBD0050BBF5 /* GameDataTargetType.swift */,
-				B55AFE4D2ADEC6D70050BBF5 /* GDCreature.swift */,
-				B55AFE4B2ADEC6CD0050BBF5 /* GDMount.swift */,
-				CA0552CB2B4D7C3400A7D8CB /* GDWoWToken.swift */,
-			);
-			path = GameData;
-			sourceTree = "<group>";
-		};
-		B55AFE4A2ADEC6B60050BBF5 /* Profile */ = {
-			isa = PBXGroup;
-			children = (
-				B55AFE532ADED2220050BBF5 /* ProfileTargetType.swift */,
-				B552EDB82ADD7E80003810AF /* PAccountProfile.swift */,
-			);
-			path = Profile;
-			sourceTree = "<group>";
-		};
-		B56EEE8B2AE134A4008AF5F6 /* HomeCell */ = {
-			isa = PBXGroup;
-			children = (
-				B56EEE882AE13477008AF5F6 /* HomeCell.xib */,
-				B56EEE872AE13477008AF5F6 /* HomeCell.swift */,
-			);
-			path = HomeCell;
-			sourceTree = "<group>";
-		};
-		B5747CFD2AE66F32009D80E2 /* Mount */ = {
-			isa = PBXGroup;
-			children = (
-				B552EDBC2ADD7E80003810AF /* MountListViewModel.swift */,
-				B5747CFE2AE66F41009D80E2 /* MountDetailViewModel.swift */,
-			);
-			path = Mount;
-			sourceTree = "<group>";
-		};
-		B5747D022AE67F55009D80E2 /* Mount */ = {
-			isa = PBXGroup;
-			children = (
-				B552EDB22ADD7E80003810AF /* MountListService.swift */,
-				B5747D002AE67DCA009D80E2 /* MountDetailService.swift */,
-			);
-			path = Mount;
-			sourceTree = "<group>";
-		};
-		B5747D0E2AE6BFE2009D80E2 /* Responses */ = {
-			isa = PBXGroup;
-			children = (
-				B5747D0C2AE6BC40009D80E2 /* ResponseAsset.swift */,
-				B5747D052AE695DE009D80E2 /* ResponseMount.swift */,
-			);
-			path = Responses;
-			sourceTree = "<group>";
-		};
-		B5CE03E12ADD8B6F0069283A /* Mount */ = {
-			isa = PBXGroup;
-			children = (
-				B55AFE2E2ADE6CF90050BBF5 /* Mount.storyboard */,
-				B552ED772ADD7E43003810AF /* MountListViewController.swift */,
-				B5DA60DB2AE16B40004B7F0E /* MountDetailViewController.swift */,
-				B5DA60D52AE1627F004B7F0E /* MountListCell */,
-			);
-			path = Mount;
-			sourceTree = "<group>";
-		};
-		B5CE03E22ADD8B7A0069283A /* Login */ = {
-			isa = PBXGroup;
-			children = (
-				B55AFE432ADE856F0050BBF5 /* Main.storyboard */,
-				B552ED7A2ADD7E43003810AF /* LoginViewController.swift */,
-			);
-			path = Login;
-			sourceTree = "<group>";
-		};
-		B5DA60D52AE1627F004B7F0E /* MountListCell */ = {
-			isa = PBXGroup;
-			children = (
-				B5DA60D72AE16294004B7F0E /* MountListCell.xib */,
-				B5DA60D62AE16294004B7F0E /* MountListCell.swift */,
-			);
-			path = MountListCell;
-			sourceTree = "<group>";
-		};
-		B5F084D22AF15BD50054D802 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				B5062F422AFCF03E00390B03 /* MountTests.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		CA0945ED2B4C534900545C54 /* Token */ = {
-			isa = PBXGroup;
-			children = (
-				CA0945EE2B4C535B00545C54 /* TokenPriceView.xib */,
-				CA0945F02B4C548800545C54 /* TokenPriceView.swift */,
-			);
-			path = Token;
-			sourceTree = "<group>";
-		};
-		CA0945F22B4C55E000545C54 /* Common */ = {
-			isa = PBXGroup;
-			children = (
-				CA0945ED2B4C534900545C54 /* Token */,
-			);
-			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B552ED332ADD7A22003810AF /* WoW-Inventory */ = {
+		6A7091392E09757A006C568C /* WoWInventory */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B552ED5E2ADD7A24003810AF /* Build configuration list for PBXNativeTarget "WoW-Inventory" */;
+			buildConfigurationList = 6A7091582E09757B006C568C /* Build configuration list for PBXNativeTarget "WoWInventory" */;
 			buildPhases = (
 				B593FD802AF0F37B00B387DD /* Swiftlint */,
-				B552ED302ADD7A22003810AF /* Sources */,
-				B552ED312ADD7A22003810AF /* Frameworks */,
 				B552ED322ADD7A22003810AF /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "WoW-Inventory";
-			productName = "WoW-Inventory";
-			productReference = B552ED342ADD7A22003810AF /* WoW-Inventory.app */;
+			fileSystemSynchronizedGroups = (
+				6A70913B2E09757A006C568C /* WoWInventory */,
+			);
+			name = WoWInventory;
+			packageProductDependencies = (
+			);
+			productName = WoWInventory;
 			productType = "com.apple.product-type.application";
 		};
-		B552ED492ADD7A24003810AF /* WoW-InventoryTests */ = {
+		6A7091452E09757B006C568C /* WoWInventoryTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B552ED612ADD7A24003810AF /* Build configuration list for PBXNativeTarget "WoW-InventoryTests" */;
+			buildConfigurationList = 6A70915B2E09757B006C568C /* Build configuration list for PBXNativeTarget "WoWInventoryTests" */;
 			buildPhases = (
-				B552ED462ADD7A24003810AF /* Sources */,
-				B552ED472ADD7A24003810AF /* Frameworks */,
-				B552ED482ADD7A24003810AF /* Resources */,
+				6A7091422E09757B006C568C /* Sources */,
+				6A7091432E09757B006C568C /* Frameworks */,
+				6A7091442E09757B006C568C /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				B552ED4C2ADD7A24003810AF /* PBXTargetDependency */,
+				6A7091482E09757B006C568C /* PBXTargetDependency */,
 			);
-			name = "WoW-InventoryTests";
-			productName = "WoW-InventoryTests";
-			productReference = B552ED4A2ADD7A24003810AF /* WoW-InventoryTests.xctest */;
+			fileSystemSynchronizedGroups = (
+				6A7091492E09757B006C568C /* WoWInventoryTests */,
+			);
+			name = WoWInventoryTests;
+			packageProductDependencies = (
+			);
+			productName = WoWInventoryTests;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		B552ED532ADD7A24003810AF /* WoW-InventoryUITests */ = {
+		6A70914F2E09757B006C568C /* WoWInventoryUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B552ED642ADD7A24003810AF /* Build configuration list for PBXNativeTarget "WoW-InventoryUITests" */;
+			buildConfigurationList = 6A70915E2E09757B006C568C /* Build configuration list for PBXNativeTarget "WoWInventoryUITests" */;
 			buildPhases = (
-				B552ED502ADD7A24003810AF /* Sources */,
-				B552ED512ADD7A24003810AF /* Frameworks */,
-				B552ED522ADD7A24003810AF /* Resources */,
+				6A70914C2E09757B006C568C /* Sources */,
+				6A70914D2E09757B006C568C /* Frameworks */,
+				6A70914E2E09757B006C568C /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				B552ED562ADD7A24003810AF /* PBXTargetDependency */,
+				6A7091522E09757B006C568C /* PBXTargetDependency */,
 			);
-			name = "WoW-InventoryUITests";
-			productName = "WoW-InventoryUITests";
-			productReference = B552ED542ADD7A24003810AF /* WoW-InventoryUITests.xctest */;
+			fileSystemSynchronizedGroups = (
+				6A7091532E09757B006C568C /* WoWInventoryUITests */,
+			);
+			name = WoWInventoryUITests;
+			packageProductDependencies = (
+			);
+			productName = WoWInventoryUITests;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -618,19 +208,19 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1500;
+				LastSwiftUpdateCheck = 1640;
 				LastUpgradeCheck = 1500;
 				TargetAttributes = {
-					B552ED332ADD7A22003810AF = {
-						CreatedOnToolsVersion = 15.0;
+					6A7091392E09757A006C568C = {
+						CreatedOnToolsVersion = 16.4;
 					};
-					B552ED492ADD7A24003810AF = {
-						CreatedOnToolsVersion = 15.0;
-						TestTargetID = B552ED332ADD7A22003810AF;
+					6A7091452E09757B006C568C = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = 6A7091392E09757A006C568C;
 					};
-					B552ED532ADD7A24003810AF = {
-						CreatedOnToolsVersion = 15.0;
-						TestTargetID = B552ED332ADD7A22003810AF;
+					6A70914F2E09757B006C568C = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = 6A7091392E09757A006C568C;
 					};
 				};
 			};
@@ -652,14 +242,28 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B552ED332ADD7A22003810AF /* WoW-Inventory */,
-				B552ED492ADD7A24003810AF /* WoW-InventoryTests */,
-				B552ED532ADD7A24003810AF /* WoW-InventoryUITests */,
+				6A7091392E09757A006C568C /* WoWInventory */,
+				6A7091452E09757B006C568C /* WoWInventoryTests */,
+				6A70914F2E09757B006C568C /* WoWInventoryUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		6A7091442E09757B006C568C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A70914E2E09757B006C568C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B552ED322ADD7A22003810AF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -681,20 +285,6 @@
 				B552EDDC2ADD7E80003810AF /* Mounts.json in Resources */,
 				B552EDDB2ADD7E80003810AF /* Mount.json in Resources */,
 				B552ED752ADD7D95003810AF /* LifeCraft.ttf in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B552ED482ADD7A24003810AF /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B552ED522ADD7A24003810AF /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -723,97 +313,174 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		B552ED302ADD7A22003810AF /* Sources */ = {
+		6A7091422E09757B006C568C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5CE03E52ADD8BD30069283A /* WISegue.swift in Sources */,
-				B5DA60D82AE16294004B7F0E /* MountListCell.swift in Sources */,
-				CA0945F12B4C548800545C54 /* TokenPriceView.swift in Sources */,
-				B552EDE12ADD7E80003810AF /* WICredentials.swift in Sources */,
-				B5DA60D42AE16090004B7F0E /* UIFont+WI.swift in Sources */,
-				B55AFE3B2ADE742B0050BBF5 /* HomeViewController.swift in Sources */,
-				B552ED382ADD7A22003810AF /* AppDelegate.swift in Sources */,
-				B552ED3A2ADD7A22003810AF /* SceneDelegate.swift in Sources */,
-				B55AFE4C2ADEC6CD0050BBF5 /* GDMount.swift in Sources */,
-				B552ED7D2ADD7E43003810AF /* LoginViewController.swift in Sources */,
-				B5A099FF2AE7B0310063770B /* FactionType.swift in Sources */,
-				B552ED7B2ADD7E43003810AF /* MountListViewController.swift in Sources */,
-				CA0552CC2B4D7C3400A7D8CB /* GDWoWToken.swift in Sources */,
-				B55AFE522ADECFBD0050BBF5 /* GameDataTargetType.swift in Sources */,
-				CA0552CE2B4D7EB800A7D8CB /* WoWToken.swift in Sources */,
-				B5747D012AE67DCA009D80E2 /* MountDetailService.swift in Sources */,
-				B53366192AEFF37A00C69321 /* UIView+WI.swift in Sources */,
-				B5747D042AE69401009D80E2 /* Key.swift in Sources */,
-				B552EDE52ADD7E80003810AF /* MountListViewModel.swift in Sources */,
-				B552EDBD2ADD7E80003810AF /* OAuthToken.swift in Sources */,
-				B557663A2AEFFDE300C89A9D /* UIImage+WI.swift in Sources */,
-				B55429AC2AEA8F8F00182DB3 /* WIError.swift in Sources */,
-				B552EDE42ADD7E80003810AF /* BlizzardOAuth.swift in Sources */,
-				B5747D092AE69638009D80E2 /* CreatureDisplay.swift in Sources */,
-				B552EDDE2ADD7E80003810AF /* MountListService.swift in Sources */,
-				B56EEE892AE13477008AF5F6 /* HomeCell.swift in Sources */,
-				B552EDE22ADD7E80003810AF /* PAccountProfile.swift in Sources */,
-				B55AFE562ADED2A60050BBF5 /* WITargetType.swift in Sources */,
-				B5747D0B2AE6BA3B009D80E2 /* Asset.swift in Sources */,
-				B540B6952AE6697A00319774 /* String+WI.swift in Sources */,
-				B5062F4F2AFD277800390B03 /* DataLoader.swift in Sources */,
-				B552EDD92ADD7E80003810AF /* UDKey.swift in Sources */,
-				B5A09A092AE807C70063770B /* LoginViewModel.swift in Sources */,
-				B55AFE542ADED2220050BBF5 /* ProfileTargetType.swift in Sources */,
-				B5A09A072AE807BA0063770B /* LoginService.swift in Sources */,
-				B5747D062AE695DE009D80E2 /* ResponseMount.swift in Sources */,
-				B5747CFF2AE66F41009D80E2 /* MountDetailViewModel.swift in Sources */,
-				B5747D0D2AE6BC40009D80E2 /* ResponseAsset.swift in Sources */,
-				CA0552CA2B4D5F0E00A7D8CB /* HomeService.swift in Sources */,
-				B56EEE852AE11D7F008AF5F6 /* HomeViewModel.swift in Sources */,
-				B5DA60DC2AE16B40004B7F0E /* MountDetailViewController.swift in Sources */,
-				B552EDBE2ADD7E80003810AF /* Mount.swift in Sources */,
-				B55AFE4E2ADEC6D70050BBF5 /* GDCreature.swift in Sources */,
-				B55AFE3F2ADE7DA90050BBF5 /* DataType.swift in Sources */,
-				B56EEE832AE11D55008AF5F6 /* HomeCellType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B552ED462ADD7A24003810AF /* Sources */ = {
+		6A70914C2E09757B006C568C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5062F482AFD1A5F00390B03 /* LoginViewModelTests.swift in Sources */,
-				B552ED4F2ADD7A24003810AF /* WoW_InventoryTests.swift in Sources */,
-				B5062F432AFCF03E00390B03 /* MountTests.swift in Sources */,
-				B5F084D62AF15D8D0054D802 /* MockLoader.swift in Sources */,
-				B5062F4D2AFD258600390B03 /* MountDetailViewModelTests.swift in Sources */,
-				B5062F4A2AFD1D8300390B03 /* MountListViewModelTests.swift in Sources */,
-				B5062F462AFD177900390B03 /* HomeViewModelTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B552ED502ADD7A24003810AF /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B552ED592ADD7A24003810AF /* WoW_InventoryUITests.swift in Sources */,
-				B552ED5B2ADD7A24003810AF /* WoW_InventoryUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		B552ED4C2ADD7A24003810AF /* PBXTargetDependency */ = {
+		6A7091482E09757B006C568C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = B552ED332ADD7A22003810AF /* WoW-Inventory */;
-			targetProxy = B552ED4B2ADD7A24003810AF /* PBXContainerItemProxy */;
+			target = 6A7091392E09757A006C568C /* WoWInventory */;
+			targetProxy = 6A7091472E09757B006C568C /* PBXContainerItemProxy */;
 		};
-		B552ED562ADD7A24003810AF /* PBXTargetDependency */ = {
+		6A7091522E09757B006C568C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = B552ED332ADD7A22003810AF /* WoW-Inventory */;
-			targetProxy = B552ED552ADD7A24003810AF /* PBXContainerItemProxy */;
+			target = 6A7091392E09757A006C568C /* WoWInventory */;
+			targetProxy = 6A7091512E09757B006C568C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		6A7091592E09757B006C568C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 95Q5YEGF4A;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = pattest.WoWInventory;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6A70915A2E09757B006C568C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 95Q5YEGF4A;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = pattest.WoWInventory;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6A70915C2E09757B006C568C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 95Q5YEGF4A;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = pattest.WoWInventoryTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WoWInventory.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WoWInventory";
+			};
+			name = Debug;
+		};
+		6A70915D2E09757B006C568C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 95Q5YEGF4A;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = pattest.WoWInventoryTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WoWInventory.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WoWInventory";
+			};
+			name = Release;
+		};
+		6A70915F2E09757B006C568C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 95Q5YEGF4A;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = pattest.WoWInventoryUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WoWInventory;
+			};
+			name = Debug;
+		};
+		6A7091602E09757B006C568C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 95Q5YEGF4A;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = pattest.WoWInventoryUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WoWInventory;
+			};
+			name = Release;
+		};
 		B552ED5C2ADD7A24003810AF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -935,187 +602,41 @@
 			};
 			name = Release;
 		};
-		B552ED5F2ADD7A24003810AF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = "";
-				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
-				CODE_SIGN_ENTITLEMENTS = "WoW-Inventory/WoW-Inventory.entitlements";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 95Q5YEGF4A;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "WoW-Inventory/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "WoW Inventory";
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UIStatusBarStyle = "";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "pattest.WoW-Inventory";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		B552ED602ADD7A24003810AF /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = "";
-				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
-				CODE_SIGN_ENTITLEMENTS = "WoW-Inventory/WoW-Inventory.entitlements";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 95Q5YEGF4A;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "WoW-Inventory/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "WoW Inventory";
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UIStatusBarStyle = "";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "pattest.WoW-Inventory";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		B552ED622ADD7A24003810AF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 95Q5YEGF4A;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "pattest.WoW-InventoryTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
-				SUPPORTS_MACCATALYST = NO;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WoW-Inventory.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WoW-Inventory";
-			};
-			name = Debug;
-		};
-		B552ED632ADD7A24003810AF /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 95Q5YEGF4A;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "pattest.WoW-InventoryTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
-				SUPPORTS_MACCATALYST = NO;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WoW-Inventory.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WoW-Inventory";
-			};
-			name = Release;
-		};
-		B552ED652ADD7A24003810AF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 95Q5YEGF4A;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "pattest.WoW-InventoryUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
-				SUPPORTS_MACCATALYST = NO;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "WoW-Inventory";
-			};
-			name = Debug;
-		};
-		B552ED662ADD7A24003810AF /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 95Q5YEGF4A;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "pattest.WoW-InventoryUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
-				SUPPORTS_MACCATALYST = NO;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "WoW-Inventory";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		6A7091582E09757B006C568C /* Build configuration list for PBXNativeTarget "WoWInventory" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A7091592E09757B006C568C /* Debug */,
+				6A70915A2E09757B006C568C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6A70915B2E09757B006C568C /* Build configuration list for PBXNativeTarget "WoWInventoryTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A70915C2E09757B006C568C /* Debug */,
+				6A70915D2E09757B006C568C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6A70915E2E09757B006C568C /* Build configuration list for PBXNativeTarget "WoWInventoryUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A70915F2E09757B006C568C /* Debug */,
+				6A7091602E09757B006C568C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		B552ED2F2ADD7A22003810AF /* Build configuration list for PBXProject "WoW-Inventory" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B552ED5C2ADD7A24003810AF /* Debug */,
 				B552ED5D2ADD7A24003810AF /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B552ED5E2ADD7A24003810AF /* Build configuration list for PBXNativeTarget "WoW-Inventory" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B552ED5F2ADD7A24003810AF /* Debug */,
-				B552ED602ADD7A24003810AF /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B552ED612ADD7A24003810AF /* Build configuration list for PBXNativeTarget "WoW-InventoryTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B552ED622ADD7A24003810AF /* Debug */,
-				B552ED632ADD7A24003810AF /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B552ED642ADD7A24003810AF /* Build configuration list for PBXNativeTarget "WoW-InventoryUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B552ED652ADD7A24003810AF /* Debug */,
-				B552ED662ADD7A24003810AF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1140,19 +661,6 @@
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		6A3A44E5303474E500A6A7A9 /* Alamofire */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 6A3A44E4303474E500A6A7A9 /* XCRemoteSwiftPackageReference "Alamofire" */;
-			productName = Alamofire;
-		};
-		6A3A44EA303474F000A6A7A9 /* AlamofireImage */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 6A3A44E9303474F000A6A7A9 /* XCRemoteSwiftPackageReference "AlamofireImage" */;
-			productName = AlamofireImage;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B552ED2C2ADD7A22003810AF /* Project object */;
 }
