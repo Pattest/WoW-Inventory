@@ -7,11 +7,11 @@
 
 import Foundation
 
-protocol ProfileTargetType: WITargetType {
+protocol PTargetType: WITargetType {
     //
 }
 
-extension ProfileTargetType {
+extension PTargetType {
 
     var strBaseURL: String {
         return "\(WICredentials.shared.baseURL)/profile/wow"

@@ -13,7 +13,7 @@ enum GDMount {
     case mount(id: Int)
 }
 
-extension GDMount: GameDataTargetType {
+extension GDMount: GDTargetType {
 
     var namespace: String {
         return "static-eu"

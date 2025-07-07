@@ -1,5 +1,5 @@
 //
-//  GameDataTargetType.swift
+//  GDTargetType.swift
 //  WoW-Inventory
 //
 //  Created by Baptiste Cadoux on 17/10/2023.
@@ -7,11 +7,11 @@
 
 import Foundation
 
-protocol GameDataTargetType: WITargetType {
+protocol GDTargetType: WITargetType {
     var namespace: String { get }
 }
 
-extension GameDataTargetType {
+extension GDTargetType {
 
     var strBaseURL: String {
         return "\(WICredentials.shared.baseURL)/data/wow"

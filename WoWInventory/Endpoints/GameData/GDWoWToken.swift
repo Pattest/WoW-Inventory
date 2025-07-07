@@ -12,7 +12,7 @@ enum GDWoWToken {
     case index
 }
 
-extension GDWoWToken: GameDataTargetType {
+extension GDWoWToken: GDTargetType {
 
     var namespace: String {
         return "dynamic-eu"

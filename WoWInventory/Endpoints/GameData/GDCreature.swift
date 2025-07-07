@@ -14,7 +14,7 @@ enum GDCreature {
     case creatureFamilyMedia(id: Int)
 }
 
-extension GDCreature: GameDataTargetType {
+extension GDCreature: GDTargetType {
 
     var namespace: String {
         return "static-eu"

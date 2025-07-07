@@ -6,25 +6,6 @@
 	objectVersion = 70;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		6A05FA573034761200C51D57 /* WICredentials.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6A05FA563034760600C51D57 /* WICredentials.plist */; };
-		B540B6932AE668A700319774 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = B540B6922AE668A700319774 /* Localizable.xcstrings */; };
-		B552ED732ADD7D95003810AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B552ED6F2ADD7D95003810AF /* Assets.xcassets */; };
-		B552ED742ADD7D95003810AF /* Morpheus.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B552ED712ADD7D95003810AF /* Morpheus.ttf */; };
-		B552ED752ADD7D95003810AF /* LifeCraft.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B552ED722ADD7D95003810AF /* LifeCraft.ttf */; };
-		B552EDDA2ADD7E80003810AF /* Toy.json in Resources */ = {isa = PBXBuildFile; fileRef = B552EDAD2ADD7E80003810AF /* Toy.json */; };
-		B552EDDB2ADD7E80003810AF /* Mount.json in Resources */ = {isa = PBXBuildFile; fileRef = B552EDAE2ADD7E80003810AF /* Mount.json */; };
-		B552EDDC2ADD7E80003810AF /* Mounts.json in Resources */ = {isa = PBXBuildFile; fileRef = B552EDAF2ADD7E80003810AF /* Mounts.json */; };
-		B552EDDD2ADD7E80003810AF /* Pet.json in Resources */ = {isa = PBXBuildFile; fileRef = B552EDB02ADD7E80003810AF /* Pet.json */; };
-		B55AFE2F2ADE6CF90050BBF5 /* Mount.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B55AFE2E2ADE6CF90050BBF5 /* Mount.storyboard */; };
-		B55AFE3D2ADE74310050BBF5 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B55AFE3C2ADE74310050BBF5 /* Home.storyboard */; };
-		B55AFE422ADE856F0050BBF5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B55AFE432ADE856F0050BBF5 /* Main.storyboard */; };
-		B55AFE442ADE85870050BBF5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B55AFE452ADE85870050BBF5 /* LaunchScreen.storyboard */; };
-		B56EEE8A2AE13477008AF5F6 /* HomeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B56EEE882AE13477008AF5F6 /* HomeCell.xib */; };
-		B5DA60D92AE16294004B7F0E /* MountListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5DA60D72AE16294004B7F0E /* MountListCell.xib */; };
-		CA0945EF2B4C535B00545C54 /* TokenPriceView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA0945EE2B4C535B00545C54 /* TokenPriceView.xib */; };
-/* End PBXBuildFile section */
-
 /* Begin PBXContainerItemProxy section */
 		6A7091472E09757B006C568C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -42,27 +23,18 @@
 		};
 /* End PBXContainerItemProxy section */
 
-/* Begin PBXFileReference section */
-		6A05FA563034760600C51D57 /* WICredentials.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = WICredentials.plist; sourceTree = "<group>"; };
-		B540B6922AE668A700319774 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
-		B552ED6F2ADD7D95003810AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		B552ED712ADD7D95003810AF /* Morpheus.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Morpheus.ttf; sourceTree = "<group>"; };
-		B552ED722ADD7D95003810AF /* LifeCraft.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = LifeCraft.ttf; sourceTree = "<group>"; };
-		B552EDAD2ADD7E80003810AF /* Toy.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Toy.json; sourceTree = "<group>"; };
-		B552EDAE2ADD7E80003810AF /* Mount.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Mount.json; sourceTree = "<group>"; };
-		B552EDAF2ADD7E80003810AF /* Mounts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Mounts.json; sourceTree = "<group>"; };
-		B552EDB02ADD7E80003810AF /* Pet.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Pet.json; sourceTree = "<group>"; };
-		B55AFE2E2ADE6CF90050BBF5 /* Mount.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Mount.storyboard; sourceTree = "<group>"; };
-		B55AFE3C2ADE74310050BBF5 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
-		B55AFE432ADE856F0050BBF5 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		B55AFE452ADE85870050BBF5 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
-		B56EEE882AE13477008AF5F6 /* HomeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCell.xib; sourceTree = "<group>"; };
-		B5DA60D72AE16294004B7F0E /* MountListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MountListCell.xib; sourceTree = "<group>"; };
-		CA0945EE2B4C535B00545C54 /* TokenPriceView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TokenPriceView.xib; sourceTree = "<group>"; };
-/* End PBXFileReference section */
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		6A55E4E32E16CCDB00B7E162 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 6A7091392E09757A006C568C /* WoWInventory */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		6A70913B2E09757A006C568C /* WoWInventory */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = WoWInventory; sourceTree = "<group>"; };
+		6A70913B2E09757A006C568C /* WoWInventory */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (6A55E4E32E16CCDB00B7E162 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = WoWInventory; sourceTree = "<group>"; };
 		6A7091492E09757B006C568C /* WoWInventoryTests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = WoWInventoryTests; sourceTree = "<group>"; };
 		6A7091532E09757B006C568C /* WoWInventoryUITests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = WoWInventoryUITests; sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -85,36 +57,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		17D23178D0150BB85D580F27 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
-		6A05FB663034817A00C51D57 /* Recovered References */ = {
-			isa = PBXGroup;
-			children = (
-				B55AFE452ADE85870050BBF5 /* LaunchScreen.storyboard */,
-				B55AFE2E2ADE6CF90050BBF5 /* Mount.storyboard */,
-				CA0945EE2B4C535B00545C54 /* TokenPriceView.xib */,
-				B552EDAD2ADD7E80003810AF /* Toy.json */,
-				6A05FA563034760600C51D57 /* WICredentials.plist */,
-				B55AFE3C2ADE74310050BBF5 /* Home.storyboard */,
-				B552ED6F2ADD7D95003810AF /* Assets.xcassets */,
-				B5DA60D72AE16294004B7F0E /* MountListCell.xib */,
-				B552EDB02ADD7E80003810AF /* Pet.json */,
-				B56EEE882AE13477008AF5F6 /* HomeCell.xib */,
-				B540B6922AE668A700319774 /* Localizable.xcstrings */,
-				B55AFE432ADE856F0050BBF5 /* Main.storyboard */,
-				B552ED712ADD7D95003810AF /* Morpheus.ttf */,
-				B552EDAF2ADD7E80003810AF /* Mounts.json */,
-				B552EDAE2ADD7E80003810AF /* Mount.json */,
-				B552ED722ADD7D95003810AF /* LifeCraft.ttf */,
-			);
-			name = "Recovered References";
-			sourceTree = "<group>";
-		};
 		B552ED2B2ADD7A22003810AF = {
 			isa = PBXGroup;
 			children = (
@@ -122,8 +64,6 @@
 				6A7091492E09757B006C568C /* WoWInventoryTests */,
 				6A7091532E09757B006C568C /* WoWInventoryUITests */,
 				B552ED352ADD7A22003810AF /* Products */,
-				17D23178D0150BB85D580F27 /* Pods */,
-				6A05FB663034817A00C51D57 /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -354,6 +294,7 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WoWInventory/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -384,6 +325,7 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WoWInventory/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

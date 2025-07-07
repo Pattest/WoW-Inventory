@@ -14,7 +14,6 @@ enum CredentialKey: String {
 
 public class WICredentials {
 
-    // TODO: ?
     nonisolated(unsafe) static var shared = WICredentials()
 
     private static let credentialsPlist: [String: String] = {

@@ -13,7 +13,7 @@ enum PAccountProfile {
     case mounts
 }
 
-extension PAccountProfile: ProfileTargetType {
+extension PAccountProfile: PTargetType {
 
     var strBaseURL: String {
         return "\(WICredentials.shared.baseURL)/profile/user/wow/"
