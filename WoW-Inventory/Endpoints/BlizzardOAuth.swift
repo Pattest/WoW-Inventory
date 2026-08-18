@@ -6,7 +6,7 @@
 //  Copyright © 2019 Baptistecdx. All rights reserved.
 //
 
-import Moya
+import Alamofire
 import Foundation
 
 enum BlizzardOAuth {
@@ -15,10 +15,14 @@ enum BlizzardOAuth {
     case checkToken(token: String)
 }
 
-extension BlizzardOAuth: TargetType {
+extension BlizzardOAuth: WITargetType {
+
+    var strBaseURL: String {
+        return "https://oauth.battle.net"
+    }
 
     var baseURL: URL {
-        return URL(string: "https://oauth.battle.net/")!
+        return URL(string: strBaseURL)!
     }
 
     var path: String {
@@ -34,7 +38,7 @@ extension BlizzardOAuth: TargetType {
         }
     }
 
-    var method: Moya.Method {
+    var method: HTTPMethod {
         switch self {
         case .authorize:
             return .get
@@ -45,7 +49,7 @@ extension BlizzardOAuth: TargetType {
         }
     }
 
-    var task: Task {
+    var task: WIRequestTask {
         switch self {
         case .authorize:
             return .requestParameters(
@@ -75,7 +79,7 @@ extension BlizzardOAuth: TargetType {
         }
     }
 
-    var headers: [String: String]? {
+    var headers: HTTPHeaders? {
         switch self {
         case .authorize:
             return [
@@ -94,5 +98,9 @@ extension BlizzardOAuth: TargetType {
                 "Authorization": "Basic \(base64LoginString)"
             ]
         }
+    }
+
+    var parameters: [String: Any] {
+        return [:]
     }
 }

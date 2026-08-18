@@ -5,7 +5,7 @@
 //  Created by Baptiste Cadoux on 09/01/2024.
 //
 
-import Moya
+import Alamofire
 import Foundation
 
 enum GDWoWToken {
@@ -29,14 +29,14 @@ extension GDWoWToken: GameDataTargetType {
         }
     }
 
-    var method: Moya.Method {
+    var method: HTTPMethod {
         switch self {
         case .index:
             return .get
         }
     }
 
-    var task: Task {
+    var task: WIRequestTask {
         switch self {
         case .index:
             return .requestParameters(

@@ -5,7 +5,7 @@
 //  Created by Baptiste Cadoux on 17/10/2023.
 //
 
-import Moya
+import Alamofire
 import Foundation
 
 enum GDCreature {
@@ -35,7 +35,7 @@ extension GDCreature: GameDataTargetType {
         }
     }
 
-    var method: Moya.Method {
+    var method: HTTPMethod {
         switch self {
         case .creature,
                 .creatureDisplayMedia,
@@ -44,7 +44,7 @@ extension GDCreature: GameDataTargetType {
         }
     }
 
-    var task: Task {
+    var task: WIRequestTask {
         switch self {
         case .creature,
                 .creatureDisplayMedia,

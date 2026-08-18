@@ -6,27 +6,40 @@
 //
 
 import Foundation
-import Moya
+import Alamofire
+
+typealias WIResponse = AFDataResponse<Data>
 
 class DataLoader {
     static var shared = DataLoader()
+
+    private func request<T: WITargetType>(_ target: T,
+                                          logContext: String,
+                                          handler: @escaping (WIResponse?) -> Void) {
+        AF.request(target.url,
+                   method: target.method,
+                   parameters: target.task.parameters,
+                   encoding: target.task.encoding,
+                   headers: target.headers)
+        .responseData { response in
+            switch response.result {
+            case .success:
+                handler(response)
+
+            case let .failure(error):
+                print("DataLoader > \(logContext): \(error)")
+                handler(nil)
+            }
+        }
+    }
 }
 
 // MARK: - HomeService
 
 extension DataLoader {
 
-    func fetchTokenPrice(handler: @escaping (Response?) -> Void) {
-        MoyaProvider<GDWoWToken>().request(.index) { result in
-            switch result {
-            case let .success(response):
-                handler(response)
-
-            case let .failure(error):
-                print("DataLoader > fetchTokenPrice: \(error)")
-                handler(nil)
-            }
-        }
+    func fetchTokenPrice(handler: @escaping (WIResponse?) -> Void) {
+        request(GDWoWToken.index, logContext: "fetchTokenPrice", handler: handler)
     }
 }
 
@@ -35,31 +48,17 @@ extension DataLoader {
 extension DataLoader {
 
     func checkTokenAvailability(_ token: String,
-                                handler: @escaping (Response?) -> Void) {
-        MoyaProvider<BlizzardOAuth>().request(.checkToken(token: token)) { result in
-            switch result {
-            case let .success(response):
-                handler(response)
-
-            case let .failure(error):
-                print("DataLoader > checkTokenAvailability: \(error)")
-                handler(nil)
-            }
-        }
+                                handler: @escaping (WIResponse?) -> Void) {
+        request(BlizzardOAuth.checkToken(token: token),
+                logContext: "checkTokenAvailability",
+                handler: handler)
     }
 
     func fetchAccessToken(_ authToken: String,
-                          handler: @escaping (Response?) -> Void) {
-        MoyaProvider<BlizzardOAuth>().request(.token(code: authToken)) { result in
-            switch result {
-            case let .success(response):
-                handler(response)
-
-            case let .failure(error):
-                print("DataLoader > fetchAccessToken: \(error)")
-                handler(nil)
-            }
-        }
+                          handler: @escaping (WIResponse?) -> Void) {
+        request(BlizzardOAuth.token(code: authToken),
+                logContext: "fetchAccessToken",
+                handler: handler)
     }
 
 }
@@ -68,31 +67,13 @@ extension DataLoader {
 
 extension DataLoader {
 
-    func fetchMounts(handler: @escaping (Response?) -> Void) {
-        MoyaProvider<PAccountProfile>().request(.mounts) { result in
-            switch result {
-            case let .success(response):
-                handler(response)
-
-            case let .failure(error):
-                print("DataLoader > fetchMounts: \(error)")
-                handler(nil)
-            }
-        }
+    func fetchMounts(handler: @escaping (WIResponse?) -> Void) {
+        request(PAccountProfile.mounts, logContext: "fetchMounts", handler: handler)
     }
 
     func fetchMountDetail(_ mountId: Int,
-                          handler: @escaping (Response?) -> Void) {
-        MoyaProvider<GDMount>().request(.mount(id: mountId)) { result in
-            switch result {
-            case let .success(response):
-                handler(response)
-
-            case let .failure(error):
-                print("DataLoader > fetchMountDetail: \(error)")
-                handler(nil)
-            }
-        }
+                          handler: @escaping (WIResponse?) -> Void) {
+        request(GDMount.mount(id: mountId), logContext: "fetchMountDetail", handler: handler)
     }
 }
 
@@ -101,16 +82,9 @@ extension DataLoader {
 extension DataLoader {
 
     func fetchCreatureDisplayMedia(id: Int,
-                                   handler: @escaping (Response?) -> Void) {
-        MoyaProvider<GDCreature>().request(.creatureDisplayMedia(id: id)) { result in
-            switch result {
-            case let .success(response):
-                handler(response)
-
-            case let .failure(error):
-                print("DataLoader > fetchCreatureDisplay: \(error)")
-                handler(nil)
-            }
-        }
+                                   handler: @escaping (WIResponse?) -> Void) {
+        request(GDCreature.creatureDisplayMedia(id: id),
+                logContext: "fetchCreatureDisplay",
+                handler: handler)
     }
 }

@@ -16,10 +16,9 @@ class MountDetailService: MountDetailServiceProtocol {
     func fetchCreatureDisplayMedia(id: Int,
                                    handler: @escaping ([Asset]) -> Void) {
         DataLoader.shared.fetchCreatureDisplayMedia(id: id) { response in
-            guard let response else { return handler([]) }
+            guard let data = response?.data else { return handler([]) }
 
             do {
-                let data = response.data
                 let decoder = JSONDecoder()
                 let assetData = try decoder.decode(ResponseAsset.self, from: data)
                 handler(assetData.assets)

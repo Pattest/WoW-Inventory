@@ -17,10 +17,9 @@ class MountListService: MountListServiceProtocol {
 
     func fetchMounts(handler: @escaping ([Mount]) -> Void) {
         DataLoader.shared.fetchMounts { response in
-            guard let response else { return handler([]) }
+            guard let data = response?.data else { return handler([]) }
 
             do {
-                let data = response.data
                 let decoder = JSONDecoder()
                 let mount = try decoder.decode(ResponseMount.self, from: data)
                 let sortedMounts = mount.getSortedMounts()
@@ -35,10 +34,9 @@ class MountListService: MountListServiceProtocol {
 
     func fetchMountDetail(_ mountId: Int, handler: @escaping (Mount.Detail?) -> Void) {
         DataLoader.shared.fetchMountDetail(mountId) { response in
-            guard let response else { return handler(nil) }
+            guard let data = response?.data else { return handler(nil) }
 
             do {
-                let data = response.data
                 let decoder = JSONDecoder()
                 let mountDetail = try decoder.decode(Mount.Detail.self, from: data)
                 handler(mountDetail)
