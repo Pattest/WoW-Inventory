@@ -19,7 +19,6 @@ jobs:
     env:
       PROJECT: WoW-Inventory.xcodeproj
       SCHEME: WoW-Inventory
-      DESTINATION: platform=iOS Simulator,name=iPhone 16,OS=latest
 
     steps:
       - name: Checkout
@@ -27,6 +26,20 @@ jobs:
 
       - name: Show Xcode version
         run: xcodebuild -version
+
+      - name: Select available iPhone simulator
+        run: |
+          set -euo pipefail
+
+          DESTINATION="$(xcrun simctl list devices available | awk -F '[()]' '/iPhone/ && /Shutdown|Booted/ { print "platform=iOS Simulator,id="$2; exit }')"
+
+          if [ -z "$DESTINATION" ]; then
+            xcrun simctl list devices available
+            exit 1
+          fi
+
+          echo "DESTINATION=$DESTINATION" >> "$GITHUB_ENV"
+          echo "Using destination: $DESTINATION"
 
       - name: Cache Swift packages
         uses: actions/cache@v4
