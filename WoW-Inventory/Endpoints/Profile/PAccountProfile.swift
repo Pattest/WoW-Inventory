@@ -6,7 +6,7 @@
 //  Copyright © 2019 Interactive Mobility. All rights reserved.
 //
 
-import Moya
+import Alamofire
 import Foundation
 
 enum PAccountProfile {
@@ -30,14 +30,14 @@ extension PAccountProfile: ProfileTargetType {
         }
     }
 
-    var method: Moya.Method {
+    var method: HTTPMethod {
         switch self {
         case .mounts:
             return .get
         }
     }
 
-    var task: Task {
+    var task: WIRequestTask {
         switch self {
         case .mounts:
             return .requestParameters(

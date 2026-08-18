@@ -16,9 +16,9 @@ class LoginService: LoginServiceProtocol {
 
     func checkTokenAvailability(_ token: String, handler: @escaping (Bool) -> Void) {
         DataLoader.shared.checkTokenAvailability(token) { response in
-            guard let response else { return handler(false) }
+            guard let data = response?.data else { return handler(false) }
 
-            if WIError.decodeError(from: response.data) != nil {
+            if WIError.decodeError(from: data) != nil {
                 handler(false)
             } else {
                 handler(true)
@@ -28,10 +28,9 @@ class LoginService: LoginServiceProtocol {
 
     func fetchAccessToken(_ authToken: String, handler: @escaping (Bool) -> Void) {
         DataLoader.shared.fetchAccessToken(authToken) { response in
-            guard let response else { return handler(false) }
+            guard let data = response?.data else { return handler(false) }
 
             do {
-                let data = response.data
                 let decoder = JSONDecoder()
                 let oauthToken = try decoder.decode(OAuthToken.self, from: data)
                 WICredentials.shared.saveAccessToken(oauthToken.accessToken)
