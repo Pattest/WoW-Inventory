@@ -676,6 +676,7 @@
 				B56EEE8A2AE13477008AF5F6 /* HomeCell.xib in Resources */,
 				B540B6932AE668A700319774 /* Localizable.xcstrings in Resources */,
 				B55AFE422ADE856F0050BBF5 /* Main.storyboard in Resources */,
+				6A05FADF3034804D00C51D57 /* WICredentials.plist in Resources */,
 				B552ED742ADD7D95003810AF /* Morpheus.ttf in Resources */,
 				B552EDDC2ADD7E80003810AF /* Mounts.json in Resources */,
 				B552EDDB2ADD7E80003810AF /* Mount.json in Resources */,
