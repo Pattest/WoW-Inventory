@@ -5,8 +5,9 @@
 //  Created by Baptiste Cadoux on 19/10/2023.
 //
 
-import UIKit
 import AlamofireImage
+import UIKit
+import WoWLibrary
 
 class MountDetailViewController: UIViewController {
 
